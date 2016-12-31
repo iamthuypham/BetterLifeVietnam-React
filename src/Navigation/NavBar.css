@@ -1,0 +1,9 @@
+nav a {
+    font-family: 'Lato', sans-serif;
+}
+.donateButton {
+    background-color: #f46600;
+}
+.donateButton > a {
+    color: white !important ;
+}

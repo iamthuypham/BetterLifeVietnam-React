@@ -1,0 +1,23 @@
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #00ba5d;
+}
+.carousel {
+    max-width: 500px;
+}
+.carousel-indicators {
+    display: none;
+}
+.carousel-caption {
+    height: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carousel-caption > h3 {
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
