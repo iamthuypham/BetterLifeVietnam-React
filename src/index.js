@@ -19,7 +19,7 @@ import './index.css'
 const App = () => (
   <Router history={hashHistory}>
     <Route path='/' component={NavBar}>
-      <IndexRoute path='/' component={Landing} />
+      <IndexRoute component={Landing} />
       <Route path='/about' component={About} />
       <Route path='/our-team' component={OurTeam} />
       <Route path='/what-we-do' component={WhatWeDo}>

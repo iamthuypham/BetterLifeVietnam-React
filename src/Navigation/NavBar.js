@@ -6,14 +6,12 @@ import {Navbar,Nav,NavItem,NavDropdown,MenuItem, Image} from 'react-bootstrap'
 
 const NavBar = (props) => (
   <div className='container-fluid'>
+    <div style={{minHeight: '50px', padding: '10px 30px'}}><a href='#' ><Image style={{ width: '100%', maxWidth: '370px'}} src={ logo } responsive /></a></div>
     <Navbar collapseOnSelect style={{margin: '0'}}>
       <Navbar.Header>
-        <Navbar.Brand>
-          <a href='#' style={{height: '75px', padding: '10px'}}><Image style={{height: '100%'}} src={ logo } responsive /></a>
-        </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
-      <Navbar.Collapse style={{marginTop: '15px'}}>
+      <Navbar.Collapse>
         <Nav pullRight>
           <NavDropdown eventKey='1' title='About' id='basic-nav-dropdown'>
             <MenuItem eventKey='1.1'><Link to='/about'><div>Who We Are</div></Link></MenuItem>
