@@ -25,7 +25,6 @@ const NavBar = (props) => (
           <NavDropdown eventKey='3' title='Responsible Tourism' id='basic-nav-dropdown'>
             <MenuItem eventKey='3.1'><Link to='/tour-for-book'><div>Tour For Book</div></Link></MenuItem>
             <MenuItem eventKey='3.2'><Link to='/voluntourism'><div>Voluntourism</div></Link></MenuItem>
-            <MenuItem eventKey='3.3'><Link to='/visa-info'><div>Visa Info</div></Link></MenuItem>
           </NavDropdown>
           <NavItem eventKey='4' title='Contact'>Contact</NavItem>
           <NavItem eventKey='5' title='Donate' className="donateButton">❤ Donate</NavItem>
