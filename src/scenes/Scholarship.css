@@ -1,0 +1,7 @@
+.panel-title {
+    text-align: center;
+}
+
+.panel-heading > h4 {
+    text-indent: 0;
+}
