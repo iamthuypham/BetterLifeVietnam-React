@@ -1,9 +1,29 @@
 nav a {
     font-family: 'Lato', sans-serif;
 }
+
 .donateButton {
     background-color: #f46600;
 }
-.donateButton > a {
-    color: white !important ;
+
+.donateButton>a {
+    color: white !important;
+}
+
+.socialMedia {
+    position: relative;
+    display: block;
+}
+
+.socialMedia > a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .socialMedia {
+        float: left;
+    }
 }

@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import './NavBar.css'
 import logo from '../images/BLV-logo.png'
 import {Navbar,Nav,NavItem,NavDropdown,MenuItem, Image} from 'react-bootstrap'
+import FontAwesome from 'react-fontawesome'
 
 const NavBar = (props) => (
   <div className='container-fluid'>
@@ -36,8 +37,14 @@ const NavBar = (props) => (
             <MenuItem eventKey='3.2'><Link to='/voluntourism'><div>Voluntourism</div></Link></MenuItem>
           </NavDropdown>
           <NavItem eventKey='4' title='Contact'><Link to='/contact'>Contact</Link></NavItem>
+          <div className="socialMedia">
+            <a href="https://www.facebook.com/pg/Better-Life-Vietnam-111667145557377/photos/?tab=album&album_id=1296427037081376"><FontAwesome name='facebook-square' /></a>
+            <a href="https://www.instagram.com/betterlifevietnam/"><FontAwesome name='instagram' /></a>
+            <a href="https://twitter.com/BetterLifeVN?lang=en"><FontAwesome name='twitter' /></a>
+        </div>
         </Nav>
       </Navbar.Collapse>
+      
     </Navbar>
     <div>
       {props.children}

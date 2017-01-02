@@ -47,6 +47,14 @@ ul, li {
   color: #777;
 }
 
+a, a:visited {
+  color: #777;
+}
+a:hover, #basic-nav-dropdown:hover {
+  color: #00ba5d;
+  text-decoration: none;
+}
+
 .center-top-col {
     display: flex;
     flex-direction: column;

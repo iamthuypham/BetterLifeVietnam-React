@@ -8,6 +8,7 @@ import About from './scenes/About'
 import OurTeam from './scenes/OurTeam'
 import FreeBookLibrary from './scenes/FreeBookLibrary'
 import Scholarship from './scenes/Scholarship'
+import JobAssistance from './scenes/JobAssistance'
 import TourForBook from './scenes/TourForBook'
 import VisaInfo from './scenes/VisaInfo'
 import Voluntourism from './scenes/Voluntourism'
@@ -24,7 +25,7 @@ const App = () => (
       <Route path='/what-we-do'>
         <Route path='free-book-library' component={FreeBookLibrary} />
         <Route path='scholarship' component={Scholarship} />
-        <Route path='job-assistance' component={Scholarship} />
+        <Route path='job-assistance' component={JobAssistance} />
       </Route>
       <Route path='/tour-for-book' component={TourForBook} />
       <Route path='/visa-info' component={VisaInfo} />
