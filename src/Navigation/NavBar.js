@@ -3,11 +3,19 @@ import { Link } from 'react-router'
 import './NavBar.css'
 import logo from '../images/BLV-logo.png'
 import {Navbar,Nav,NavItem,NavDropdown,MenuItem, Image} from 'react-bootstrap'
-import FontAwesome from 'react-fontawesome'
 
 const NavBar = (props) => (
   <div className='container-fluid'>
-    <div style={{minHeight: '50px', padding: '10px 30px'}}><a href='#' ><Image style={{ width: '100%', maxWidth: '370px'}} src={ logo } responsive /></a></div>
+    <div className='space-top-row'>
+      <div style={{minHeight: '50px', padding: '10px 0 10px 30px'}}><a href='#' ><Image style={{ width: '100%', maxWidth: '370px'}} src={ logo } responsive /></a></div>
+      <div style={{minHeight: '50px', padding: '10px 30px 10px 0'}}>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="K9P45W3RSSL44" />
+          <input type="image" style={{ width: '100%'}} src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+        </form>
+      </div>
+    </div>
     <Navbar collapseOnSelect style={{margin: '0'}}>
       <Navbar.Header>
         <Navbar.Toggle />
@@ -28,7 +36,6 @@ const NavBar = (props) => (
             <MenuItem eventKey='3.2'><Link to='/voluntourism'><div>Voluntourism</div></Link></MenuItem>
           </NavDropdown>
           <NavItem eventKey='4' title='Contact'><Link to='/contact'>Contact</Link></NavItem>
-          <NavItem eventKey='5' title='Donate' className="donateButton"><FontAwesome name='heart'  size='1x'/> Donate</NavItem>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
