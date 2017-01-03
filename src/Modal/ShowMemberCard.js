@@ -1,25 +1,32 @@
 const React = require('react')
-import { Modal, Col, Thumbnail, Button } from 'react-bootstrap'
+import { Modal, Col, Thumbnail} from 'react-bootstrap'
 
 class ShowMemberCard extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      showModal: false
+    showModal: false
     }
-    this.close = {
-      showModal: false
-    }
-    this.close = {
-      showModal: true
-    }
+  this.open = this.open.bind(this)
+  this.close = this.close.bind(this)
   }
+  open() {
+    this.setState({
+      showModal: true
+    })
+  }
+  close() {
+    this.setState({
+      showModal: false
+    })
+  }
+  
   render () {
     return (
       <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
         <Thumbnail src={process.env.PUBLIC_URL + '/images/membersImg/' + this.props.img}>
-          <div className='center-top-row'>
-            <div className='show-card'>
+          <div>
+            <div>
               <h3 style={{ color: '#00ba5d', cursor: 'pointer' }} onClick={this.open}>{this.props.name}<h5 style={{textIndent: '0'}}>{this.props.position}</h5></h3>
               <Modal show={this.state.showModal} onHide={this.close}>
                 <Modal.Header closeButton>
@@ -29,9 +36,6 @@ class ShowMemberCard extends React.Component {
                   <p>{this.props.info1}</p>
                   <p>{this.props.info2}</p>
                 </Modal.Body>
-                <Modal.Footer>
-                  <Button onClick={this.close}>Close</Button>
-                </Modal.Footer>
               </Modal>
             </div>
           </div>
