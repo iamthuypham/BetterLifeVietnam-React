@@ -21,75 +21,81 @@ import TeamModalSimonWalter from '../Modal/teamModalSimonWalter'
 import TeamModalThachNguyen from '../Modal/teamModalThachNguyen'
 import TeamModalVuThaoHoan from '../Modal/teamModalVuThaoHoan'
 
+import ShowCard from '../ShowCard'
+import data from '../data.json'
+
 const OurTeam = () => (
   <div className='container'>
     <Grid>
-    <Row style={{padding: '0 5%'}}>
-    <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth:'250px'}}>
-      <Thumbnail src={ ThinhNguyenThumb } alt="242x200">
-        <div className='center-top-row'>
-          <TeamModalThinh></TeamModalThinh>
-        </div>
-      </Thumbnail>
-    </Col>
-    <Col xs={12} sm={4} style={{ maxHeight: '420px',maxWidth:'250px'}}>
-      <Thumbnail src={ SimonWalterThumb } alt="242x200">
-        <div className='center-top-row'>
-          <TeamModalSimonWalter></TeamModalSimonWalter>
-        </div>
-      </Thumbnail>
-    </Col>
-    <Col xs={12} sm={4} style={{ maxHeight: '420px',maxWidth:'250px'}}>
-      <Thumbnail src={ GregThumb } alt="242x200">
-        <div className='center-top-row'>
-          <TeamModalGregHitchcock></TeamModalGregHitchcock>
-        </div>
-      </Thumbnail>
-    </Col>
-    <Col xs={12} sm={4} style={{ maxHeight: '420px',maxWidth:'250px'}}>
-      <Thumbnail src={ RobertDoThumb } alt="242x200">
-        <div className='center-top-row'>
-          <TeamModalRobertDo></TeamModalRobertDo>
-        </div>
-      </Thumbnail>
-    </Col>
-    <Col xs={12} sm={4} style={{ maxHeight: '420px',maxWidth:'250px'}}>
-      <Thumbnail src={ ThachNguyenThumb } alt="242x200">
-        <div className='center-top-row'>
-          <TeamModalThachNguyen></TeamModalThachNguyen>
-        </div>
-      </Thumbnail>
-    </Col>
-    <Col xs={12} sm={4} style={{ maxHeight: '420px',maxWidth:'250px'}}>
-      <Thumbnail src={ AlyssaThumb } alt="242x200">
-        <div className='center-top-row'>
-          <TeamModalAlyssaKopelman></TeamModalAlyssaKopelman>
-        </div>
-      </Thumbnail>
-    </Col>
-    <Col xs={12} sm={4} style={{ maxHeight: '420px',maxWidth:'250px'}}>
-      <Thumbnail src={ HoanVuThumb } alt="242x200">
-        <div className='center-top-row'>
-          <TeamModalVuThaoHoan></TeamModalVuThaoHoan>
-        </div>
-      </Thumbnail>
-    </Col>
-    <Col xs={12} sm={4} style={{ maxHeight: '420px',maxWidth:'250px'}}>
-      <Thumbnail src={ PhuongNguyenThumb } alt="242x200">
-        <div className='center-top-row'>
-          <TeamModalPhuongNguyen></TeamModalPhuongNguyen>
-        </div>
-      </Thumbnail>
-    </Col>
-    <Col xs={12} sm={4} style={{ maxHeight: '420px',maxWidth:'250px'}}>
-      <Thumbnail src={ BethanyThumb } alt="242x200">
-        <div className='center-top-row'>
-          <TeamModalBethanyTietjen></TeamModalBethanyTietjen>
-        </div>
-      </Thumbnail>
-    </Col>
-    </Row>
-  </Grid>
+      <Row style={{padding: '0 5%'}}>
+        <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
+          <Thumbnail src={ThinhNguyenThumb} alt='242x200'>
+            <div className='center-top-row'>
+              <TeamModalThinh />
+            </div>
+          </Thumbnail>
+        </Col>
+        <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
+          <Thumbnail src={SimonWalterThumb} alt='242x200'>
+            <div className='center-top-row'>
+              <TeamModalSimonWalter />
+            </div>
+          </Thumbnail>
+        </Col>
+        <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
+          <Thumbnail src={GregThumb} alt='242x200'>
+            <div className='center-top-row'>
+              <TeamModalGregHitchcock />
+            </div>
+          </Thumbnail>
+        </Col>
+        <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
+          <Thumbnail src={RobertDoThumb} alt='242x200'>
+            <div className='center-top-row'>
+              <TeamModalRobertDo />
+            </div>
+          </Thumbnail>
+        </Col>
+        <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
+          <Thumbnail src={ThachNguyenThumb} alt='242x200'>
+            <div className='center-top-row'>
+              <TeamModalThachNguyen />
+            </div>
+          </Thumbnail>
+        </Col>
+        <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
+          <Thumbnail src={AlyssaThumb} alt='242x200'>
+            <div className='center-top-row'>
+              <TeamModalAlyssaKopelman />
+            </div>
+          </Thumbnail>
+        </Col>
+        <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
+          <Thumbnail src={HoanVuThumb} alt='242x200'>
+            <div className='center-top-row'>
+              <TeamModalVuThaoHoan />
+            </div>
+          </Thumbnail>
+        </Col>
+        <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
+          <Thumbnail src={PhuongNguyenThumb} alt='242x200'>
+            <div className='center-top-row'>
+              <TeamModalPhuongNguyen />
+            </div>
+          </Thumbnail>
+        </Col>
+        <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
+          <Thumbnail src={BethanyThumb} alt='242x200'>
+            <div className='center-top-row'>
+              <TeamModalBethanyTietjen />
+            </div>
+          </Thumbnail>
+        </Col>
+        {data.members.map((member) => (
+          <ShowCard {...member} key={member.id} />
+        ))}
+      </Row>
+    </Grid>
   </div>
 )
 
