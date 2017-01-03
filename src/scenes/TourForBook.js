@@ -1,22 +1,10 @@
 import React from 'react'
-import { Grid, Row, Col, Thumbnail, Button, Tabs, Tab} from 'react-bootstrap'
-import CompModal from '../Modal/compModal'
-import NorthModal from '../Modal/northModal'
-import SouthModal from '../Modal/southModal'
-import CentralModal from '../Modal/centralModal'
-import CustomModal from '../Modal/customModal'
+import { Grid, Row, Tabs, Tab} from 'react-bootstrap'
+
 import '../scenes/TourForBook.css'
 
-import CompModalThumb from '../images/compModalThumb.jpg'
-import NorthModalThumb from '../images/northModalThumb.jpg'
-import SouthModalThumb from '../images/southModalThumb.jpg'
-import CentralModalThumb from '../images/centralModalThumb.jpg'
-import CustomModalThumb from '../images/customModalThumb.png'
-
-import CompBrochure from '../images/compBrochure.pdf'
-import NorthBrochure from '../images/northBrochure.pdf'
-import SouthBrochure from '../images/southBrochure.pdf'
-import CentralBrochure from '../images/centralBrochure.pdf'
+import ShowTourCard from '../Modal/ShowTourCard'
+import tourData from '../tour.json'
 
 const TourForBook = () => (
   <div className='container'>
@@ -28,50 +16,9 @@ const TourForBook = () => (
     </div>
     <Grid>
       <Row>
-        <Col xs={12} sm={6} md={4} style={{minHeight: '300px'}}>
-          <Thumbnail src={CompModalThumb} alt='242x200'>
-            <h3 style={{color: '#00ba5d'}}>Comprehensive Vietnam Tours</h3>
-            <div className='center-top-row'>
-              <CompModal />&nbsp;
-              <a href={CompBrochure}><Button>Brochure</Button></a>
-            </div>
-          </Thumbnail>
-        </Col>
-        <Col xs={12} sm={6} md={4}>
-          <Thumbnail src={NorthModalThumb} alt='242x200'>
-            <h3 style={{color: '#00ba5d'}}>Northern Vietnam Tours</h3>
-            <div className='center-top-row'>
-              <NorthModal />&nbsp;
-              <a href={NorthBrochure}><Button>Brochure</Button></a>
-            </div>
-          </Thumbnail>
-        </Col>
-        <Col xs={12} sm={6} md={4}>
-          <Thumbnail src={CentralModalThumb} alt='242x200'>
-            <h3 style={{color: '#00ba5d'}}>Central Vietnam Tours</h3>
-            <div className='center-top-row'>
-              <CentralModal />&nbsp;
-              <a href={CentralBrochure}><Button>Brochure</Button></a>
-            </div>
-          </Thumbnail>
-        </Col>
-        <Col xs={12} sm={6} md={4}>
-          <Thumbnail src={SouthModalThumb} alt='242x200'>
-            <h3 style={{color: '#00ba5d'}}>Southern Vietnam Tours</h3>
-            <div className='center-top-row'>
-              <SouthModal />&nbsp;
-              <a href={SouthBrochure}><Button>Brochure</Button></a>
-            </div>
-          </Thumbnail>
-        </Col>
-        <Col xs={12} sm={6} md={4}>
-          <Thumbnail src={CustomModalThumb} alt='242x200'>
-            <h3 style={{color: '#00ba5d'}}>Custom Tours</h3>
-            <div className='center-top-row'>
-              <CustomModal />&nbsp;
-            </div>
-          </Thumbnail>
-        </Col>
+         {tourData.tours.map((tour) => (
+          <ShowTourCard {...tour} key={tour.id} />
+          ))}
       </Row>
     </Grid>
     <div>
