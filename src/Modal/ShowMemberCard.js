@@ -1,7 +1,7 @@
 const React = require('react')
 import { Modal, Col, Thumbnail, Button } from 'react-bootstrap'
 
-class ShowCard extends React.Component {
+class ShowMemberCard extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -43,11 +43,11 @@ class ShowCard extends React.Component {
 
 const { string } = React.PropTypes
 
-ShowCard.propTypes = {
+ShowMemberCard.propTypes = {
   name: string.isRequired,
   position: string.isRequired,
   info1: string.isRequired,
   info2: string
 }
 
-module.exports = ShowCard
+module.exports = ShowMemberCard
