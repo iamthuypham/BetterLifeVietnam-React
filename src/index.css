@@ -21,12 +21,14 @@ h4 {
   color: #777;
   line-height: 150%;
   margin-top: 0;
+  font-size: 1em;
 }
 
 h1 {
   font-weight: 700;
   color: #00ba5d;
   text-align: center;
+  font-size: 1.7em;
 }
 
 h3 {
