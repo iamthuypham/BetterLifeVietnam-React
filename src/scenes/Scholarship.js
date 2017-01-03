@@ -1,21 +1,9 @@
 import React from 'react'
-import { Accordion, Panel, Grid, Row, Col, Thumbnail } from 'react-bootstrap'
-
-import StudentModalChua from '../Modal/studentModalChua'
-import StudentModalDanh from '../Modal/studentModalDanh'
-import StudentModalNgan from '../Modal/studentModalNgan'
-import StudentModalHa from '../Modal/studentModalHa'
-import StudentModalMy from '../Modal/studentModalMy'
-import StudentModalSon from '../Modal/studentModalSon'
-
-import StudentDanh from '../images/studentDanh.jpeg'
-import StudentChua from '../images/studentChua.jpg'
-import StudentSon from '../images/studentSon.jpeg'
-import StudentNgan from '../images/studentNgan.jpeg'
-import StudentMy from '../images/studentMy.jpeg'
-import StudentHa from '../images/studentHa.jpeg'
-
+import { Accordion, Panel, Grid, Row, Col } from 'react-bootstrap'
 import '../scenes/Scholarship.css'
+
+import ShowStudentCard from '../Modal/ShowStudentCard'
+import studentData from '../student.json'
 
 const Scholarship = () => (
   <div className='container-fluid'>
@@ -97,48 +85,9 @@ const Scholarship = () => (
       <h1 style={{textAlign: 'center'}}>Featured Students</h1>
       <Grid>
         <Row style={{padding: '0 5%'}}>
-          <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
-            <Thumbnail src={StudentDanh} alt='242x200'>
-              <div className='center-top-row'>
-                <StudentModalDanh />
-              </div>
-            </Thumbnail>
-          </Col>
-          <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
-            <Thumbnail src={StudentNgan} alt='242x200'>
-              <div className='center-top-row'>
-                <StudentModalNgan />
-              </div>
-            </Thumbnail>
-          </Col>
-          <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
-            <Thumbnail src={StudentHa} alt='242x200'>
-              <div className='center-top-row'>
-                <StudentModalHa />
-              </div>
-            </Thumbnail>
-          </Col>
-          <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
-            <Thumbnail src={StudentChua} alt='242x200'>
-              <div className='center-top-row'>
-                <StudentModalChua />
-              </div>
-            </Thumbnail>
-          </Col>
-          <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
-            <Thumbnail src={StudentSon} alt='242x200'>
-              <div className='center-top-row'>
-                <StudentModalSon />
-              </div>
-            </Thumbnail>
-          </Col>
-          <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
-            <Thumbnail src={StudentMy} alt='242x200'>
-              <div className='center-top-row'>
-                <StudentModalMy />
-              </div>
-            </Thumbnail>
-          </Col>
+          {studentData.students.map((student) => (
+          <ShowStudentCard {...student} key={student.id} />
+          ))}
         </Row>
       </Grid>
     </div>

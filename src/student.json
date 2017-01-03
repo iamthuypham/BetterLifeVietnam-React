@@ -1,0 +1,54 @@
+{
+    "students":[{
+        "name":"Doan Huu Danh",
+        "age":"14",
+        "homeTown":"Ben Tre",
+        "sponsor":"",
+        "story":"Danh is a 14 year old boy without a father from the time he was born. He has been cared for by his mother and grandmother who have no stable job. Although he also has to work to support the family, he still studies well at school. He wishes to finish his high school and to be able to go to university. He will enter high school next year and will be eligible for a high school scholarship package of $50 per month.",
+        "link1":"http://caplayeuthuong.vtv24.vtv.vn/cau-be-mo-coi-cha-me-ngheo-quyet-tam-hoc-gioi/a79.html",
+        "img":"DoanHuuDanh.jpeg",
+        "id":"1"
+    },{
+       "name":"Le Thi Thu Ngan",
+        "age":"16",
+        "homeTown":"Khanh Hoa",
+        "story":"Ngan is one of a family of three children. Her father left the family when she was a child and her mother has suffered from a serious uterine illness. Despite having this serious disease, her mother has been working hard to raise Ngan and her sister and brother. Her mother's job as a dish washer brings the family an income of less than VND2,000,000 per month (less than $90). This puts Ngan, her brother and her sister at risk of having to quit school. We hope to offer Ngan a high scholarship package of $50 per month.",
+        "link1":"http://caplayeuthuong.vtv24.vtv.vn/nguoi-me-ngheo-dau-yeu-gang-suc-nuoi-ba-con-an-hoc/a242.html",
+        "img":"LeThiThuNgan.jpeg",
+        "id":"2"
+    },{
+        "name":"Le Quoc Son",
+        "age":"",
+        "homeTown":"",
+        "story":"Son is one of a family of three children. His father left the family when she was a child and his mother has suffered from a serious uterine illness. Despite this serious disease, his mother has been working hard to raise him and his sisters. His mother's job as a dish washer brings the family an income of less than VND 2,000,000 per month (less than $90). This puts Ngan, her brother and her sister at the risk of having to quit school. We hope to offer Son a high scholarship package of $50 per month.",
+        "link1":"",
+        "img":"LeQuocSon.jpeg",
+        "id":"3"
+    },{
+       "name":"Ha",
+        "age":"14",
+        "homeTown":"Quang Ngai",
+        "sponsor":"Mr. Mathieu Lamolle (Belgium)",
+        "story":"Ha is the eldest sister in a family of three children. She lost her father who was infected with HIV. Her mother is also infected with HIV. The family is dependent on a 40$ allowance per month from the government. Despite this difficult life, Ha is having good grades at school. We are thankful to Mr Mathieu Lamolle for offering her a secondary scholarship package of $35 per month.",
+        "link1":"http://caplayeuthuong.vtv24.vtv.vn/ba-be-con-hieu-thao-hoc-gioi-cua-nguoi-me-ngheo-co-hiv/a169.html",
+        "img":"Ha.jpeg",
+        "id":"4"
+    },{
+        "name":"Lo Thi Chua",
+        "age":"18",
+        "homeTown":"Ha Giang",
+        "sponsor":"",
+        "story":"Chua is an orphan and has been taken care of by a social center in Ha Giang Province. She has been studying really hard and has passed an exam into university in Tuyen Quang province. She is a big sister standing in the middle in this photo. We hope to offer her a university scholarship of $80 per month.",
+        "link1":"http://caplayeuthuong.vtv24.vtv.vn/tam-guong-vuot-kho-vuon-len-trong-cuoc-song-va-hoc-tap/a52.html",
+        "img":"LoThiChua.jpeg",
+        "id":"5"
+    },{
+        "name":"Le Ngoc My",
+        "age":"8",
+        "homeTown":"Quang Ngai",
+        "story":"My is an eight year old orphan. Her father died in an accident when My was seven months old. When she was three years old, her mother passed away because of liver cancer. She was then cared for by her grandparents who have a difficult life. Her grandmother is 68 years old and has a mental disease. My and her grandparents are dependent on a government allowance of VND800,000 VND per month ($35). We hope to offer My a primary scholarship package of $25 per month for her to be able to have healthy meals and go to school.",
+        "link1":"http://caplayeuthuong.vtv24.vtv.vn/thuong-thay-canh-be-my-mo-coi-phai-lam-bao-mau-cho-ba-ngoai/a168.html",
+        "img":"LeNgocMy.jpeg",
+        "id":"6"
+    }]
+}
