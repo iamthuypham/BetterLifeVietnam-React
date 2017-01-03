@@ -18,7 +18,11 @@ import StudentHa from '../images/studentHa.jpeg'
 import '../scenes/Scholarship.css'
 
 const Scholarship = () => (
-  <div className='container'>
+  <div className='container-fluid'>
+    <div style={{backgroundColor:'#F46600'}}>
+      <h4 style={{color: '#F5FEF7', padding: '2% 2% 0 2%', lineHeight: '150%', textAlign:'center'}}>BETTER LIFE VIETNAM WOULD LIKE TO THANK <span style={{color:'#F5FEF7'}}>SIR TOBIN JAMES</span> FOR ENABLE US TO START THIS SCHOLARSHIP PROGRAM</h4>
+      <p style={{textAlign:'center', paddingBottom: '2%'}}><a href='http://www.tobinjames.com' style={{color:'#F5FEF7'}}>www.tobinjames.com</a></p>
+    </div>
     <div>
       <h1 style={{textAlign: 'center'}}>Family and Education Scholarship</h1>
       <h4 style={{padding: '0 6%', lineHeight: '150%'}}>Poverty prevents many children in Vietnam from continuing their education beyond primary school. Many children have to find jobs and earn a living, instead. Furthermore, those who have worked so hard to pass competitive national entrance exams into universities cannot attend due to limited finances.</h4>
