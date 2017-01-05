@@ -9,7 +9,7 @@ const Highlight = () => (
     <h1 style={{textAlign: 'center', marginBottom: 0}}>Previous Event</h1>
     <Row className='show-grid row-fluid' style={{padding: '10px 0'}}>
       <Col xs={12} sm={6} className='center-top-col' style={{ height: '400px'}}>
-        <Image alt='Tour For Book' src={TFB} style={{ height: '380px'}} />
+        <Image alt='Tour For Book' src={TFB} style={{ width: '100%', height: 'auto'}} />
       </Col>
       <Col xs={12} sm={6} className='center-top-col' style={{padding: '0 8%'}}>
         <h4 style={{color: '#00ba5d'}}>Christmas 2016 with Children of Ba Vi</h4>

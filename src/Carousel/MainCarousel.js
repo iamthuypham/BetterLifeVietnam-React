@@ -9,30 +9,30 @@ import education4 from '../images/education4.jpeg'
 import '../Carousel/MainCarousel.css'
 
 const MainCarousel = () => (
-  <div className='center'>
+  <div className='center-top-col'>
     <Carousel>
       <Carousel.Item>
-        <img width={500} height={334} alt='900x500' src={education1} />
+        <img alt="" src={education1} />
         <Carousel.Caption>
-          <h3 className=''>distributing books &amp; bringing thousands of smiles every year</h3>
+          <span className='' >distributing books &amp; bringing thousands of smiles every year</span>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={500} height={443} alt='900x500' src={education2} />
+        <img alt="" src={education2} />
         <Carousel.Caption>
-          <h3>foster the learning</h3>
+          <span>foster the learning</span>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={500} height={443} alt='900x500' src={education3} />
+        <img alt="" src={education3} />
         <Carousel.Caption>
-          <h3>making education possible</h3>
+          <span>making education possible</span>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={500} height={443} alt='900x500' src={education4} />
+        <img alt="" src={education4} />
         <Carousel.Caption>
-          <h3>organizing voluntourism programs to collect funds</h3>
+          <span>organizing voluntourism programs to collect funds</span>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

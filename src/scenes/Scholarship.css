@@ -1,3 +1,13 @@
+.message {
+    background-color: #F46600;
+    width:100%;
+}
+.message h4 {
+    margin: 10px 0 10px 0 ;
+    text-align: center;
+    color: white;
+}
+
 .panel-title {
     text-align: center;
 }

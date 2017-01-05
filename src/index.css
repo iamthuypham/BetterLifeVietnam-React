@@ -15,8 +15,8 @@ h1, h2, h3 {
 }
 
 h4 {
-  text-indent: 20px;
-  text-align: justify;
+  /*text-indent: 20px;*/
+  text-align: left;
   font-family: 'Lato', sans-serif;
   color: #777;
   line-height: 150%;
@@ -38,21 +38,13 @@ h3 {
 }
 
 p {
-  text-indent: 20px;
-  text-align: justify;
+  /*text-indent: 20px;*/
+  text-align: left;
   font-family: 'Lato', sans-serif;
   color: #777;
 }
 
-ul, li {
-  font-family: 'Lato', sans-serif;
-  color: #777;
-}
-
-a, a:visited {
-  color: #777;
-}
-a:hover, #basic-nav-dropdown:hover {
+a:hover {
   color: #00ba5d;
   text-decoration: none;
 }
@@ -79,4 +71,10 @@ a:hover, #basic-nav-dropdown:hover {
   justify-content: space-between;
   align-items: center;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;  
+  }
 }

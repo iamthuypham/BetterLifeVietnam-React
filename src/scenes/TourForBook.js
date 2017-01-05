@@ -7,8 +7,8 @@ import ShowTourCard from '../Modal/ShowTourCard'
 import tourData from '../tour.json'
 
 const TourForBook = () => (
-  <div className='container'>
-    <div className='center-top-col' style={{ margin: '3% 0'}}>
+  <div>
+    <div className="container">
       <h4>Do you want to visit Vietnam and are you looking for a reliable Tour Agency to ease your trip? Why not choose Tours for Books for your bookings. It will make your trip to Vietnam even more meaningful.</h4>
       <h4><span style={{color: '#00ba5d'}}>Better Life Vietnam</span> has teamed up with <span style={{color: '#00ba5d'}}>VietDan Travel</span> to launch the <span style={{color: '#f46600'}}>Tours for Books</span> business. Profits generated from the tours will contribute to our education fund to provide books and scholarships to underprivileged children. By choosing <span style={{color: '#f46600'}}>Tours for Books</span>, tourists truly help us to improve lives by buying books and providing scholarships to underprivileged children, as well as support disadvantaged youth in our Better job for youth vendors in Hanoi project.</h4>
       <h4>We offer a wide range of package tours, travel services and other travel solutions to individuals, families, large groups and travel agencies.
@@ -21,13 +21,13 @@ const TourForBook = () => (
           ))}
       </Row>
     </Grid>
+    <div className="container">
     <div>
       <h1>Travel services</h1>
       <h4 style={{color: '#00ba5d', textAlign: 'center'}}>Vietnam Visa On Arrival</h4>
       <h4>Visa to Vietnam might be troublesome to many foreign tourists planning to visit the country, as the process of acquiring it might take a lot of time and effort.</h4>
-      <h4>Upon understanding that inconvenience, <span style={{color: '#00ba5d'}}>Tours For Books</span> has launched the <span style={{color: '#00ba5d'}}>Vietnam Visa On Arrival arrangement service</span> to support you at our best, which will shorten the cumbersome procedure, save you more time and tackle your big worry. Being a fully-licensed & reputable tour operator protected by the law of Vietnam, you can certainly put your trust in our quick & secured visa Vietnam service. Please contact our travel consultants at blvtour4books@gmail.com for further information.</h4>
-      <h4 style={{color: '#00ba5d', textAlign: 'center'}}>How To Apply For Visa</h4>
-      <Tabs defaultActiveKey={1} id='uncontrolled-tab-example'>
+      <h4>Upon understanding that inconvenience, <span style={{color: '#00ba5d'}}>Tours For Books</span> has launched the <span style={{color: '#00ba5d'}}>Vietnam Visa On Arrival arrangement service</span> to support you at our best, which will shorten the cumbersome procedure, save you more time and tackle your big worry. Being a fully-licensed & reputable tour operator protected by the law of Vietnam, you can certainly put your trust in our quick & secured visa Vietnam service. Please contact our travel consultants at blvtour4books@gmail.com for further information. To apply for a visa, please follow the instruction below.</h4>
+      <Tabs defaultActiveKey={1} id='applyVisa' className='center-top-col'>
         <Tab eventKey={1} title='Step 1'>
           <h4 style={{color: '#00ba5d', textAlign: 'center'}}>Provide us with essential details</h4>
           <h4>We need to receive the order by email from the applicant with information as below:</h4>
@@ -68,6 +68,7 @@ const TourForBook = () => (
       <h4>The problem with International Driving License is still not finalized in Vietnam, thus drive a car on your own is not really a good choice here. Especially when you travel with your family or a group of more than 5 people, it will cost you a lot more than you expect.</h4>
       <h4>That's a reason why <span style={{color: '#00ba5d'}}>Tours For Books</span> offers car rental service with driver. With the extensive routes to many famous destinations in Vietnam, you can either relax and enjoy the surpassing sceneries on the way or save your time and money. Following our motto "drive safe, drive fun", our highly trained drivers - with not only good English speaking & skilled driving but also friendly and courteous - along with a wide range of high-standard vehicles including 4-seater car, 16-seater van, 24-seater bus, 35-seater bus & 45-seater bus will provide you with an unforgettable driving experience.</h4>
       <h4>Please be well noted that our car rental service is also supplied daily, monthly or in long term period with special offers.</h4>
+    </div>
     </div>
   </div>
 )

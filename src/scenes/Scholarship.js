@@ -6,16 +6,18 @@ import ShowStudentCard from '../Modal/ShowStudentCard'
 import studentData from '../student.json'
 
 const Scholarship = () => (
-  <div className='container-fluid'>
-    <div style={{backgroundColor: '#F46600'}}>
-      <h4 style={{color: '#F5FEF7', padding: '2% 2% 0 2%', lineHeight: '150%', textAlign: 'center'}}>BETTER LIFE VIETNAM WOULD LIKE TO THANK <span style={{color: '#F5FEF7'}}>SIR TOBIN JAMES</span> FOR ENABLE US TO START THIS SCHOLARSHIP PROGRAM</h4>
-      <p style={{textAlign: 'center', paddingBottom: '2%'}}><a href='http://www.tobinjames.com' style={{color: '#F5FEF7'}}>www.tobinjames.com</a></p>
+  <div>
+    <div className="container message">
+      <h4>BETTER LIFE VIETNAM WOULD LIKE TO THANKSIR TOBIN JAMESFOR ENABLE US TO START THIS SCHOLARSHIP PROGRAM</h4>
+      <a href='http://www.tobinjames.com'><h4>www.tobinjames.com</h4></a>
     </div>
+    <div className='container'>
     <div>
       <h1 style={{textAlign: 'center'}}>Family and Education Scholarship</h1>
-      <h4 style={{padding: '0 6%', lineHeight: '150%'}}>Poverty prevents many children in Vietnam from continuing their education beyond primary school. Many children have to find jobs and earn a living, instead. Furthermore, those who have worked so hard to pass competitive national entrance exams into universities cannot attend due to limited finances.</h4>
-      <h4 style={{padding: '0 6%', lineHeight: '150%'}}>School fees are often low but children have to pay for many other expenses, such as uniforms, contribution to school infrastructure, and insurance. Total expenses can range from <span style={{color: '#00ba5d'}}>$60-$80</span> per semester from primary school to high school.  University students can expect to pay <span style={{color: '#00ba5d'}}>$200 -$500 per semester</span>.</h4>
-      <h4 style={{padding: '0 6%', lineHeight: '150%'}}>A variety of scholarship packages with a value of <span style={{color: '#00ba5d'}}>$30 per month to $80 per month</span> will be awarded to underprivileged students in rural Vietnam to continue their studies. The amounts indicated will be used to cover school expenses (tuition fee and school supplies) for one student for one year. A portion of this will be invested in an income-generating activity for his/her family to improve the family’s livelihood.</h4>
+      <h4>Poverty prevents many children in Vietnam from continuing their education beyond primary school. Many children have to find jobs and earn a living, instead. Furthermore, those who have worked so hard to pass competitive national entrance exams into universities cannot attend due to limited finances.</h4>
+      <h4>School fees are often low but children have to pay for many other expenses, such as uniforms, contribution to school infrastructure, and insurance. Total expenses can range from <span style={{color: '#00ba5d'}}>$60-$80</span> per semester from primary school to high school.  University students can expect to pay <span style={{color: '#00ba5d'}}>$200 -$500 per semester</span>.</h4>
+      <h4>A variety of scholarship packages with a value of <span style={{color: '#00ba5d'}}>$30 per month to $80 per month</span> will be awarded to underprivileged students in rural Vietnam to continue their studies. The amounts indicated will be used to cover school expenses (tuition fee and school supplies) for one student for one year. A portion of this will be invested in an income-generating activity for his/her family to improve the family’s livelihood.</h4>
+    </div>
     </div>
     <div className='center-top-col'>
       <h1 style={{textAlign: 'center'}}>Core elements of the BLV scholarship</h1>
@@ -76,10 +78,12 @@ const Scholarship = () => (
         </Panel>
       </Accordion>
     </div>
+    <div className='container'>
     <div className='center-top-col'>
       <h1 style={{textAlign: 'center'}}>How do we monitor and evaluate this program?</h1>
-      <h4 style={{padding: '0 6%', lineHeight: '150%'}}>In addition to selecting qualified students, BLV will play a role in providing financial support to the family, guiding the children to study hard and evaluating the children’s progress. We will also contact the recipient’s family regularly and organize letters between the child and his/her sponsor. A visit to the study location can also be organized.</h4>
-      <h4 style={{padding: '0 6%', lineHeight: '150%'}}>Only students who have outstanding grades by the end of the semester will be eligible for a scholarship for the following semester.</h4>
+      <h4>In addition to selecting qualified students, BLV will play a role in providing financial support to the family, guiding the children to study hard and evaluating the children’s progress. We will also contact the recipient’s family regularly and organize letters between the child and his/her sponsor. A visit to the study location can also be organized.</h4>
+      <h4>Only students who have outstanding grades by the end of the semester will be eligible for a scholarship for the following semester.</h4>
+    </div>
     </div>
     <div className='center-top-col'>
       <h1 style={{textAlign: 'center'}}>Featured Students</h1>

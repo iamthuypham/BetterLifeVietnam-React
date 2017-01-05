@@ -1,23 +1,5 @@
 {
     "tours": [{
-        "name": "Comprehensive Vietnam Tours",
-        "detail1": "If you have long trip and are looking for package tour which cover all attractions of whole Vietnam, this option is perfect choice for you to discover Vietnam country in depth.",
-        "detail2": "",
-        "attractions": [
-            "Overview of Hanoi - the heart of the country: center of culture & economy",
-            "Wonderful cruise trip on Halong bay",
-            "Hue forbidden citadel for royal family in the past",
-            "Stunning architecture of Japanese, Chinese and Vietnamese inside Hoian ancient town",
-            "Vietnam cuisine with cooking class",
-            "Luxury beach vacation in Nha Trang",
-            "Dalat city is famous for perfect weather and romantic scenery",
-            "Dinner cruise on Saigon river (also called Ho Chi Minh river)",
-            "Mekong delta and floating local life"
-        ],
-        "img": "CompTour.jpg",
-        "brochure": "CompBrochure.pdf",
-        "id": "1"
-    }, {
         "name": "Northern Vietnam Tours",
         "detail1": "The North of Vietnam is truly a must-see area for anyone coming to this beautiful country. From a short day tour in Hanoi - the capital city, a boat trip in the scenic Hoa Lu Tam Coc, few days cruising in the wonderful Halong Bay, to the adventurous trekking in Sapa - they're all worth a try.",
         "detail2": "",
@@ -41,6 +23,24 @@
         "img": "SouthernTour.jpg",
         "brochure": "SouthernBrochure.pdf",
         "id": "4"
+    }, {
+        "name": "Comprehensive Vietnam Tours",
+        "detail1": "If you have long trip and are looking for package tour which cover all attractions of whole Vietnam, this option is perfect choice for you to discover Vietnam country in depth.",
+        "detail2": "",
+        "attractions": [
+            "Overview of Hanoi - the heart of the country: center of culture & economy",
+            "Wonderful cruise trip on Halong bay",
+            "Hue forbidden citadel for royal family in the past",
+            "Stunning architecture of Japanese, Chinese and Vietnamese inside Hoian ancient town",
+            "Vietnam cuisine with cooking class",
+            "Luxury beach vacation in Nha Trang",
+            "Dalat city is famous for perfect weather and romantic scenery",
+            "Dinner cruise on Saigon river (also called Ho Chi Minh river)",
+            "Mekong delta and floating local life"
+        ],
+        "img": "CompTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "id": "1"
     }, {
         "name": "Custom Vietnam Tours",
         "detail1": "Thank you for trusting Tours For Books and giving us a chance to be your companion on your trip to Asia. Beside specific day tours and packages to our chosen destinations, we also offer tailor-made tour based on what you need and what you love: we are delighted to listen to your wish, and make it come true.",

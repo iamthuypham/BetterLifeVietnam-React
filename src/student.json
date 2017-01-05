@@ -17,14 +17,6 @@
         "img":"LeThiThuNgan.jpeg",
         "id":"2"
     },{
-        "name":"Le Quoc Son",
-        "age":"",
-        "homeTown":"",
-        "story":"Son is one of a family of three children. His father left the family when she was a child and his mother has suffered from a serious uterine illness. Despite this serious disease, his mother has been working hard to raise him and his sisters. His mother's job as a dish washer brings the family an income of less than VND 2,000,000 per month (less than $90). This puts Ngan, her brother and her sister at the risk of having to quit school. We hope to offer Son a high scholarship package of $50 per month.",
-        "link1":"",
-        "img":"LeQuocSon.jpeg",
-        "id":"3"
-    },{
        "name":"Ha",
         "age":"14",
         "homeTown":"Quang Ngai",
@@ -42,6 +34,14 @@
         "link1":"http://caplayeuthuong.vtv24.vtv.vn/tam-guong-vuot-kho-vuon-len-trong-cuoc-song-va-hoc-tap/a52.html",
         "img":"LoThiChua.jpeg",
         "id":"5"
+    },{
+        "name":"Le Quoc Son",
+        "age":"",
+        "homeTown":"",
+        "story":"Son is one of a family of three children. His father left the family when she was a child and his mother has suffered from a serious uterine illness. Despite this serious disease, his mother has been working hard to raise him and his sisters. His mother's job as a dish washer brings the family an income of less than VND 2,000,000 per month (less than $90). This puts Ngan, her brother and her sister at the risk of having to quit school. We hope to offer Son a high scholarship package of $50 per month.",
+        "link1":"",
+        "img":"LeQuocSon.jpeg",
+        "id":"3"
     },{
         "name":"Le Ngoc My",
         "age":"8",
