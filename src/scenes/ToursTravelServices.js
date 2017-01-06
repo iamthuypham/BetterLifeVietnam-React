@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Row, Tabs, Tab} from 'react-bootstrap'
 
-import '../scenes/TourForBook.css'
+import '../scenes/ToursTravelServices.css'
 
 import ShowTourCard from '../Modal/ShowTourCard'
 import tourData from '../tour.json'

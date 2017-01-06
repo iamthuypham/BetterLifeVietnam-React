@@ -9,9 +9,9 @@ import OurTeam from './scenes/OurTeam'
 import FreeBookLibrary from './scenes/FreeBookLibrary'
 import Scholarship from './scenes/Scholarship'
 import JobAssistance from './scenes/JobAssistance'
-import TourForBook from './scenes/TourForBook'
-import VisaInfo from './scenes/VisaInfo'
+import ToursTravelServices from './scenes/ToursTravelServices'
 import Voluntourism from './scenes/Voluntourism'
+import StudyTours from './scenes/StudyTours'
 import Contact from './scenes/Contact'
 
 import './index.css'
@@ -27,9 +27,11 @@ const App = () => (
         <Route path='scholarship' component={Scholarship} />
         <Route path='job-assistance' component={JobAssistance} />
       </Route>
-      <Route path='/tour-for-book' component={TourForBook} />
-      <Route path='/visa-info' component={VisaInfo} />
-      <Route path='/voluntourism' component={Voluntourism} />
+      <Route path='/responsible-tourism'>
+        <Route path='/tours-travel-services' component={ToursTravelServices} />
+        <Route path='/voluntourism' component={Voluntourism} />
+        <Route path='/study-tours' component={StudyTours} />
+      </Route>
       <Route path='/contact' component={Contact} />
     </Route>
   </Router>

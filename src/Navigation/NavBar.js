@@ -33,8 +33,9 @@ const NavBar = (props) => (
             <MenuItem eventKey='2.2'><Link to='/what-we-do/job-assistance'><div>Job Assistance</div></Link></MenuItem>
           </NavDropdown>
           <NavDropdown eventKey='3' title='Responsible Tourism' id='basic-nav-dropdown'>
-            <MenuItem eventKey='3.1'><Link to='/tour-for-book'><div>Tours For Books</div></Link></MenuItem>
+            <MenuItem eventKey='3.1'><Link to='/tours-travel-services'><div>Tours & Travel Services</div></Link></MenuItem>
             <MenuItem eventKey='3.2'><Link to='/voluntourism'><div>Voluntourism</div></Link></MenuItem>
+            <MenuItem eventKey='3.3'><Link to='/study-tours'><div>Study Tours</div></Link></MenuItem>
           </NavDropdown>
           <NavItem eventKey='4' title='Contact'><Link to='/contact'>Contact</Link></NavItem>
           <div className='socialMedia'>
