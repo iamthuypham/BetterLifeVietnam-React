@@ -47,8 +47,8 @@ a {
   color: #00ba5d;
 }
 a:hover {
-  color: blue;
-  text-decoration: none;
+  color: #00ba5d;
+  text-decoration: underline;
 }
 
 .routeLink {

@@ -20,7 +20,7 @@ const MainCarousel = () => (
       <Carousel.Item>
         <img alt="" src={education2} />
         <Carousel.Caption>
-          <span>foster the learning</span>
+          <span>foster the learning & knowledge</span>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
