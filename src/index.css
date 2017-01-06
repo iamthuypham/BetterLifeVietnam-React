@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Lato:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Lato:700,900');
 
 body {
   margin: 0;
@@ -47,6 +47,15 @@ p {
 a:hover {
   color: #00ba5d;
   text-decoration: none;
+}
+
+.routeLink {
+  color: #00ba5d;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 900;
 }
 
 .center-top-col {
