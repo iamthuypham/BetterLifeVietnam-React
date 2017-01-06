@@ -3,14 +3,13 @@ import { Accordion, Panel, Grid, Row, Col } from 'react-bootstrap'
 import '../scenes/BLVScholarship.css'
 
 import ShowStudentCard from '../Modal/ShowStudentCard'
+import ShowMessage from '../Modal/ShowMessage'
+
 import studentData from '../student.json'
 
 const Scholarship = () => (
   <div>
-    <div className="container message">
-      <h4>BETTER LIFE VIETNAM WOULD LIKE TO THANKSIR TOBIN JAMESFOR ENABLE US TO START THIS SCHOLARSHIP PROGRAM</h4>
-      <a href='http://www.tobinjames.com'><h4>www.tobinjames.com</h4></a>
-    </div>
+    <ShowMessage></ShowMessage>
     <div className='container'>
     <div>
       <h1 style={{textAlign: 'center'}}>Family and Education Scholarship</h1>

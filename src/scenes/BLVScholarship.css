@@ -1,11 +1,20 @@
-.message {
-    background-color: #F46600;
-    width:100%;
+.modal-dialog {
+    margin-top: 25%;
 }
-.message h4 {
-    margin: 10px 0 10px 0 ;
+
+.thankyou h2{
+    font-family: 'Alex Brush', cursive;
     text-align: center;
-    color: white;
+    font-size: 3em;
+}
+
+.thankyou .modal-body, .thankyou .modal-footer {
+    padding: 15px 30px;
+    background-color: #ebffea;
+}
+
+.thankyou .modal-footer {
+    border-top: none;
 }
 
 .panel-title {
@@ -14,4 +23,10 @@
 
 .panel-heading > h4 {
     text-indent: 0;
+}
+
+@media (min-width: 768px) {
+  .thankyou .modal-sm {
+      width: 400px;
+  }
 }

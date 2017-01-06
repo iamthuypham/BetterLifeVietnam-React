@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Lato:700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Lato:700,900|Alex+Brush|Cookie|Dancing+Script|Great+Vibes|Niconne');
 
 body {
   margin: 0;
@@ -43,9 +43,11 @@ p {
   font-family: 'Lato', sans-serif;
   color: #777;
 }
-
-a:hover {
+a {
   color: #00ba5d;
+}
+a:hover {
+  color: blue;
   text-decoration: none;
 }
 
