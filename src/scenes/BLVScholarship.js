@@ -1,6 +1,6 @@
 import React from 'react'
 import { Accordion, Panel, Grid, Row, Col } from 'react-bootstrap'
-import '../scenes/Scholarship.css'
+import '../scenes/BLVScholarship.css'
 
 import ShowStudentCard from '../Modal/ShowStudentCard'
 import studentData from '../student.json'

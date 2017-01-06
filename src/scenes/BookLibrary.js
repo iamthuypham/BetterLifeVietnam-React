@@ -1,13 +1,13 @@
 import React from 'react'
-import { Image } from 'react-bootstrap'
-import '../scenes/FreeBookLibrary.css'
+import { Image, Well } from 'react-bootstrap'
+import '../scenes/BookLibrary.css'
 import FreeBookLibraryPic from '../images/FreeBookLibrary.jpg'
 
-const FreeBookLibrary = () => (
-  <div className='container'>
-    <div>
+const BookLibrary = () => (
+  <div>
+    <div className='container'>
       <div className='center-top-col'>
-        <h1>Books Library for Brighter Future Project</h1>
+        <h1>BLV Books Library</h1>
         <Image className='pic' src={FreeBookLibraryPic} />
       </div>
 
@@ -43,34 +43,31 @@ const FreeBookLibrary = () => (
       <div>
 
         <h1>What Others Say</h1>
-
-        <div>
+          <Well><blockquote>
+			The Books Library Project has improved the quality of education at the school, with students earning higher scores on exams, especially in social sciences.<h4> Pham Duc Duong, headmaster at An Duc Secondary School</h4>
+          </blockquote></Well>
+        
+        <Well>
           <blockquote>
-			The Books Library Project has improved the quality of education at the school, with students earning higher scores on exams, especially in social sciences.<span style={{color: '#00ba5d'}}><cite> Pham Duc Duong, headmaster at An Duc Secondary School</cite></span>
+			I was diagnosed with osteogenesis imperfecta. I had always felt hopeless until I read the book &quot;Overcoming Destiny&quot; at the Hoang Clan Library. This book helped me realize that, with great effort, people with disabilities can overcome challenges.<h4> Hoang Thi Nhan, student at An Duc Secondary School</h4>
           </blockquote>
-        </div>
+        </Well>
 
-        <div>
+        <Well>
           <blockquote>
-			I was diagnosed with osteogenesis imperfecta. I had always felt hopeless until I read the book &quot;Overcoming Destiny&quot; at the Hoang Clan Library. This book helped me realize that, with great effort, people with disabilities can overcome challenges.<span style={{color: '#00ba5d'}}><cite> Hoang Thi Nhan, student at An Duc Secondary School</cite></span>
+			Since the classroom libraries were implemented, I have seen more students read books both at school and at home. Students are thinking &quot;outside the box,&quot; asking teachers more questions, and starting their own debate clubs, which they run themselves. I feel sad for thousands of my former students in the past 30 years who lacked the same opportunity. <h4> Duong Le Nga, former chairwoman of Youth Pioneers Union at An Duc Secondary School</h4>
           </blockquote>
-        </div>
+        </Well>
 
-        <div>
+        <Well>
           <blockquote>
-			Since the classroom libraries were implemented, I have seen more students read books both at school and at home. Students are thinking &quot;outside the box,&quot; asking teachers more questions, and starting their own debate clubs, which they run themselves. I feel sad for thousands of my former students in the past 30 years who lacked the same opportunity. <span style={{color: '#00ba5d'}}><cite> Duong Le Nga, former chairwoman of Youth Pioneers Union at An Duc Secondary School</cite></span>
+			Many of the students here will become workers in nearby factories. However, after seeing the influence of the new libraries, he hopes the children will have higher ambitions for themselves when they graduate. He says the libraries have encouraged peer reading amongst students and teachers and for families when the children bring books back home.<h4> Uong Minh Thanh, deputy head of An Duc Secondary School</h4>
           </blockquote>
-        </div>
-
-        <div>
-          <blockquote>
-			Many of the students here will become workers in nearby factories. However, after seeing the influence of the new libraries, he hopes the children will have higher ambitions for themselves when they graduate. He says the libraries have encouraged peer reading amongst students and teachers and for families when the children bring books back home.<span style={{color: '#00ba5d'}}><cite> Uong Minh Thanh, deputy head of An Duc Secondary School</cite></span>
-          </blockquote>
-        </div>
+        </Well>
 
       </div>
     </div>
   </div>
 )
 
-module.exports = FreeBookLibrary
+module.exports = BookLibrary

@@ -6,37 +6,39 @@
 	margin-right: auto;
 }
 
-.BLV {
-	color: rgb(0, 186, 93);
-}
 
 blockquote {
-	font-size: 18px;
+	font-size: 14px;
 	font-style: italic;
 	width: 100%;
 	margin: 0.25em 0;
-	padding: 0.25em 40px;
+	padding: 0.25em 5px 0.25em 20px;
 	line-height: 1.45;
 	position: relative;
+	border-left: none;
+	color: #777;
 } 
 
 blockquote:before {
 	display: block;
 	content: "\201C";
-	font-size: 80px;
+	font-size: 60px;
 	position: absolute;
-	left: -20px;
+	left: -10px;
 	top: -20px;
-	color: #00ba5d;
+	color: #777;
 }
 
-blockquote cite {
+blockquote h4 {
 	font-size: 14px;
 	display: block;
 	margin-top: 5px;
+	font-style: normal;
+	color: #00ba5d;
+	margin-bottom: 5px;
 }
  
-blockquote cite:before {
+blockquote h4:before {
 	content: "\2014 \2009";
 }
 
