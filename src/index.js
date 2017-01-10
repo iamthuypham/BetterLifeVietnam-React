@@ -11,6 +11,7 @@ import BLVScholarship from './scenes/BLVScholarship'
 import ToursTravelServices from './scenes/ToursTravelServices'
 import Voluntourism from './scenes/Voluntourism'
 import StudyTours from './scenes/StudyTours'
+import OurDonors from './scenes/OurDonors'
 import Contact from './scenes/Contact'
 
 import './index.css'
@@ -30,6 +31,7 @@ const App = () => (
         <Route path='/voluntourism' component={Voluntourism} />
         <Route path='/study-tours' component={StudyTours} />
       </Route>
+      <Route path='/our-donors' component={OurDonors} />
       <Route path='/contact' component={Contact} />
     </Route>
   </Router>

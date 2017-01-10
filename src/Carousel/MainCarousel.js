@@ -3,7 +3,7 @@ import {Carousel} from 'react-bootstrap'
 
 import education1 from '../images/education1.jpeg'
 import education2 from '../images/education2.jpeg'
-import education3 from '../images/education3.jpeg'
+import education3 from '../images/education3.jpg'
 import education4 from '../images/education4.jpeg'
 
 import '../Carousel/MainCarousel.css'
