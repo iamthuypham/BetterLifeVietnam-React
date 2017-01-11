@@ -84,10 +84,6 @@ strong {
   padding: 0;
 }
 
-.modal-backdrop {
-  background-color: #00ba5d;
-}
-
 @media (min-width: 768px) {
   .container {
     padding: 0 30px;  
