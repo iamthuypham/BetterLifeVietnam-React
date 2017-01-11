@@ -17,13 +17,22 @@
     justify-content: flex-start;
     padding: 0;
 }
-.carousel-caption > span {
+.carousel-caption > span, .TFB-slide > .carousel-caption > div  {
     background-color: rgba(0,0,0,0.6);
     position: relative;
     text-transform: capitalize;
     padding: 5px 10px;
     text-shadow: none;
 }
+
+.TFB-slide > .carousel-caption > div > span, .TFB-slide > .carousel-caption > div > div > button {
+    margin-right: 10px;
+    padding: 1px 8px;
+}
+.TFB-slide > .carousel-caption > div > div > button > a {
+    font-size: 10px;
+}
+
 
 @media (min-width: 320px) {
 }
@@ -38,7 +47,10 @@
         position: relative;
         bottom: 70px;
     }
-    .carousel-caption > span {
+    .carousel-inner>.item:nth-child(3)>img{
+        bottom: 30px;
+    }
+    .carousel-caption > span, .TFB-slide > .carousel-caption > div {
         background-color: transparent;
         height:100%;
         width: 100%;
@@ -69,6 +81,22 @@
     .carousel-inner>.item:nth-child(4) > .carousel-caption>span {
         padding-top: 7%;
     }
+    
+    .TFB-slide > .carousel-caption > div {
+        width: 100%;
+    }
+    .TFB-slide > .carousel-caption > div > div > button {
+        background-color: #00ba5d;
+    }
+    .TFB-slide > .carousel-caption > div > div > button > a {
+        color: white;
+    }
+    .TFB-slide > .carousel-caption > div > div > button > a {
+        font-size: 1em;
+    }
+    .TFB-slide > .carousel-caption > div > div > button {
+    padding: 6px 12px;
+}
 }
 @media (min-width: 1024px) {
     .carousel, .carousel-inner, .item  {

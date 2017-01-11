@@ -1,10 +1,12 @@
 import React from 'react'
-import {Carousel} from 'react-bootstrap'
+import {Carousel, Button} from 'react-bootstrap'
+import {Link} from 'react-router'
 
 import education1 from '../images/education1.jpeg'
 import education2 from '../images/education2.jpeg'
 import education3 from '../images/education3.jpg'
 import education4 from '../images/education4.jpeg'
+import TFB from '../images/TFB-slide.jpg'
 
 import '../Carousel/MainCarousel.css'
 
@@ -33,6 +35,18 @@ const MainCarousel = () => (
         <img alt="" src={education4} />
         <Carousel.Caption>
           <span>organizing voluntourism programs to collect funds</span>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item className='TFB-slide'>
+        <img alt="" src={TFB} />
+        <Carousel.Caption>
+          <div>
+            <div><span>tours for book</span></div>
+            <div>
+              <Button><Link to='/tours-travel-services'>Find Tours</Link></Button>
+              <Button><a href='#TFB'>Learn More</a></Button>
+            </div>
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
