@@ -10,14 +10,20 @@
   box-shadow: 1px 1px 1px #3d3d3d
 }
 
-.needSponsorButton2 { 
+.needSponsorButton2{ 
   margin-top: 10px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-.needSponsorButton > a, .needSponsorButton2 > div > a {
+.needSponsorButton > a {
   color: white;
   padding: 5px 10px;
   display: inline-block;
+}
+.needSponsorButton2 > div > p {
+  font-size: 0.8em;
+  color: white;
 }
 
 .needSponsorButton:hover {
@@ -29,11 +35,14 @@
   color: #ff6100;
   cursor: pointer;
 }
-.needSponsorButton2:hover {
+.needSponsorButton2:hover, .needSponsorButton2:visited {
   background-color: #ff6100; 
   border-color: #ff6100;
+  color: white;
 }
-.needSponsorButton2 > div> a:hover {
-  text-decoration: none;
-  cursor: default;
+
+@media (min-width: 768px) {
+  .needSponsorButton2 > div > p {
+    font-size: 1em;
+  }
 }

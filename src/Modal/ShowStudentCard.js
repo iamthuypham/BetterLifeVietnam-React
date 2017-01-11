@@ -79,7 +79,7 @@ class ShowStudentCard extends React.Component {
       needSponsor = (<div className='needSponsorButton'><a>Sponsor Me</a></div>)
       needSponsorButton2 = (
         <Button className='needSponsorButton2'>
-          <div><a>I would like to sponsor {this.props.name}</a></div>
+          <div><p>I would like to sponsor {this.props.name}</p></div>
           <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
             <input type='hidden' name='cmd' value='_s-xclick' />
             <input type='hidden' name='hosted_button_id' value='K9P45W3RSSL44' />
