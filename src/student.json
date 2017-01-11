@@ -87,7 +87,7 @@
         "birthYear":"2005",
         "homeTown":"Ha Noi",
         "bio": {
-            "birthdate": "16/12/2005",
+            "dateOfBirth": "16/12/2005",
             "school": "6C Minh Quang  Middle School",
             "address": "Dam San Village- Minh Quang- Ba Vi- Ha Noi"
             },
