@@ -9,10 +9,17 @@ class ShowMessage extends React.Component {
       count: 7,
     }
   this.open = this.open.bind(this)
+  this.close = this.close.bind(this)
   }
   open() {
     this.setState({
       showModal: true
+    })
+  }
+  close() {
+    clearInterval(this.state.timerId);
+    this.setState({
+      showModal: false
     })
   }
   
@@ -45,8 +52,11 @@ class ShowMessage extends React.Component {
     let messageModal
     messageModal = (
       <Modal className='thankyou' show={this.state.showModal} onHide={this.open} bsSize='sm'>
-        <Modal.Body>
+        <Modal.Header style={{borderBottom: 'none'}}>
+          <button type='button' className='close' aria-label='Close'><span aria-hidden='true' onClick={this.close}>×</span></button>
           <h2>Thank You</h2>
+        </Modal.Header>
+        <Modal.Body>
           <h4><strong>Better Life Vietnam</strong> would like to thank sir <a href='http://www.tobinjames.com'>Tobin James</a> for enable us to start this scholarship program.</h4>
         </Modal.Body>
       </Modal>
