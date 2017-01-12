@@ -1,37 +1,58 @@
 const React = require('react')
-import { Modal, Button } from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
 
 class ShowMessage extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-    showModal: true
+      showModal: true,
+      count: 7,
     }
   this.open = this.open.bind(this)
-  this.close = this.close.bind(this)
   }
   open() {
     this.setState({
       showModal: true
     })
   }
-  close() {
-    this.setState({
-      showModal: false
-    })
+  
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+  
+  tick() {
+    var newCount = this.state.count -1;
+    if(newCount >= 0) { 
+      this.setState({ 
+        count: newCount
+      });
+    } else {
+      clearInterval(this.state.timerId);
+      this.setState({ 
+        showModal: false
+      });
+    }
   }
   
   render () {
-    return (
+    let messageModal
+    messageModal = (
       <Modal className='thankyou' show={this.state.showModal} onHide={this.open} bsSize='sm'>
         <Modal.Body>
           <h2>Thank You</h2>
           <h4><strong>Better Life Vietnam</strong> would like to thank sir <a href='http://www.tobinjames.com'>Tobin James</a> for enable us to start this scholarship program.</h4>
         </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={this.close}>Close</Button>
-        </Modal.Footer>
       </Modal>
+      )
+    return (
+      <div>{ messageModal }</div>
     )
   }
 }
