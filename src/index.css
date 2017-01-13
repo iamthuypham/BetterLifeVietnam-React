@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Lato:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Lato:700,900|Alex+Brush|Cookie|Dancing+Script|Great+Vibes|Niconne');
 
 body {
   margin: 0;
@@ -15,8 +15,8 @@ h1, h2, h3 {
 }
 
 h4 {
-  text-indent: 20px;
-  text-align: justify;
+  /*text-indent: 20px;*/
+  text-align: left;
   font-family: 'Lato', sans-serif;
   color: #777;
   line-height: 150%;
@@ -38,23 +38,26 @@ h3 {
 }
 
 p {
-  text-indent: 20px;
-  text-align: justify;
+  /*text-indent: 20px;*/
+  text-align: left;
   font-family: 'Lato', sans-serif;
   color: #777;
 }
-
-ul, li {
-  font-family: 'Lato', sans-serif;
-  color: #777;
+a {
+  color: #00ba5d;
+}
+a:hover {
+  color: #00ba5d;
+  text-decoration: underline;
 }
 
-a, a:visited {
-  color: #777;
-}
-a:hover, #basic-nav-dropdown:hover {
+.routeLink {
   color: #00ba5d;
   text-decoration: none;
+}
+
+strong {
+  font-weight: 900;
 }
 
 .center-top-col {
@@ -79,4 +82,10 @@ a:hover, #basic-nav-dropdown:hover {
   justify-content: space-between;
   align-items: center;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;  
+  }
 }

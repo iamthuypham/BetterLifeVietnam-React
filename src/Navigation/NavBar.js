@@ -28,15 +28,16 @@ const NavBar = (props) => (
             <MenuItem eventKey='1.2'><Link to='/our-team'><div>Our Team</div></Link></MenuItem>
           </NavDropdown>
           <NavDropdown eventKey='2' title='What We Do' id='basic-nav-dropdown'>
-            <MenuItem eventKey='2.1'><Link to='/what-we-do/free-book-library'><div>Free Book Library</div></Link></MenuItem>
-            <MenuItem eventKey='2.2'><Link to='/what-we-do/scholarship'><div>Scholarship</div></Link></MenuItem>
-            <MenuItem eventKey='2.2'><Link to='/what-we-do/job-assistance'><div>Job Assistance</div></Link></MenuItem>
+            <MenuItem eventKey='2.1'><Link to='/book-library'><div>Book Library</div></Link></MenuItem>
+            <MenuItem eventKey='2.2'><Link to='/blv-scholarship'><div>BLV Scholarship</div></Link></MenuItem>
           </NavDropdown>
-          <NavDropdown eventKey='3' title='Responsible Tourism' id='basic-nav-dropdown'>
-            <MenuItem eventKey='3.1'><Link to='/tour-for-book'><div>Tours For Books</div></Link></MenuItem>
+          <NavDropdown eventKey='3' title='Tours For Books' id='basic-nav-dropdown'>
+            <MenuItem eventKey='3.1'><Link to='/tours-travel-services'><div>Tours & Travel Services</div></Link></MenuItem>
             <MenuItem eventKey='3.2'><Link to='/voluntourism'><div>Voluntourism</div></Link></MenuItem>
+            <MenuItem eventKey='3.3'><Link to='/study-tours'><div>Study Tours</div></Link></MenuItem>
           </NavDropdown>
-          <NavItem eventKey='4' title='Contact'><Link to='/contact'>Contact</Link></NavItem>
+          <NavItem eventKey='4' title='Our Donors'><Link to='/our-donors'>Our Donors</Link></NavItem>
+          <NavItem eventKey='5' title='Contact'><Link to='/contact'>Contact</Link></NavItem>
           <div className='socialMedia'>
             <a href='https://www.facebook.com/pg/Better-Life-Vietnam-111667145557377/photos/?tab=album&album_id=1296427037081376'><FontAwesome name='facebook-square' /></a>
             <a href='https://www.instagram.com/betterlifevietnam/'><FontAwesome name='instagram' /></a>
