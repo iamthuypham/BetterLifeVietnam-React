@@ -2,10 +2,11 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 
-app.set('port', (process.env.PORT || 3001));
+app.set('port', (3001));
 
 // Express only serves static assets in production
 if (process.env.NODE_ENV === 'production') {
+  app.set('port', (process.env.PORT || 3001));
   app.use(express.static('client/build'));
 }
 
@@ -41,7 +42,7 @@ app.post('/api/comments', function (req, res) {
     // setup e-mail data
   var mailOptions = {
     from: 'BLV Development Member <dev.betterlifevietnam@gmail.com>', // sender address
-    to: ['phamrosalind@gmail.com','dev.betterlifevietnam@gmail.com'], // list of receivers
+    to: ['dev.betterlifevietnam@gmail.com', 'betterlifevietnam@gmail.com'], // list of receivers
     subject: 'New BLV Contact from '+ req.body.name, // Subject line
     text: req.body.message, // plaintext body
     html: '<h4> Name: '+req.body.name+'</h4><h4>Email: '+req.body.email+'</h4><h4>Message: "'+ req.body.message +'"</h4>' // html body

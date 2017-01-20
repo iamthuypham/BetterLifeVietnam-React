@@ -11,7 +11,6 @@ import ToursTravelServices from './scenes/ToursTravelServices'
 import Voluntourism from './scenes/Voluntourism'
 import StudyTours from './scenes/StudyTours'
 import OurDonors from './scenes/OurDonors'
-// import Contact from './scenes/Contact'
 import CommentBox from './scenes/CommentBox'
 
 import './index.css'

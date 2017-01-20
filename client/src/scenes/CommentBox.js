@@ -1,7 +1,7 @@
 const React = require('react')
 const { FormGroup, FormControl, Button } = require('react-bootstrap')
-// const marked = require('marked')
 const $ = require('jquery')
+import './CommentBox.css'
 
 var CommentBox = React.createClass({
   loadCommentsFromServer: function() {

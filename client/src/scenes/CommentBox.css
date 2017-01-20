@@ -1,0 +1,10 @@
+.btn {
+	background-color: #00ba5d;
+	color: white;
+}
+@media (min-width: 768px) {
+  	.commentBox{
+		padding: 0 20%;  
+	}
+}
+

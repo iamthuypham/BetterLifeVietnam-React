@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ClientApp from './ClientApp'
 import './index.css';
+import ClientApp from './ClientApp'
 
 ReactDOM.render(
   <ClientApp />,
