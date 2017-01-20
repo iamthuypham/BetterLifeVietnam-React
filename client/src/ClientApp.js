@@ -11,7 +11,7 @@ import ToursTravelServices from './scenes/ToursTravelServices'
 import Voluntourism from './scenes/Voluntourism'
 import StudyTours from './scenes/StudyTours'
 import OurDonors from './scenes/OurDonors'
-import Contact from './scenes/Contact'
+// import Contact from './scenes/Contact'
 import CommentBox from './scenes/CommentBox'
 
 import './index.css'
@@ -31,7 +31,6 @@ const ClientApp = () => (
         <Route path='/study-tours' component={StudyTours} />
       </Route>
       <Route path='/our-donors' component={OurDonors} />
-      <Route path='/contact' component={Contact} />
       <Route path='/CommentBox' component={CommentBox} />
     </Route>
   </Router>

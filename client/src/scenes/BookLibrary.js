@@ -43,10 +43,16 @@ const BookLibrary = () => (
       <div>
 
         <h1>What Others Say</h1>
-        <Well><blockquote>
+        <Well>
+          <blockquote>
+			The teachers and students of Tien Hiep secondary school really appreciated what BLV and the volunteers have done for us. It was an amazingly meaningful Tet present for our school. We promise to protect your books and use them in the good way in order to give knowledge to our students. We wish BLV and the volunteers the best of luck and hope to do more meaningful programs like this in near future. Hope to see you very soon. Thank you so much!<h4> Teachers and students, Tien Hiep Secondary School</h4>
+          </blockquote>
+        </Well>
+        <Well>
+          <blockquote>
 			The Books Library Project has improved the quality of education at the school, with students earning higher scores on exams, especially in social sciences.<h4> Pham Duc Duong, headmaster at An Duc Secondary School</h4>
-        </blockquote></Well>
-
+          </blockquote>
+        </Well>
         <Well>
           <blockquote>
 			I was diagnosed with osteogenesis imperfecta. I had always felt hopeless until I read the book &quot;Overcoming Destiny&quot; at the Hoang Clan Library. This book helped me realize that, with great effort, people with disabilities can overcome challenges.<h4> Hoang Thi Nhan, student at An Duc Secondary School</h4>
