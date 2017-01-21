@@ -86,7 +86,7 @@ const Landing = () => (
             <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
               <input type='hidden' name='cmd' value='_s-xclick' />
               <input type='hidden' name='hosted_button_id' value='K9P45W3RSSL44' />
-              <input type='image' style={{ }} src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif' name='submit' alt='PayPal - The safer, easier way to pay online!' />
+              <input type='image' style={{ }} src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif' name='submit' alt='PayPal - The safer, easier way to pay online' />
             </form>
           </div>
       </div>
