@@ -1,0 +1,67 @@
+.cover-container {
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+}
+.cover-pic {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.cover-title {
+	position: absolute;
+	z-index: 2;
+	padding: 2% 5%;
+	text-align: right;
+}
+.cover-title h1 {
+	text-align: right;
+	color: white;
+	font-size: 1em;
+	margin-bottom: 20px;
+}
+.cover-title .btn {
+	background-color: #ffd000;
+	color: black;
+	border: none;
+	box-shadow:  2px 2px 2px black;
+}
+
+@media (min-width: 768px) {
+  	.cover-container{
+		height: 300px;
+	}
+	.cover-pic {
+		top: -100px;
+	}
+	.cover-title h1{ 
+		font-size: 1.5em;
+		margin-left: 35%;
+		line-height: 30px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.cover-container{
+		height: 500px;
+	}
+	.cover-title h1{ 
+		font-size: 2.5em;
+		margin-left: 23%;
+		line-height: 40px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.cover-container{
+		height: 600px;
+	}
+	.cover-pic {
+		top: -150px;
+	}
+	.cover-title h1{ 
+		font-size: 3em;
+		margin-left: 30%;
+		line-height: 50px;
+	}
+}
