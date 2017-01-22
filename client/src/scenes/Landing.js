@@ -6,8 +6,10 @@ import FreeBookLibraryPic from '../images/FreeBookLibrary.jpg'
 import About1 from '../images/About1.jpg'
 import './Landing.css'
 
-const Landing = () => (
-  <div className=''>
+class Landing extends React.Component {
+  render () {
+    return (
+        <div className=''>
     <div className='center-top-col cover-container container-fluid'>
       <div className='cover-title'>
         <h1>Working to improve education conditions for underprivileged children and youth in Vietnam</h1>
@@ -49,7 +51,7 @@ const Landing = () => (
     </div>
     <Highlight />
     <div className='footer-container' style={{display:'inline-block'}}>
-      <Col className='footer-col' xs={12} sm={5}>
+      <Col className='footer-col' xs={12} sm={4}>
         <Col className='footer-info-col' xs={6}>
           <h6>About</h6>
           <p>Who We Are</p>
@@ -66,33 +68,34 @@ const Landing = () => (
           <h6>Our Donors</h6>
           <h6>Contact</h6>
         </Col>
-      </Col>
-      <Col className='footer-col footer-social-media-col' xs={12} sm={4}>
-        <h6>Follow Us on Social Media</h6>
-        <Col className='footer-icon-col' xs={4}>
-          <a><FontAwesome name='facebook-official fa-2x' /></a>
         </Col>
-        <Col className='footer-icon-col' xs={4}>
-          <a><FontAwesome name='instagram fa-2x' /></a>
+        <Col className='footer-col footer-social-media-col' xs={12} sm={4}>
+          <h6>Follow Us on Social Media</h6>
+          <Col className='footer-icon-col' xs={4}>
+            <a><FontAwesome name='facebook-official fa-2x' /></a>
+          </Col>
+          <Col className='footer-icon-col' xs={4}>
+            <a><FontAwesome name='instagram fa-2x' /></a>
+          </Col>
+          <Col className='footer-icon-col' xs={4}>
+            <a><FontAwesome name='twitter fa-2x' /></a>
+          </Col>
         </Col>
-        <Col className='footer-icon-col' xs={4}>
-          <a><FontAwesome name='twitter fa-2x' /></a>
-        </Col>
-      </Col>
-      <Col className='footer-col' xs={12} sm={3}>
-        <div className='center-top-col'>
-          <h6>Donate Now</h6>
-          <div className='footer-icon-col'>
-            <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
-              <input type='hidden' name='cmd' value='_s-xclick' />
-              <input type='hidden' name='hosted_button_id' value='K9P45W3RSSL44' />
-              <input type='image' style={{ }} src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif' name='submit' alt='PayPal - The safer, easier way to pay online' />
-            </form>
+        <Col className='footer-col' xs={12} sm={4}>
+          <div className='center-top-col'>
+            <h6>Donate Now</h6>
+            <div className='footer-icon-col'>
+              <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
+                <input type='hidden' name='cmd' value='_s-xclick' />
+                <input type='hidden' name='hosted_button_id' value='K9P45W3RSSL44' />
+                <input type='image' style={{ }} src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif' name='submit' alt='PayPal - The safer, easier way to pay online' />
+              </form>
+            </div>
           </div>
+        </Col>
       </div>
-      </Col>
     </div>
-  </div>
-)
-
+    )
+  }
+}
 module.exports = Landing

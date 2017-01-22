@@ -1,7 +1,9 @@
 import React from 'react'
-import './Highlight.css'
+import { Link } from 'react-router'
 import { Col, Image, Button } from 'react-bootstrap'
 import TFB from '../images/TFB-logo.png'
+
+import './Highlight.css'
 
 const Highlight = () => (
   <div className='TFB-container' style={{display:'inline-block'}}>
@@ -15,7 +17,7 @@ const Highlight = () => (
     </Col>
     <Col className='TFB-col' xs={12} sm={6}>
       <h3>A Proud Supporter of Better Life Vietnam</h3>
-      <Image className='TFB-pic' alt='Tour For Book' src={TFB}/>
+      <Link to='/tours-travel-services'><Image className='TFB-pic' alt='Tour For Book' src={TFB}/></Link>
     </Col>
   </div>
 )
