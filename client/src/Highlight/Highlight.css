@@ -1,0 +1,38 @@
+.TFB-container {
+	padding: 2% 2%;
+}
+.TFB-col {
+    padding: 15px 10%;
+    text-align: center;
+}
+.TFB-col h3 {
+	margin-top: 10px;
+}
+.TFB-p > p {
+    text-align: center;
+}
+.TFB-col .btn {
+	background-color: #EFD314;
+	color: black;
+	border: none;
+	box-shadow:  1px 1px 2px black;
+	border-radius: 15px;
+}
+.TFB-pic {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .TFB-col {
+		padding: 15px 3%;
+	}
+	.TFB-p {
+		min-height: 150px
+	}
+}
+
+@media (min-width: 1024px) {
+	.TFB-col h3{
+		font-size: 1.5em;
+	}
+}
