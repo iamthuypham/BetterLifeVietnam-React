@@ -5,12 +5,9 @@
 }
 .cover-pic {
 	width: 100%;
-	position: absolute;
-	z-index: 1;
 }
 .cover-title {
 	position: absolute;
-	z-index: 2;
 	padding: 2% 5%;
 	text-align: right;
 }
