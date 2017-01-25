@@ -32,7 +32,7 @@ class ShowMemberCard extends React.Component {
                 <Modal.Title style={{color: '#00ba5d'}}>{this.props.name}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <p>{this.props.info1}</p>
+                <p className='info1' style={{color:'#00ba5d'}}><i>{this.props.info1}</i></p>
                 <p>{this.props.info2}</p>
               </Modal.Body>
             </Modal>
