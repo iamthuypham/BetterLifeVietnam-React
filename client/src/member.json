@@ -70,11 +70,25 @@
         "img":"RonitZvi.jpg",
         "id":"10"
     },{
+        "name":"Nancy Pham",
+        "position":"Editor/Graphic Designer",
+        "info1":"",
+        "info2":"With a passion for travel and youth education, Nancy is excited to work with Better Life Vietnam as an editor and graphic designer. Nancy earned her B.A. in Journalism from the University of Maryland. She currently works at a major news publication in Washington, D.C. and volunteers as a mentor for underserved Asian Pacific American youth in Maryland. ",
+        "img":"NancyPham.jpg",
+        "id":"11"
+    },{
+        "name":"Roman Sheydvasser",
+        "position":"IT Specialist",
+        "info1":"",
+        "info2":"Roman Sheydvasser hails from Siberia, Russia. He immigrated to the U.S. as a child, and grew up with his hands constantly on computers and computer devices. He now lives in California where he is working as a programmer on multiple startup projects.</br>Roman believes education and international cooperation are key to the world’s future. He wants children and adults in Vietnam to have the same chance to succeed as he did. At BLV he uses his technology skills to communicate our mission to the world via social media, and to assist the volunteers with any IT challenges.",
+        "img":"RomanSheydvasser.jpg",
+        "id":"12"
+    },{
         "name":"Thuy Pham (Rosa)",
         "position":"Web Developer",
         "info1":"",
         "info2":"A Passionate, Productive, Software developer with a specialization in web development.  A quick learner, problem solver, with a mission focus mindset.  With 1.5 years experience in HTML, CSS, and JavaScript and exposure to AngularJS, React, and Ruby on Rails, Rosa is quick to pick up new technologies and apply them to the latest stack of software development foundations.  She has a working knowledge and understanding of a variety of web technologies, and brings her skills to deliver high quality thoughtful web experiences.  Rosa is passionate about supporting the next generation of youth with education and technology to improve the quality of life through youth outreach and non-profit programs.",
         "img":"RosaPham.jpg",
-        "id":"11"
+        "id":"13"
     }]
 }
