@@ -36,7 +36,7 @@
         "id":"5"
     },{
         "name":"Le Quoc Son",
-        "age":"",
+        "age":"8",
         "homeTown":"",
         "story":"Son is one of a family of three children. His father left the family when she was a child and his mother has suffered from a serious uterine illness. Despite this serious disease, his mother has been working hard to raise him and his sisters. His mother's job as a dish washer brings the family an income of less than VND 2,000,000 per month (less than $90). This puts Ngan, her brother and her sister at the risk of having to quit school. We hope to offer Son a high scholarship package of $50 per month.",
         "link1":"",
@@ -48,7 +48,7 @@
         "homeTown":"Quang Ngai",
         "story":"My is an eight year old orphan. Her father died in an accident when My was seven months old. When she was three years old, her mother passed away because of liver cancer. She was then cared for by her grandparents who have a difficult life. Her grandmother is 68 years old and has a mental disease. My and her grandparents are dependent on a government allowance of VND800,000 VND per month ($35). We hope to offer My a primary scholarship package of $25 per month for her to be able to have healthy meals and go to school.",
         "link1":"http://caplayeuthuong.vtv24.vtv.vn/thuong-thay-canh-be-my-mo-coi-phai-lam-bao-mau-cho-ba-ngoai/a168.html",
-        "img":"LeNgocMy.jpeg",
+        "img":"LeNgocMy.jpg",
         "id":"6"
     },{
         "name":"Le Khanh Duong",
@@ -109,5 +109,6 @@
         "link1":"",
         "img":"NguyenNgocAnh.jpg",
         "img2":"NguyenNgocAnhFam.jpg",
+        "feature": true,
         "id":"8"}]
 }

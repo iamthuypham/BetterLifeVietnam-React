@@ -1,13 +1,16 @@
+.thumbnail {
+  border: 2px solid #777;
+}
 .needSponsorButton {
   position: absolute;
   top: -10px;
   right: -5px;
 }
 .needSponsorButton, .needSponsorButton2 {
-  background-color: #ff6100;
-  border: 1px solid #ff6100;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px #3d3d3d
+  background-color: #8F68B1;
+  border: 1px solid #8F68B1;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px #3d3d3d;
 }
 
 .needSponsorButton2{ 

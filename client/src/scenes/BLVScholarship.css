@@ -47,7 +47,7 @@
 .processCol {
     padding: 0 5px;
 }
-.processCol div {
+.processCol .panel, .processCol .panel-heading, .processCol .panel-body {
     border-radius: 0;
 }
 .scholarshipPanel .processCol:nth-child(1) .panel-heading {
@@ -72,6 +72,7 @@
     border: 2px solid white;
     margin-right: 7px;
 }
+
 @media (min-width: 768px) {
   .thankyou .modal-sm {
       width: 350px;
@@ -89,10 +90,13 @@
 
 @media (min-width: 1024px) {
     .scholarshipPanel .panel-body {
-      min-height: 190px;
+          min-height: 190px;
      }
-      .processCol .panel {
-    min-height: 425px;
-}
+    .processCol .panel {
+        min-height: 430px;
+    }
+    .featureText {
+        margin-left: 37px;
+    }
 
 }

@@ -25,6 +25,7 @@ class ClientApp extends React.Component {
           <Route path='/what-we-do'>
             <Route path='/book-library' component={BookLibrary} />
             <Route path='/blv-scholarship' component={BLVScholarship} />
+            <Route path='/allStudent' component={BLVScholarship} />
           </Route>
           <Route path='/tours-for-books'>
             <Route path='/tours-travel-services' component={ToursTravelServices} />

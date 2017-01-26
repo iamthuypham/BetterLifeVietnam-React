@@ -11,13 +11,22 @@ import studentData from '../student.json'
 const Scholarship = () => (
   <div>
     <ShowMessage />
-    <div className='container'>
-      <div>
-        <h1 style={{textAlign: 'center'}}>Family and Education Scholarship</h1>
-        <h4>Poverty prevents many children in Vietnam from continuing their education beyond primary school. Many children have to find jobs and earn a living, instead. Furthermore, those who have worked so hard to pass competitive national entrance exams into universities cannot attend due to limited finances.</h4>
-        <h4>School fees are often low but children have to pay for many other expenses, such as uniforms, contribution to school infrastructure, and insurance. Total expenses can range from <span style={{color: '#00ba5d'}}>$60-$80</span> per semester from primary school to high school.  University students can expect to pay <span style={{color: '#00ba5d'}}>$200 -$500 per semester</span>.</h4>
-        <h4>A variety of scholarship packages with a value of <span style={{color: '#00ba5d'}}>$30 per month to $80 per month</span> will be awarded to underprivileged students in rural Vietnam to continue their studies. The amounts indicated will be used to cover school expenses (tuition fee and school supplies) for one student for one year. A portion of this will be invested in an income-generating activity for his/her family to improve the family’s livelihood.</h4>
-      </div>
+    <div className='center-top-col'>
+      <Grid>
+        <Row className='show-grid'>
+            {studentData.students.map((student) => (
+              student.feature ? (
+                <ShowStudentCard {...student} key={student.id} featureCardShow={true}/>
+              ) : ''
+            ))}
+          <Col xs={12} sm={8} className='featureText'>
+            <h1 style={{marginTop: '0', textAlign:'left'}}>Family and Education Scholarship</h1>
+            <p>Poverty prevents many children in Vietnam from continuing their education beyond primary school. Many children have to find jobs and earn a living, instead. Furthermore, those who have worked so hard to pass competitive national entrance exams into universities cannot attend due to limited finances.</p>
+            <p>School fees are often low but children have to pay for many other expenses, such as uniforms, contribution to school infrastructure, and insurance. Total expenses can range from <strong>$60-$80</strong> per semester from primary school to high school.  University students can expect to pay <strong>$200 -$500 per semester</strong>.</p>
+            <p>A variety of scholarship packages with a value of <strong>$30 per month to $80 per month</strong> will be awarded to underprivileged students in rural Vietnam to continue their studies. The amounts indicated will be used to cover school expenses (tuition fee and school supplies) for one student for one year. A portion of this will be invested in an income-generating activity for his/her family to improve the family’s livelihood.</p>
+          </Col>
+        </Row>
+      </Grid>
     </div>
     <div className='center-top-col grey-bg'>
       <h1>Scholarship Options</h1>
@@ -94,13 +103,13 @@ const Scholarship = () => (
         </Row>
       </Grid>
     </div>
-    <div className='container'>
+    <div className='center-top-col container'>
       <h1>How do we monitor and evaluate this program?</h1>
       <p>In addition to selecting qualified students, <strong>BLV will play a role in providing financial support to the family, guiding the children to study hard and evaluating the children’s progress</strong>. We will also contact the recipient’s family regularly and organize letters between the child and his/her sponsor. A visit to the study location can also be organized.</p>
       <p>Only students who have outstanding grades by the end of the semester will be eligible for a scholarship for the following semester.</p>
     </div>
     <hr/>
-    <div className='center-top-col'>
+    <div className='center-top-col' id='allStudent'>
       <h1>Featured Students</h1>
       <Grid>
         <Row style={{padding: '0 5%'}}>
