@@ -1,3 +1,6 @@
+.grey-bg {
+    background-color: #e8e8e8;    
+}
 .modal-dialog {
     margin-top: 10%;
 }
@@ -15,17 +18,81 @@
 .thankyou .modal-footer {
     border-top: none;
 }
-
-.panel-title {
+.scholarshipPanel .panel{
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+    border: none;
+}
+.panel, .panel-heading > h4, .scholarshipPanel .panel-body p {
     text-align: center;
 }
-
-.panel-heading > h4 {
-    text-indent: 0;
+.scholarshipPanel .panel-heading, .scholarshipProcess .panel-heading {
+    background-color: #40AB48;
+    color: white;
+    font-weight: bold;
 }
-
+.scholarshipWorth {
+    font-weight: bold;
+}
+.scholarshipNote {
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.coreElement .panel-heading {
+    background-color: white;
+    border-radius: 0px;
+    border: 2px solid black;
+}
+.processCol {
+    padding: 0 5px;
+}
+.processCol div {
+    border-radius: 0;
+}
+.scholarshipPanel .processCol:nth-child(1) .panel-heading {
+    background-color: #029AB1;
+}
+.scholarshipPanel .processCol:nth-child(3) .panel-heading {
+    background-color: #FFA91C;
+}
+.scholarshipPanel .processCol:nth-child(4) .panel-heading {
+    background-color: #EC5900;
+}
+.processCol .panel-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+}
+.processColNum {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 7px;
+}
 @media (min-width: 768px) {
   .thankyou .modal-sm {
       width: 350px;
   }
+  .scholarshipPanel .panel-body {
+      min-height: 170px;
+  }
+ .padding20 {
+     padding: 0 20%;
+ }
+ .processCol .panel {
+    min-height: 285px;
+}
+}
+
+@media (min-width: 1024px) {
+    .scholarshipPanel .panel-body {
+      min-height: 190px;
+     }
+      .processCol .panel {
+    min-height: 425px;
+}
+
 }
