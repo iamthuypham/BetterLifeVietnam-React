@@ -17,7 +17,7 @@
 	font-size: 1em;
 	margin-bottom: 20px;
 }
-.cover-title .btn, .col-activity .btn {
+.cover-title .btn, .col-activity .btn, .col-title form .btn {
 	background-color: #EFD314;
 	color: black;
 	border: none;
