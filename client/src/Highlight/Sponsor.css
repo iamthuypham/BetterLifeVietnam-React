@@ -5,6 +5,16 @@
 
 .sponsorImageCol img {
     width: 100%;
+    /*height: 56px;*/
+}
+
+.sponsorImageCol:nth-child(2) img {
+    height: 60%;
+    width: 60%;
+}
+.sponsorImageCol .sponsorNote {
+    padding: 5px 0;
+    width: 90%;
 }
 
 @media (min-width: 768px) {
