@@ -44,23 +44,58 @@
     },{
         "name":"Vu Thao Hoan",
         "position":"Program Coordinator",
-        "info1":">“I found that a meaningful life isn't about acquiring money or social status. It is about dedicating your life to make positive changes to disadvantage people, communities, especially to children.",
+        "info1":"“I found that a meaningful life isn't about acquiring money or social status. It is about dedicating your life to make positive changes to disadvantage people, communities, especially to children.",
         "info2":"Hoan spent her childhood in Western Ha Noi. She graduated from Diplomatic Academy of Vietnam with a degree in International Economics. She strong desires to pursue the career in promoting human welfare and social reforms.",
         "img":"VuThaoHoan.jpg",
         "id":"7"
     },{
         "name":"Phuong Nguyen",
         "position":"Program Assistant",
-        "info1":"Phuong graduated from Dai Nam University with a degree in English Language. Her strong passion in helping the children in need motivated her to offer her volunteer services with Better Life Vietnam since the beginning. After graduation, she has joined the BLV Team as the Program Assistant.",
-        "info2":"",
+        "info1":"",
+        "info2":"Phuong graduated from Dai Nam University with a degree in English Language. Her strong passion in helping the children in need motivated her to offer her volunteer services with Better Life Vietnam since the beginning. After graduation, she has joined the BLV Team as the Program Assistant.",
         "img":"PhuongNguyen.jpg",
         "id":"8"
     },{
         "name":"Bethany Tietjen",
         "position":"Volunteer",
-        "info1":"Originally from New York, Bethany lived overseas for most of her childhood and developed a love of travel and philanthropy from a young age. She received her Bachelor of Arts in International Relations and German Studies from American University in Washington, DC, and has experience working in nonprofits and government agencies both in the U.S. and abroad. Her main passion lies in finding sustainable, lasting solutions to the world's biggest development issues. She is currently working as an English teacher in Hanoi on top of her work with Better Life Vietnam.",
-        "info2":"",
+        "info1":"",
+        "info2":"Originally from New York, Bethany lived overseas for most of her childhood and developed a love of travel and philanthropy from a young age. She received her Bachelor of Arts in International Relations and German Studies from American University in Washington, DC, and has experience working in nonprofits and government agencies both in the U.S. and abroad. Her main passion lies in finding sustainable, lasting solutions to the world's biggest development issues. She is currently working as an English teacher in Hanoi on top of her work with Better Life Vietnam.",
         "img":"BethanyTietjen.jpg",
         "id":"9"
+    },{
+        "name":"Maggie",
+        "position":"Social Media Coordinator",
+        "info1":"",
+        "info2":"Maggie has left her job as a technology consultant of two years in search for opportunities to explore new cultures and create a meaningful impact in the world. Originally from New York, she had graduated with a Bachelors in Finance and Information Management from Syracuse University. Starting from her university days, she has spent majority of her time expanding her cross-cultural understanding and adhering to her motto to live like a local for every place she visits. In search for a way to contribute to a greater cause, Maggie was drawn to Better Life Vietnam. She believes that improving education for children is the key to uplifting a nation to greater heights. My passion for gaining deeper cultural understandings of different countries aligns with Tours For Books goal to show visitors a more authentic perspective of Vietnamese culture as well as an opportunity to give back to society. Maggie hopes to leverage her expertise to bring more awareness to Better Life Vietnam and Tours For Books.",
+        "img":"Maggie.png",
+        "id":"10"
+    },{
+        "name":"Ronit Zvi",
+        "position":"UX/UI Designer",
+        "info1":"“Visual artist turned UX designer, my love resides in creating visually stimulating, detail oriented designs. As an experience designer, I have learned to go beyond visual aesthetics and appeal to living, breathing people, bringing products to life in a purposeful way.”",
+        "info2":"A native New Yorker, Ronit studied visual arts at SUNY Purchase. Her interest in human behavior and technology inspired her to continue her education in the field of User Experience Design. She is passionate about creating efficient and fulfilling experiences for users. When coming across Better Life Vietnam she was inspired to use her UX skills to build a better experience for the BLV users, and help the BLV team work toward creating positive change.",
+        "img":"RonitZvi.jpg",
+        "id":"11"
+    },{
+        "name":"Nancy Pham",
+        "position":"Editor/Graphic Designer",
+        "info1":"",
+        "info2":"With a passion for travel and youth education, Nancy is excited to work with Better Life Vietnam as an editor and graphic designer. Nancy earned her B.A. in Journalism from the University of Maryland. She currently works at a major news publication in Washington, D.C. and volunteers as a mentor for underserved Asian Pacific American youth in Maryland. ",
+        "img":"NancyPham.jpg",
+        "id":"12"
+    },{
+        "name":"Roman Sheydvasser",
+        "position":"IT Specialist",
+        "info1":"",
+        "info2":"Roman Sheydvasser hails from Siberia, Russia. He immigrated to the U.S. as a child, and grew up with his hands constantly on computers and computer devices. He now lives in California where he is working as a programmer on multiple startup projects.</br>Roman believes education and international cooperation are key to the world’s future. He wants children and adults in Vietnam to have the same chance to succeed as he did. At BLV he uses his technology skills to communicate our mission to the world via social media, and to assist the volunteers with any IT challenges.",
+        "img":"RomanSheydvasser.jpg",
+        "id":"13"
+    },{
+        "name":"Thuy Pham (Rosa)",
+        "position":"Web Developer",
+        "info1":"",
+        "info2":"A Passionate, Productive, Software developer with a specialization in web development.  A quick learner, problem solver, with a mission focus mindset.  With 1.5 years experience in HTML, CSS, and JavaScript and exposure to AngularJS, React, and Ruby on Rails, Rosa is quick to pick up new technologies and apply them to the latest stack of software development foundations.  She has a working knowledge and understanding of a variety of web technologies, and brings her skills to deliver high quality thoughtful web experiences.  Rosa is passionate about supporting the next generation of youth with education and technology to improve the quality of life through youth outreach and non-profit programs.",
+        "img":"RosaPham.jpg",
+        "id":"14"
     }]
 }

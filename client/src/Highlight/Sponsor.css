@@ -1,0 +1,11 @@
+.sponsorImageCol div {
+    /*display: block;*/
+    width: 30%;
+}
+
+.sponsorImageCol img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+}

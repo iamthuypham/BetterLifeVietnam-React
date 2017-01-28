@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Lato:700,900|Alex+Brush|Cookie|Dancing+Script|Great+Vibes|Niconne');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Lato:700,900|Alex+Brush');
 
 body {
   margin: 0;
@@ -18,7 +18,7 @@ h4 {
   /*text-indent: 20px;*/
   text-align: left;
   font-family: 'Lato', sans-serif;
-  color: #777;
+  color: black;
   line-height: 150%;
   margin-top: 0;
   font-size: 1em;
@@ -26,7 +26,7 @@ h4 {
 
 h1 {
   font-weight: 700;
-  color: #00ba5d;
+  color: black;
   text-align: center;
   font-size: 1.7em;
 }
@@ -40,8 +40,8 @@ h3 {
 p {
   /*text-indent: 20px;*/
   text-align: left;
-  font-family: 'Lato', sans-serif;
-  color: #777;
+  font-family: 'Open-Sans', sans-serif;
+  color: black;
 }
 a {
   color: #00ba5d;
@@ -57,7 +57,12 @@ a:hover {
 }
 
 strong {
-  font-weight: 900;
+  font-weight: 700;
+}
+
+hr {
+  border-color: #e8e8e8;
+  margin: 5px 0;
 }
 
 .center-top-col {
@@ -65,7 +70,15 @@ strong {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 0;
+    padding: 15px 0;
+}
+
+.center-top-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
 }
 
 .center-top-row {

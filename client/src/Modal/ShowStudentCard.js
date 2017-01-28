@@ -1,5 +1,6 @@
 const React = require('react')
 import { Modal, Col, Thumbnail, Image, Button} from 'react-bootstrap'
+import { Link } from 'react-router'
 
 import '../Modal/ShowStudentCard.css'
 
@@ -32,6 +33,7 @@ class ShowStudentCard extends React.Component {
     let famImg
     let needSponsor
     let needSponsorButton2
+    let otherStudentLink
 
     if (this.props.age) {
       ageText = (<h5 style={{textIndent: '0'}}>{this.props.age} years old, {this.props.homeTown}</h5>)
@@ -88,6 +90,9 @@ class ShowStudentCard extends React.Component {
         </Button>
         )
     }
+    if (this.props.featureCardShow) {
+      otherStudentLink = (<Link href='#allStudent'>See Other Students...</Link>)
+    }
     return (
       <Col xs={12} sm={4} style={{ maxHeight: '420px', maxWidth: '250px'}}>
         <Thumbnail src={process.env.PUBLIC_URL + '/images/studentsImg/' + this.props.img} onClick={this.open}>
@@ -114,6 +119,7 @@ class ShowStudentCard extends React.Component {
             </Modal>
           </div>
         </Thumbnail>
+        { otherStudentLink }
       </Col>
     )
   }

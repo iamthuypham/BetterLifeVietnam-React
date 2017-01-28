@@ -1,5 +1,36 @@
 {
     "students":[{
+        "name":"Nguyen Ngoc Anh",
+        "age":"12",
+        "birthYear":"2005",
+        "homeTown":"Ha Noi",
+        "bio": {
+            "dateOfBirth": "16/12/2005",
+            "school": "6C Minh Quang  Middle School",
+            "address": "Dam San Village- Minh Quang- Ba Vi- Ha Noi"
+            },
+        "needSponsor": true,
+        "sponsor":"",
+        "story":"Her father passed away due to a fatal disease. Ngoc Anh, her mother, and her three siblings live in a small rundown house next to a new home built from borrowed money. A construction debt of about VND 60 million ($ 2700) is a burden on the shoulders of a young mother and children who have just lost a father. In addition to working in the fields and tending to pigs, Huong also works for hire but she still is not able to make enough to support her kids and make monthly payments. Even though Ngoc Anh is young, she already knows how to help her mother with fieldwork and tending to livestock. She always gives 100% effort into her studies and is named an honor student every year.",
+        "detail": {
+            "title": "Pigs farming/keeping for reproduction.",
+            "reason": [
+                "Huong who is mother of Ngoc Anh already has many years of experience in tending to pigs and their reproduction.",
+                "The occupation does not take too much time and is efficient in bringing in profits."
+                ],
+            "sizeOfBusiness": "One top-notch female pig weighing 100kg.",
+            "totalEstimatedInvestment": "7,650,000 VND ($350) /5 months.",
+            "profitOffInvestment": "The sixth month",
+            "estimatedIncome": "The pig will birth approximately 7-10 children in its first litter, every year, the mother will give birth to 2-4 litters. The market price of a piglet, at the time being, ranges from 700,000 VND to 900,000 VND ($35-$45) for average pigs and from 1,000,000 VND to 1,200,000 VND ($50-$60) for good pigs. The total profit for one litter ranges from 7,000,000 VND to 10,000,000 VND ($ 350- $460).",
+            "profitSpendingPlan": "To pay for schooling and living costs of family members, pay back a debt of VND 60 million that came from building a house."
+        },
+        "link1":"",
+        "img":"NguyenNgocAnh.jpg",
+        "img2":"NguyenNgocAnhFam.jpg",
+        "feature": true,
+        "id":"1"
+        
+    },{
         "name":"Doan Huu Danh",
         "age":"14",
         "homeTown":"Ben Tre",
@@ -7,7 +38,7 @@
         "story":"Danh is a 14 year old boy without a father from the time he was born. He has been cared for by his mother and grandmother who have no stable job. Although he also has to work to support the family, he still studies well at school. He wishes to finish his high school and to be able to go to university. He will enter high school next year and will be eligible for a high school scholarship package of $50 per month.",
         "link1":"http://caplayeuthuong.vtv24.vtv.vn/cau-be-mo-coi-cha-me-ngheo-quyet-tam-hoc-gioi/a79.html",
         "img":"DoanHuuDanh.jpeg",
-        "id":"1"
+        "id":"2"
     },{
        "name":"Le Thi Thu Ngan",
         "age":"16",
@@ -15,7 +46,7 @@
         "story":"Ngan is one of a family of three children. Her father left the family when she was a child and her mother has suffered from a serious uterine illness. Despite having this serious disease, her mother has been working hard to raise Ngan and her sister and brother. Her mother's job as a dish washer brings the family an income of less than VND2,000,000 per month (less than $90). This puts Ngan, her brother and her sister at risk of having to quit school. We hope to offer Ngan a high scholarship package of $50 per month.",
         "link1":"http://caplayeuthuong.vtv24.vtv.vn/nguoi-me-ngheo-dau-yeu-gang-suc-nuoi-ba-con-an-hoc/a242.html",
         "img":"LeThiThuNgan.jpeg",
-        "id":"2"
+        "id":"3"
     },{
        "name":"Ha",
         "age":"14",
@@ -36,20 +67,20 @@
         "id":"5"
     },{
         "name":"Le Quoc Son",
-        "age":"",
+        "age":"8",
         "homeTown":"",
         "story":"Son is one of a family of three children. His father left the family when she was a child and his mother has suffered from a serious uterine illness. Despite this serious disease, his mother has been working hard to raise him and his sisters. His mother's job as a dish washer brings the family an income of less than VND 2,000,000 per month (less than $90). This puts Ngan, her brother and her sister at the risk of having to quit school. We hope to offer Son a high scholarship package of $50 per month.",
         "link1":"",
         "img":"LeQuocSon.jpeg",
-        "id":"3"
+        "id":"6"
     },{
         "name":"Le Ngoc My",
         "age":"8",
         "homeTown":"Quang Ngai",
         "story":"My is an eight year old orphan. Her father died in an accident when My was seven months old. When she was three years old, her mother passed away because of liver cancer. She was then cared for by her grandparents who have a difficult life. Her grandmother is 68 years old and has a mental disease. My and her grandparents are dependent on a government allowance of VND800,000 VND per month ($35). We hope to offer My a primary scholarship package of $25 per month for her to be able to have healthy meals and go to school.",
         "link1":"http://caplayeuthuong.vtv24.vtv.vn/thuong-thay-canh-be-my-mo-coi-phai-lam-bao-mau-cho-ba-ngoai/a168.html",
-        "img":"LeNgocMy.jpeg",
-        "id":"6"
+        "img":"LeNgocMy.jpg",
+        "id":"7"
     },{
         "name":"Le Khanh Duong",
         "age":"",
@@ -80,34 +111,6 @@
         "link1":"",
         "img":"LeKhanhDuong.jpg",
         "img2":"LeKhanhDuongFam.jpg",
-        "id":"7"
-    },{
-        "name":"Nguyen Ngoc Anh",
-        "age":"",
-        "birthYear":"2005",
-        "homeTown":"Ha Noi",
-        "bio": {
-            "dateOfBirth": "16/12/2005",
-            "school": "6C Minh Quang  Middle School",
-            "address": "Dam San Village- Minh Quang- Ba Vi- Ha Noi"
-            },
-        "needSponsor": true,
-        "sponsor":"",
-        "story":"Her father passed away due to a fatal disease. Ngoc Anh, her mother, and her three siblings live in a small rundown house next to a new home built from borrowed money. A construction debt of about VND 60 million ($ 2700) is a burden on the shoulders of a young mother and children who have just lost a father. In addition to working in the fields and tending to pigs, Huong also works for hire but she still is not able to make enough to support her kids and make monthly payments. Even though Ngoc Anh is young, she already knows how to help her mother with fieldwork and tending to livestock. She always gives 100% effort into her studies and is named an honor student every year.",
-        "detail": {
-            "title": "Pigs farming/keeping for reproduction.",
-            "reason": [
-                "Huong who is mother of Ngoc Anh already has many years of experience in tending to pigs and their reproduction.",
-                "The occupation does not take too much time and is efficient in bringing in profits."
-                ],
-            "sizeOfBusiness": "One top-notch female pig weighing 100kg.",
-            "totalEstimatedInvestment": "7,650,000 VND ($350) /5 months.",
-            "profitOffInvestment": "The sixth month",
-            "estimatedIncome": "The pig will birth approximately 7-10 children in its first litter, every year, the mother will give birth to 2-4 litters. The market price of a piglet, at the time being, ranges from 700,000 VND to 900,000 VND ($35-$45) for average pigs and from 1,000,000 VND to 1,200,000 VND ($50-$60) for good pigs. The total profit for one litter ranges from 7,000,000 VND to 10,000,000 VND ($ 350- $460).",
-            "profitSpendingPlan": "To pay for schooling and living costs of family members, pay back a debt of VND 60 million that came from building a house."
-        },
-        "link1":"",
-        "img":"NguyenNgocAnh.jpg",
-        "img2":"NguyenNgocAnhFam.jpg",
-        "id":"8"}]
+        "id":"8"
+    }]
 }
