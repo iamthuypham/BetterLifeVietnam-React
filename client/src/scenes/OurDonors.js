@@ -1,4 +1,5 @@
 import React from 'react'
+import Sponsor from '../Highlight/Sponsor'
 
 const OurDonors = () => (
   <div className='container'>
@@ -6,7 +7,7 @@ const OurDonors = () => (
       <h4>Thank you to our sponsors for your commitment to bring a brighter future to children of Vietnam. We appreciate your ongoing support.</h4>
       <h1>Individual Donors</h1>
       <div>
-        <h4>Mr Tobin James</h4>
+        <h4>Tobin James</h4>
         <h4>Walter family and friends</h4>
         <h4>Alyssa Kopelman and friends</h4>
         <h4>Hugh Adam</h4>
@@ -16,6 +17,7 @@ const OurDonors = () => (
         <h4>Mathieu Lamolle</h4>
       </div>
       <h1>Corporate Sponsors</h1>
+      <Sponsor />
     </div>
   </div>
 )

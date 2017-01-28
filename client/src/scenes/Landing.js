@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import { Image, Button, Col } from 'react-bootstrap'
 import FontAwesome from 'react-fontawesome'
 import Highlight from '../Highlight/Highlight'
+import Sponsor from '../Highlight/Sponsor'
 import FreeBookLibraryPic from '../images/FreeBookLibrary.jpg'
 import About1 from '../images/About1.jpg'
 import './Landing.css'
@@ -11,7 +12,7 @@ class Landing extends React.Component {
   render () {
     return (
         <div className=''>
-    <div className='center-top-col cover-container container-fluid'>
+    <div className='center-top-col cover-container'>
       <div className='cover-title'>
         <h1>Working to improve education conditions for underprivileged children and youth in Vietnam</h1>
         <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
@@ -28,7 +29,7 @@ class Landing extends React.Component {
         <h3>BLV Books Library</h3>
         <div className='col-p'>
           <p>BLV <strong>creates classroom libraries</strong> that students can use at school or home, and monitors their progress and engagement.</p>
-          <p><strong>The team has built more than 10,000 bookcases for nearly 500,000 children in rural areas to date.</strong></p>
+          <p><strong>So far, the team has built more than 10,000 bookcases for nearly 500,000 children in rural areas.</strong></p>
         </div>
         <Link to='/book-library'><Button>Learn More</Button></Link>
       </Col>
@@ -36,8 +37,8 @@ class Landing extends React.Component {
         <div className='col-icon'><a><FontAwesome name='graduation-cap' /></a></div>
         <h3>BLV Scholarship Program</h3>
         <div className='col-p'>
-          <p>BLV offers a scholarip program to <strong>cover schoole expenses</strong> and encourage the whole family to get involved to support the needs of their children</p>
-          <p><strong>Scholarships range from $30 - $80 per month</strong> based on the level of education</p>
+          <p>BLV offers a scholarship program to <strong>cover school expenses</strong> and encourage the whole family to get involved to support the needs of their children.</p>
+          <p><strong>Scholarships range from $30-80 per month</strong> based on level of education.</p>
         </div>
         <Link to='/blv-scholarship'><Button>Learn More</Button></Link>
       </Col>
@@ -55,6 +56,12 @@ class Landing extends React.Component {
       <Image className='about-pic' src={About1} />
     </div>
     <Highlight />
+    <hr/>
+    <div className='container' style={{padding: '2%'}}>
+      <h3>Our Sponsors</h3>
+      <Sponsor />
+      <div><p style={{textAlign: 'center'}}><Link to='/our-donors'>View all</Link> of our individual and corporate sponsors</p></div>
+    </div>
     <div className='footer-container' style={{display:'inline-block'}}>
       <Col className='footer-col' xs={12} sm={4}>
         <Col className='footer-info-col' xs={6}>

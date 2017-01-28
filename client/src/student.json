@@ -1,7 +1,7 @@
 {
     "students":[{
         "name":"Nguyen Ngoc Anh",
-        "age":"",
+        "age":"12",
         "birthYear":"2005",
         "homeTown":"Ha Noi",
         "bio": {

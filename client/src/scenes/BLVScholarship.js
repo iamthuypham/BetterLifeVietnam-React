@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 import { Accordion, Panel, Grid, Row, Col } from 'react-bootstrap'
 import '../scenes/BLVScholarship.css'
 
@@ -22,7 +23,7 @@ const Scholarship = () => (
           <Col xs={12} sm={8} className='featureText'>
             <h1 style={{marginTop: '0', textAlign:'left'}}>Family and Education Scholarship</h1>
             <p>Poverty prevents many children in Vietnam from continuing their education beyond primary school. Many children have to find jobs and earn a living, instead. Furthermore, those who have worked so hard to pass competitive national entrance exams into universities cannot attend due to limited finances.</p>
-            <p>School fees are often low but children have to pay for many other expenses, such as uniforms, contribution to school infrastructure, and insurance. Total expenses can range from <strong>$60-$80</strong> per semester from primary school to high school.  University students can expect to pay <strong>$200 -$500 per semester</strong>.</p>
+            <p>School fees are often low but children have to pay for many other expenses, such as uniforms, contribution to school infrastructure, and insurance. Total expenses can range from <strong>$60-$80</strong> per semester from primary school to high school.  University students can expect to pay <strong>$200-$500 per semester</strong>.</p>
             <p>A variety of scholarship packages with a value of <strong>$30 per month to $80 per month</strong> will be awarded to underprivileged students in rural Vietnam to continue their studies. The amounts indicated will be used to cover school expenses (tuition fee and school supplies) for one student for one year. A portion of this will be invested in an income-generating activity for his/her family to improve the family’s livelihood.</p>
           </Col>
         </Row>
@@ -35,29 +36,29 @@ const Scholarship = () => (
           <Col xs={12} sm={6} md={3}>
             <Panel header='Primary school'>
               <p className='scholarshipWorth'>$30/month</p>
-              <p>this scholarship will be awarded to underprivileged schoolchildren ages 6-10</p>.
+              <p>this Scholarship will be awarded to underprivileged schoolchildren ages 6-10.</p>
             </Panel>
           </Col>
           <Col xs={12} sm={6} md={3}>
             <Panel header='Secondary school'>
               <p className='scholarshipWorth'>$40/month</p>
-              <p>this scholarship will be awarded to schoolchildren ages 11-14</p>.
+              <p>this Scholarship will be awarded to schoolchildren ages 11-14.</p>
             </Panel>
           </Col>
           <Col xs={12} sm={6} md={3}>
             <Panel header='High school'>
               <p className='scholarshipWorth'>$50/month</p>
-              <p>this scholarship will be awarded to schoolchildren ages 15-18.</p>
+              <p>this Scholarship will be awarded to schoolchildren ages 15-18.</p>
             </Panel>
           </Col>
           <Col xs={12} sm={6} md={3}>
             <Panel header='University'>
               <p className='scholarshipWorth'>$80/month</p>
-              <p>this scholarship will be awarded to university students who have passed the university entrance exam but lack the finances to further their education.</p>
+              <p>this Scholarship will be awarded to university students who have passed the university entrance exam but lack the finances to further their education.</p>
             </Panel>
           </Col>
         </Row>
-        <Row><p className='scholarshipNote padding20'>If you are interested in sponsoring a child, simple email your selection to us at <a>betterlifevietnam@gmail.com</a>. We will then pair you with that student and provide a report on his/her progress.</p>
+        <Row><p className='scholarshipNote padding20'>If you are interested in sponsoring a child, simply <Link to='/CommentBox'>contact us</Link> or email to <strong>betterlifevietnam@gmail.com</strong> with your selection. We will then pair you with that student and provide a report on his/her progress.</p>
         </Row>
       </Grid>
     </div>
