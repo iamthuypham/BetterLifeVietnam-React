@@ -74,7 +74,7 @@ class Landing extends React.Component {
           <Link to='/blv-scholarship'><p>BLV Scholarship</p></Link>
         </Col>
         <Col className='footer-info-col' xs={6}>
-          <h6>Tours For Books</h6>
+          <h6>Tours for Books</h6>
           <Link to='/tours-travel-services'><p>Tours and Travel Services</p></Link>
           <Link to='/voluntourism'><p>Voluntourism</p></Link>
           <Link to='/study-tours'><p>Study Tours</p></Link>
