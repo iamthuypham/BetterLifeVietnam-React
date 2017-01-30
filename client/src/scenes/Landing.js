@@ -5,6 +5,7 @@ import FontAwesome from 'react-fontawesome'
 import Highlight from '../Highlight/Highlight'
 import Sponsor from '../Highlight/Sponsor'
 import FreeBookLibraryPic from '../images/FreeBookLibrary.jpg'
+import FreeBookLibraryPicSM from '../images/FreeBookLibrary_sm.jpg'
 import About1 from '../images/About1.jpg'
 import './Landing.css'
 
@@ -106,6 +107,7 @@ class Landing extends React.Component {
           </div>
         </Col>
       </div>
+      <Image style={{display:'none'}} src={FreeBookLibraryPicSM} />
     </div>
     )
   }
