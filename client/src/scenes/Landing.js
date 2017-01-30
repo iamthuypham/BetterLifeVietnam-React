@@ -5,15 +5,15 @@ import FontAwesome from 'react-fontawesome'
 import Highlight from '../Highlight/Highlight'
 import Sponsor from '../Highlight/Sponsor'
 import FreeBookLibraryPic from '../images/FreeBookLibrary.jpg'
+import fb_og_img from '../images/fb_og_image.jpg'
 import About1 from '../images/About1.jpg'
 import './Landing.css'
-
-import fb_og_img from '../images/fb_og_image.jpg'
 
 class Landing extends React.Component {
   render () {
     return (
         <div className=''>
+        <Image style={{display:'none'}} src={fb_og_img}/>
     <div className='center-top-col cover-container'>
       <div className='cover-title'>
         <h1>Working to improve education conditions for underprivileged children and youth in Vietnam</h1>
@@ -109,7 +109,6 @@ class Landing extends React.Component {
           </div>
         </Col>
       </div>
-      <Image style={{display:'none'}} src={fb_og_img}/>
     </div>
     )
   }
