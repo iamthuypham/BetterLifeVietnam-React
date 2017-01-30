@@ -5,7 +5,6 @@ import FontAwesome from 'react-fontawesome'
 import Highlight from '../Highlight/Highlight'
 import Sponsor from '../Highlight/Sponsor'
 import FreeBookLibraryPic from '../images/FreeBookLibrary.jpg'
-import FreeBookLibraryPicSM from '../images/FreeBookLibrary_sm.jpg'
 import About1 from '../images/About1.jpg'
 import './Landing.css'
 
@@ -85,7 +84,7 @@ class Landing extends React.Component {
         <Col className='footer-col footer-social-media-col' xs={12} sm={4}>
           <h6>Follow Us on Social Media</h6>
           <Col className='footer-icon-col' xs={4}>
-            <a href='https://www.facebook.com/pg/Better-Life-Vietnam-111667145557377/photos/?tab=album&album_id=1296427037081376'><FontAwesome name='facebook-official fa-2x' /></a>
+            <a href='https://www.facebook.com/Better-Life-Vietnam-111667145557377/'><FontAwesome name='facebook-official fa-2x' /></a>
           </Col>
           <Col className='footer-icon-col' xs={4}>
             <a href='https://www.instagram.com/betterlifevietnam/'><FontAwesome name='instagram fa-2x' /></a>
@@ -107,7 +106,6 @@ class Landing extends React.Component {
           </div>
         </Col>
       </div>
-      <Image style={{display:'none'}} src={FreeBookLibraryPicSM} />
     </div>
     )
   }

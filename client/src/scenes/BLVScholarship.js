@@ -36,29 +36,29 @@ const Scholarship = () => (
           <Col xs={12} sm={6} md={3}>
             <Panel header='Primary school'>
               <p className='scholarshipWorth'>$30/month</p>
-              <p>this Scholarship will be awarded to underprivileged schoolchildren ages 6-10.</p>
+              <p>This Scholarship will be awarded to underprivileged schoolchildren ages 6-10.</p>
             </Panel>
           </Col>
           <Col xs={12} sm={6} md={3}>
             <Panel header='Secondary school'>
               <p className='scholarshipWorth'>$40/month</p>
-              <p>this Scholarship will be awarded to schoolchildren ages 11-14.</p>
+              <p>This Scholarship will be awarded to schoolchildren ages 11-14.</p>
             </Panel>
           </Col>
           <Col xs={12} sm={6} md={3}>
             <Panel header='High school'>
               <p className='scholarshipWorth'>$50/month</p>
-              <p>this Scholarship will be awarded to schoolchildren ages 15-18.</p>
+              <p>This Scholarship will be awarded to schoolchildren ages 15-18.</p>
             </Panel>
           </Col>
           <Col xs={12} sm={6} md={3}>
             <Panel header='University'>
               <p className='scholarshipWorth'>$80/month</p>
-              <p>this Scholarship will be awarded to university students who have passed the university entrance exam but lack the finances to further their education.</p>
+              <p>This Scholarship will be awarded to university students who have passed the university entrance exam but lack the finances to further their education.</p>
             </Panel>
           </Col>
         </Row>
-        <Row><p className='scholarshipNote padding20'>If you are interested in sponsoring a child, simply <Link to='/CommentBox'>contact us</Link> or email to <strong>betterlifevietnam@gmail.com</strong> with your selection. We will then pair you with that student and provide a report on his/her progress.</p>
+        <Row><p className='scholarshipNote padding20'>If you are interested in sponsoring a child, simply <Link to='/CommentBox'>contact us</Link> or email <strong>betterlifevietnam@gmail.com</strong> with your selection. We will then pair you with that student and provide a report on his/her progress.</p>
         </Row>
       </Grid>
     </div>

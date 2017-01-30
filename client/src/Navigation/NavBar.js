@@ -39,7 +39,7 @@ const NavBar = (props) => (
           <NavItem eventKey='4' title='Our Donors'><Link to='/our-donors'>Sponsors</Link></NavItem>
           <NavItem eventKey='5' title='Contact'><Link to='/CommentBox'>Contact</Link></NavItem>
           <div className='socialMedia'>
-            <a href='https://www.facebook.com/pg/Better-Life-Vietnam-111667145557377/photos/?tab=album&album_id=1296427037081376'><FontAwesome name='facebook-square' /></a>
+            <a href='https://www.facebook.com/Better-Life-Vietnam-111667145557377/'><FontAwesome name='facebook-square' /></a>
             <a href='https://www.instagram.com/betterlifevietnam/'><FontAwesome name='instagram' /></a>
             <a href='https://twitter.com/BetterLifeVN?lang=en'><FontAwesome name='twitter' /></a>
           </div>
