@@ -5,7 +5,6 @@ import FontAwesome from 'react-fontawesome'
 import Highlight from '../Highlight/Highlight'
 import Sponsor from '../Highlight/Sponsor'
 import FreeBookLibraryPic from '../images/FreeBookLibrary.jpg'
-import fb_og_img from '../images/fb_og_image.png'
 import About1 from '../images/About1.jpg'
 import './Landing.css'
 
@@ -107,7 +106,6 @@ class Landing extends React.Component {
           </div>
         </Col>
       </div>
-      <Image src={fb_og_img}/>
     </div>
     )
   }
