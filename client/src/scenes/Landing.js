@@ -5,9 +5,10 @@ import FontAwesome from 'react-fontawesome'
 import Highlight from '../Highlight/Highlight'
 import Sponsor from '../Highlight/Sponsor'
 import FreeBookLibraryPic from '../images/FreeBookLibrary.jpg'
-import fb_og_img from '../images/fb_og_image.png'
 import About1 from '../images/About1.jpg'
 import './Landing.css'
+
+import fb_og_img from '../images/fb_og_image.jpg'
 
 class Landing extends React.Component {
   render () {
@@ -57,11 +58,12 @@ class Landing extends React.Component {
       <Image className='about-pic' src={About1} />
     </div>
     <Highlight />
-    <hr/>
-    <div className='container' style={{padding: '2%'}}>
-      <h3>Our Sponsors</h3>
-      <Sponsor />
-      <div><p style={{textAlign: 'center'}}><Link to='/our-donors'>View all</Link> of our individual and corporate sponsors</p></div>
+    <div className='grey-bg'>
+      <div className='container' style={{padding: '2%'}}>
+        <h3>Our Sponsors</h3>
+        <Sponsor />
+        <div><p style={{textAlign: 'center'}}><Link to='/our-donors'>View all</Link> of our individual and corporate sponsors</p></div>
+      </div>
     </div>
     <div className='footer-container' style={{display:'inline-block'}}>
       <Col className='footer-col' xs={12} sm={4}>
