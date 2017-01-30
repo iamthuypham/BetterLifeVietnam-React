@@ -6,6 +6,7 @@ import memberData from '../member.json'
 
 const OurTeam = () => (
   <div className='container'>
+    <h1 className='center-top-col'>Meet the Better Life Vietnam Team</h1>
     <Grid>
       <Row style={{padding: '0 5%'}}>
         {memberData.members.map((member) => (

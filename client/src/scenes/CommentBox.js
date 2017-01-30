@@ -95,7 +95,7 @@ var CommentForm = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Contact Us</h1>
+        <h1 className='addMargin'>Contact Us</h1>
         <form className="commentForm" onSubmit={this.handleSubmit}>
           <FormGroup controlId="formBasicText">
             <FormControl

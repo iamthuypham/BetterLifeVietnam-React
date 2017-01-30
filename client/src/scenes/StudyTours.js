@@ -10,9 +10,11 @@ import StudyTour3 from '../images/study-tour-3.jpg'
 const StudyTours = () => (
   <div className='container studyTours'>
     <div>
-      <h1>Study Tours</h1>
+      <h1 className='addMargin'>Study Tours</h1>
       <div>
-        <h4>Offers students and groups the opportunity to learn first-hand from local businesses, NGOs and education institutions through <strong>a fun and vital experience</strong>. The program will be designed to <strong>your time and interests</strong>. Feel free to <Link className='routeLink' to='/contact'>get in touch</Link> with your inquiries and we will together build up the program that suit your needs.</h4>
+        <p>
+        Study Tours offer students the opportunity to learn first-hand from local businesses, NGOs and education institutions through <strong>a fun and vital experience</strong>. The program will be designed to <strong>your time and interests</strong>. Feel free to <Link to='/CommentBox'>contact us</Link> with your inquiries and, together we will develop a program that suits your needs.
+        </p>
       </div>
       <Grid>
         <Row className='show-grid'>

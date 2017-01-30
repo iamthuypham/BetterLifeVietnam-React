@@ -101,4 +101,7 @@ hr {
   .container {
     padding: 0 30px;  
   }
+  .addMargin {
+    margin-top: 35px;
+  }
 }

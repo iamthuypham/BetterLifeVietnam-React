@@ -3,7 +3,7 @@ import Sponsor from '../Highlight/Sponsor'
 
 const OurDonors = () => (
   <div className='container'>
-    <div>
+    <div className='addMargin'>
       <h4>Thank you to our sponsors for your commitment to bring a brighter future to children of Vietnam. We appreciate your ongoing support.</h4>
       <h1>Individual Donors</h1>
       <div>
