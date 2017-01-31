@@ -8,7 +8,7 @@ import FontAwesome from 'react-fontawesome'
 const NavBar = (props) => (
   <div className='container-fluid'>
     <div className='space-top-row'>
-      <div style={{minHeight: '50px', padding: '10px 0 10px 30px'}}><a href='#' ><Image style={{ width: '100%', maxWidth: '370px'}} src={logo} responsive /></a></div>
+      <div style={{minHeight: '50px', padding: '10px 0 10px 30px'}}><Link to='/' ><Image style={{ width: '100%', maxWidth: '370px'}} src={logo} responsive /></Link></div>
       <div style={{minHeight: '50px', padding: '10px 30px 10px 0'}}>
         <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
           <input type='hidden' name='cmd' value='_s-xclick' />
