@@ -7,7 +7,7 @@ import HomeLogo from '../images/Home_logo.jpg'
 import WaterforeveryoneLogo from '../images/waterforeveryone_logo.png'
 
 const tooltip = (
-  <Tooltip id="tooltip">Home Hanoi Restaurant will donate 10 percent of dinner service proceeds to benefit children of Vietnam through the Better Life Vietnam organization. Please inform the restaurant at check in.</Tooltip>
+  <Tooltip id="tooltip">In partnership with Better Life Vietnam, Home Hanoi Restaurant will donate 10% of your bill to benefit the children of Vietnam. Please mention Better Life Vietnam to the host during check-in. </Tooltip>
 );
 
 class Sponsor extends React.Component {
