@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, hashHistory, IndexRoute } from 'react-router'
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 import NavBar from './Navigation/NavBar'
 import Landing from './scenes/Landing'
@@ -17,7 +17,7 @@ import './index.css'
 class ClientApp extends React.Component { 
   render () {
     return (
-      <Router history={hashHistory}>
+      <Router history={browserHistory}>
         <Route path='/' component={NavBar}>
           <IndexRoute component={Landing} />
           <Route path='/about' component={About} />

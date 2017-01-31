@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router'
 import { Image } from 'react-bootstrap'
 
 import About1 from '../images/About1.jpg'
