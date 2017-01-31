@@ -120,6 +120,7 @@ var CommentForm = React.createClass({
               value={this.state.message}
               placeholder="Your Message"
               onChange={this.handleMessageChange}
+              rows="6"
             />
           </FormGroup>
           <div><Button type="submit" value="Send Email" style={{float: 'right'}}>Send</Button></div>

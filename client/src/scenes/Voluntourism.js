@@ -5,6 +5,10 @@ import HaGiangImage from '../images/Voluntourism-in-Ha-Giang.jpg'
 import HanoiImage from '../images/Voluntourism-in-Hanoi.jpg'
 import SapaImage from '../images/Voluntourism-in-Sapa.jpg'
 
+import HanoiBrochure from '../docs/voluntourismBrochure/Voluntourism-in-Hanoi.pdf'
+import HaGiangBrochure from '../docs/voluntourismBrochure/Voluntourism-in-Ha-Giang.pdf'
+import SapaBrochure from '../docs/voluntourismBrochure/Voluntourism-in-Sapa.pdf'
+
 const Voluntourism = () => (
   <div>
     <div className='container'>
@@ -26,21 +30,21 @@ const Voluntourism = () => (
             <p>We will arrange for you to visit charity organizations where you can offer your volunteer services or give gifts directly to beneficiaries. The trip will also be a good chance for you to explore the suburban areas of Hanoi.</p>
             <p>The length of the trip is also designed to meet your particular needs. Currently, we offer a 4-day trip to visit Thuy An Rehabilitation Center for Handicapped Children. We will depart from Hanoi, transfer to Ky Son village in northwest Hanoi (45 km away), and then homestay in Ky Son village. There, we will bike around Ky Son, fish, and participate in other charity activities at Thuy An Rehabilitation Center for Handicapped Children.</p>
             <div className='center-top-col'>
-              <p><a href='download.php?f=Voluntourism-in-Hanoi.pdf'>Download Voluntourism in Hanoi Brochure</a></p>
+              <p><a href={HanoiBrochure} target='_blank'>Download Voluntourism in Hanoi Brochure</a></p>
               <Image style={{maxWidth: '300px'}} alt='Hanoi volunteer' src={HanoiImage} />
             </div>
           </Col>
           <Col sm={6} md={4}>
             <h3>Voluntourism in Sapa</h3>
             <div className='center-top-col'>
-              <p><a href='download.php?f=Voluntourism-in-Hanoi.pdf'>Download Voluntourism in Hanoi Brochure</a></p>
+              <p><a href={HaGiangBrochure} target='_blank'>Download Voluntourism in Sapa Brochure</a></p>
               <Image style={{maxWidth: '300px'}} alt='Hanoi volunteer' src={SapaImage} />
             </div>
           </Col>
           <Col sm={6} md={4}>
             <h3>Voluntourism in Ha Giang</h3>
             <div className='center-top-col'>
-              <p><a href='download.php?f=Voluntourism-in-Hanoi.pdf'>Download Voluntourism in Hanoi Brochure</a></p>
+              <p><a href={SapaBrochure} target='_blank'>Download Voluntourism in Ha Giang Brochure</a></p>
               <Image style={{maxWidth: '300px'}} alt='Hanoi volunteer' src={HaGiangImage} />
             </div>
           </Col>

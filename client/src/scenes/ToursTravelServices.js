@@ -15,7 +15,7 @@ class TourForBook extends React.Component {
       <div>
         <div className='container addMargin'>
           <p>Are you looking for a reliable tour agency to help you plan your trip to Vietnam? Choose <strong>Tours for Books</strong> for your bookings! Our services will make your trip to Vietnam even more meaningful.</p>
-          <p><strong>Better Life Vietnam</strong> has teamed up with <strong>VietDan Travel</strong> to launch the <strong>Tours for Books</strong> business. Profits generated from the tours will contribute to our education fund to provide books and scholarships to underprivileged children. By choosing <strong>Tours for Books</strong>, tourists truly help us to improve lives by buying books and providing scholarships to underprivileged children, as well as support disadvantaged youth in our Better Jobs for Youth Vendors in Hanoi project.</p>
+          <p><strong>Better Life Vietnam</strong> has teamed up with <strong>Viet Dan Travel</strong> to launch the <strong>Tours for Books</strong> business. Profits generated from the tours will contribute to our education fund to provide books and scholarships to underprivileged children. By choosing <strong>Tours for Books</strong>, tourists truly help us to improve lives by buying books and providing scholarships to underprivileged children, as well as support disadvantaged youth in our Better Jobs for Youth Vendors in Hanoi project.</p>
           <p><strong>Tours for Books</strong> offer a wide range of package tours, travel services and other travel solutions to individuals, families, large groups and travel agencies. Below you can find a list of some main products we offer:</p>
         </div>
         <Grid>
@@ -34,26 +34,26 @@ class TourForBook extends React.Component {
             <Tabs defaultActiveKey={1} id='applyVisa' className='center-top-col'>
               <Tab eventKey={1} title='Step 1'>
                 <h4 style={{color: '#00ba5d', textAlign: 'center'}}>Provide us with essential details</h4>
-                <p>We need to receive the order by email from the applicant with information as below:</p>
+                <p>All applicants must email us with the following information:</p>
                 <ul>
-                  <li>Passport copy (PDF format is recommended)</li>
-                  <li>Date of arrival Port of arrival (please choose Noi Bai (Hanoi), Danang or Tan SoNhat (Ho Chi Minh City) or both regions</li>
+                  <li>Copy of your passport (must be valid for the next six months; PDF format is recommended)</li>
+                  <li>Date and port of arrival (please choose Noi Bai/Hanoi, Danang or Tan SoNhat/Ho Chi Minh City or both regions)</li>
                   <li>Occupation</li>
                   <li>Length of stay (one month for tourist visa)</li>
-                  <li>Place to get the Visa (usually, name of the city in your country, where the most convenient Vietnam Embassy or Consulate is located)</li>
+                  <li>Location to pick up visa (usually, name of the city in your country, where the most convenient Vietnamese embassy or consulate is located)</li>
                 </ul>
               </Tab>
               <Tab eventKey={2} title='Step 2'>
                 <h4 style={{color: '#00ba5d', textAlign: 'center'}}>Confirm and make payment</h4>
-                <p>You only need to confirm and pay the visa arrangement fee to <strong>Tours for Books</strong> and we will take care the rest. We accept most major credit cards and debit cards (Visa/ Master and American Express Card) and Paypal.</p>
+                <p>You only need to confirm and pay the visa arrangement fee to <strong>Tours for Books</strong> and we will take care the rest. We accept most major credit cards and debit cards (Visa, Mastercard, and American Express) and Paypal.</p>
               </Tab>
               <Tab eventKey={3} title='Step 3'>
                 <h4 style={{color: '#00ba5d', textAlign: 'center'}}>Receive and print the approval letter</h4>
-                <p>After you submit your application and payment, we will start processing your visa for Vietnam. After 02 working days, we will send you an approval letter by email. Then you just need to print the PDF attachment file (color preferred, but not required) and prepare at least 2 passport photos (4cm x 6cm).</p>
+                <p>After you submit your application and payment, we will start processing your visa for Vietnam. We will email you an approval letter within two business days. Then you just need to print the PDF attachment file (color preferred, but not required) and prepare at least two passport photos (4cm x 6cm).</p>
               </Tab>
               <Tab eventKey={4} title='Step 4'>
                 <h4 style={{color: '#00ba5d', textAlign: 'center'}}>Get your visa stamp upon arrival at Vietnam international airports</h4>
-                <p>Upon arrival at Vietnam international airports in Hanoi, Da Nang or Ho Chi Minh city, travelers are required to fill in Entry/exit form (will be emailed together with approval letter), present your approval letter, passport (must be valid for the next six months), photos, and pay for the stamping fee to get Visa stamped on your passport.</p>
+                <p>Upon arrival at Vietnam international airports in Hanoi, Da Nang or Ho Chi Minh City, you are required to fill out an entry/exit form (will be emailed together with approval letter). Then, provide the approval letter, passport, and photos, and pay a stamping fee to get the visa stamped onto your passport.</p>
               </Tab>
             </Tabs>
           </div>

@@ -9,13 +9,13 @@ import WaterforeveryoneLogo from '../images/waterforeveryone_logo.png'
 const Sponsor = () => (
   <Row>
     <Col xs={12} sm={4} className='sponsorImageCol center-top-col'>
-      <div><a href='http://www.vietdantravel.com/'><Image src={VDGLogo}></Image></a></div>
+      <div><a href='http://www.vietdantravel.com/' target="_blank"><Image src={VDGLogo}></Image></a></div>
     </Col>
     <Col xs={12} sm={4} className='sponsorImageCol center-top-col'>
-      <div style={{textAlign: 'center'}}><a href='https://www.waterforeveryone.org/en'><Image src={WaterforeveryoneLogo}></Image></a></div>
+      <div style={{textAlign: 'center'}}><a href='https://www.waterforeveryone.org/en' target="_blank"><Image src={WaterforeveryoneLogo}></Image></a></div>
     </Col>
     <Col xs={12} sm={4} className='sponsorImageCol center-top-col'>
-      <div><a href='http://m.homehanoirestaurant.com/'><Image src={HomeLogo}></Image></a></div>
+      <div><a href='http://m.homehanoirestaurant.com/' target="_blank"><Image src={HomeLogo}></Image></a></div>
       <div className='sponsorNote'><p style={{fontSize: '10px', color:'#777', textAlign:'center'}}>Home Hanoi Restaurant will donate 10 percent of dinner service proceeds to benefit children of Vietnam through the Better Life Vietnam organization. Please inform the restaurant at check in.</p></div>
     </Col>
   </Row>

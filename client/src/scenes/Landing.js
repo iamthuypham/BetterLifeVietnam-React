@@ -48,7 +48,7 @@ class Landing extends React.Component {
         <div className='col-icon'><a><FontAwesome name='map-o fa-stack-1x' /><FontAwesome name='map-marker fa-stack-1x' /></a></div>
         <h3>Responsible Tourism</h3>
         <div className='col-p'>
-          <p>BLV and VietDan Travel partnered together to launch<strong> Tours for Books</strong>, a social enterprise that organizes tours and travel services in Vietnam</p>
+          <p>BLV and Viet Dan Travel partnered together to launch<strong> Tours for Books</strong>, a social enterprise that organizes tours and travel services in Vietnam</p>
           <p><strong>All profits generated </strong>from this business will be used to <strong>support the education projects.</strong></p>
         </div>
         <Link to='/tours-travel-services'><Button>Learn More</Button></Link>

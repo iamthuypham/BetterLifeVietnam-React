@@ -28,10 +28,10 @@ const NavBar = (props) => (
             <MenuItem eventKey='1.2'><Link to='/our-team'><div>Our Team</div></Link></MenuItem>
           </NavDropdown>
           <NavDropdown eventKey='2' title='What We Do' id='basic-nav-dropdown'>
-            <MenuItem eventKey='2.1'><Link to='/book-library'><div>Book Library</div></Link></MenuItem>
+            <MenuItem eventKey='2.1'><Link to='/book-library'><div>Books Library</div></Link></MenuItem>
             <MenuItem eventKey='2.2'><Link to='/blv-scholarship'><div>BLV Scholarship</div></Link></MenuItem>
           </NavDropdown>
-          <NavDropdown eventKey='3' title='Tours For Books' id='basic-nav-dropdown'>
+          <NavDropdown eventKey='3' title='Tours for Books' id='basic-nav-dropdown'>
             <MenuItem eventKey='3.1'><Link to='/tours-travel-services'><div>Tours & Travel Services</div></Link></MenuItem>
             <MenuItem eventKey='3.2'><Link to='/voluntourism'><div>Voluntourism</div></Link></MenuItem>
             <MenuItem eventKey='3.3'><Link to='/study-tours'><div>Study Tours</div></Link></MenuItem>
