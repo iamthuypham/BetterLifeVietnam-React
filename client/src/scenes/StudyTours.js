@@ -6,6 +6,7 @@ import '../scenes/StudyTours.css'
 import StudyTour1 from '../images/study-tour-1.jpg'
 import StudyTour2 from '../images/study-tour-2.jpg'
 import StudyTour3 from '../images/study-tour-3.jpg'
+import Footer from './Footer'
 
 const StudyTours = () => (
   <div className='container studyTours'>
@@ -24,6 +25,7 @@ const StudyTours = () => (
         </Row>
       </Grid>
     </div>
+    <Footer />
   </div>
 )
 

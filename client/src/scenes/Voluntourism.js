@@ -8,6 +8,7 @@ import SapaImage from '../images/Voluntourism-in-Sapa.jpg'
 import HanoiBrochure from '../docs/voluntourismBrochure/Voluntourism-in-Hanoi.pdf'
 import HaGiangBrochure from '../docs/voluntourismBrochure/Voluntourism-in-Ha-Giang.pdf'
 import SapaBrochure from '../docs/voluntourismBrochure/Voluntourism-in-Sapa.pdf'
+import Footer from './Footer'
 
 const Voluntourism = () => (
   <div>
@@ -52,6 +53,7 @@ const Voluntourism = () => (
         </Row>
       </Grid>
     </div>
+    <Footer />
   </div>
 )
 

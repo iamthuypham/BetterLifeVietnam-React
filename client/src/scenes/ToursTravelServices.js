@@ -5,6 +5,7 @@ import '../scenes/ToursTravelServices.css'
 
 import ShowTourCard from '../Modal/ShowTourCard'
 import tourData from '../tour.json'
+import Footer from './Footer'
 
 class TourForBook extends React.Component {
   componentDidUpdate() {
@@ -74,6 +75,7 @@ class TourForBook extends React.Component {
             <p>Please note that our car rental service is supplied daily, monthly, or longterm with special offers.</p>
           </div>
         </div>
+        <Footer />
       </div>
     )
   }

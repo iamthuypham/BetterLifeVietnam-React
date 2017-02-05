@@ -1,5 +1,6 @@
 import React from 'react'
 import Sponsor1 from '../Highlight/Sponsor1'
+import Footer from './Footer'
 
 const OurDonors = () => (
   <div className='container'>
@@ -19,6 +20,7 @@ const OurDonors = () => (
       <h1 style={{textAlign:'left'}}>Corporate Sponsors</h1>
       <Sponsor1 />
     </div>
+    <Footer />
   </div>
 )
 

@@ -5,6 +5,7 @@ import '../scenes/BLVScholarship.css'
 
 import ShowStudentCard from '../Modal/ShowStudentCard'
 import ShowMessage from '../Modal/ShowMessage'
+import Footer from './Footer'
 import FontAwesome from 'react-fontawesome'
 
 import studentData from '../student.json'
@@ -120,6 +121,7 @@ const Scholarship = () => (
         </Row>
       </Grid>
     </div>
+    <Footer />
   </div>
 )
 

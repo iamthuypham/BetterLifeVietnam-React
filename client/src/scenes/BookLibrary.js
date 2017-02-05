@@ -2,6 +2,7 @@ import React from 'react'
 import { Image, Well } from 'react-bootstrap'
 import '../scenes/BookLibrary.css'
 import FreeBookLibraryPic from '../images/FreeBookLibrary.jpg'
+import Footer from './Footer'
 
 const BookLibrary = () => (
   <div>
@@ -73,6 +74,7 @@ const BookLibrary = () => (
 
       </div>
     </div>
+    <Footer />
   </div>
 )
 

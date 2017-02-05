@@ -11,7 +11,7 @@ class Sponsor1 extends React.Component {
     return (
       <div>
         <Row>
-          <Col xs={12} sm={3} className='sponsorImageCol center-top-col'>
+          <Col xs={12} sm={3} className='sponsorImageCol1 center-top-col'>
             <div><a href='http://www.vietdantravel.com/' target="_blank"><Image src={HomeLogo}></Image></a></div>
           </Col>
           <Col xs={12} sm={9} className='sponsorTextCol' >
@@ -22,7 +22,7 @@ class Sponsor1 extends React.Component {
           </Col>
         </Row>  
         <Row>
-          <Col xs={12} sm={3} className='sponsorImageCol center-top-col'>
+          <Col xs={12} sm={3} className='sponsorImageCol1 center-top-col'>
             <div><a href='https://www.waterforeveryone.org/en' target="_blank"><Image src={WaterforeveryoneLogo}></Image></a></div>
           </Col>
           <Col xs={12} sm={9} className='sponsorTextCol'>
@@ -32,7 +32,7 @@ class Sponsor1 extends React.Component {
           </Col>
         </Row>    
         <Row>
-          <Col xs={12} sm={3} className='sponsorImageCol center-top-col'>
+          <Col xs={12} sm={3} className='sponsorImageCol1 center-top-col'>
             <div className='center-top-col'><a href='http://m.homehanoirestaurant.com/' target="_blank"><Image src={VDGLogo}></Image></a></div>
           </Col>
           <Col xs={12} sm={9} className='sponsorTextCol'>

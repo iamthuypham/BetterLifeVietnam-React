@@ -1,15 +1,15 @@
 .row {
     padding-bottom: 3vh
 }
-.sponsorImageCol div {
+.sponsorImageCol1 div {
     display: inline;
     width: auto;
     height: 80px;
 }
-.sponsorImageCol img {
+.sponsorImageCol1 img {
     width: 25vh;
 }
-.row:nth-child(2) img {
+.row:nth-child(2) .sponsorImageCol1 img {
     height: 15vh;
     width: auto;
 }

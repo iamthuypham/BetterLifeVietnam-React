@@ -2,6 +2,7 @@ const React = require('react')
 const { FormGroup, FormControl, Button } = require('react-bootstrap')
 const $ = require('jquery')
 import './CommentBox.css'
+import Footer from './Footer'
 
 var CommentBox = React.createClass({
   loadCommentsFromServer: function() {
@@ -52,9 +53,13 @@ var CommentBox = React.createClass({
       sentStatusResponse = (<h4>Oh no! Something went wrong. Please email us directly at betterlifevietnam@gmail.com</h4>)
     }
     return (
-      <div className="commentBox container">
-        <CommentForm onCommentSubmit={this.handleCommentSubmit} />
-        { sentStatusResponse }
+      <div>
+        <div className="commentBox container">
+          <CommentForm onCommentSubmit={this.handleCommentSubmit} />
+          { sentStatusResponse }
+          
+        </div>
+        <Footer />
       </div>
     );
   }
