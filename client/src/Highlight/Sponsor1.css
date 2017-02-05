@@ -1,0 +1,33 @@
+.row {
+    padding-bottom: 3vh
+}
+.sponsorImageCol div {
+    display: inline;
+    width: auto;
+    height: 80px;
+}
+.sponsorImageCol img {
+    width: 25vh;
+}
+.row:nth-child(2) img {
+    height: 15vh;
+    width: auto;
+}
+.sponsorTextCol {
+    padding: 15px 15px;
+}
+.sponsorTextCol p {
+    margin: 0;
+}
+.sponsorTextCol div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.sponsorTextCol div {
+    height: 80px;
+}
+@media (min-width: 768px) {
+
+}
