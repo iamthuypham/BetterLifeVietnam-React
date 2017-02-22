@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 var env = process.env.NODE_ENV || 'development';
-var config = require('secure')[env];
+var config = require('./secure/config')[env];
 
 app.set('port', (3001));
 // Express only serves static assets in production
