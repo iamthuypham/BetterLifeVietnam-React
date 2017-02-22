@@ -56,6 +56,7 @@ app.post('/api/comments', function (req, res) {
     }
     console.log('Message sent: ' + info.response)
     res.send(comments)
+    transporter.close();
   })
 })
 
