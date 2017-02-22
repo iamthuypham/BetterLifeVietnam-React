@@ -1,7 +1,6 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
-var env = process.env.NODE_ENV || 'development';
 
 app.set('port', (3001));
 // Express only serves static assets in production
@@ -22,7 +21,7 @@ app.use(function (req, res, next) {
   res.setHeader('Cache-Control', 'no-cache')
   next()
 })
-
+console.log('Username:' + process.env.GMAIL_USERNAME)
 var smtpConfig = {
   host: 'smtp.gmail.com',
   port: 465,
