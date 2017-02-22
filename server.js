@@ -1,8 +1,6 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
-var env = process.env.NODE_ENV || 'development';
-var config = require('./secure/config')[env];
 
 app.set('port', (3001));
 // Express only serves static assets in production
@@ -23,14 +21,13 @@ app.use(function (req, res, next) {
   res.setHeader('Cache-Control', 'no-cache')
   next()
 })
-
 var smtpConfig = {
   host: 'smtp.gmail.com',
   port: 465,
   secure: true, // use SSL
   auth: {
-    user: config.gmail.username,
-    pass: config.gmail.password
+    user: process.env.GMAIL_USERNAME,
+    pass: process.env.GMAIL_PW
   }
 }
 var transporter = nodemailer.createTransport('smtps://' + smtpConfig.auth.user + ':' + smtpConfig.auth.pass + '@smtp.gmail.com')
