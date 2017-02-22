@@ -1,6 +1,8 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
+var env = process.env.NODE_ENV || 'development';
+var config = require('./config')[env];
 
 app.set('port', (3001));
 
@@ -22,13 +24,14 @@ app.use(function (req, res, next) {
   res.setHeader('Cache-Control', 'no-cache')
   next()
 })
+
 var smtpConfig = {
   host: 'smtp.gmail.com',
   port: 465,
   secure: true, // use SSL
   auth: {
-    user: 'dev.betterlifevietnam@gmail.com',
-    pass: 'ThinhNguyen'
+    user: config.gmail.username,
+    pass: config.gmail.password
   }
 }
 var transporter = nodemailer.createTransport('smtps://' + smtpConfig.auth.user + ':' + smtpConfig.auth.pass + '@smtp.gmail.com')
@@ -42,7 +45,7 @@ app.post('/api/comments', function (req, res) {
     // setup e-mail data
   var mailOptions = {
     from: 'BLV Development Member <dev.betterlifevietnam@gmail.com>', // sender address
-    to: ['dev.betterlifevietnam@gmail.com', 'betterlifevietnam@gmail.com'], // list of receivers
+    to: ['dev.betterlifevietnam@gmail.com', 'phamrosalind@gmail.com'], // list of receivers
     subject: 'New Contact from '+ req.body.name, // Subject line
     text: req.body.message, // plaintext body
     html: '<h4> Name: '+req.body.name+'</h4><h4>Email: '+req.body.email+'</h4><h4>Message: "'+ req.body.message +'"</h4>' // html body
