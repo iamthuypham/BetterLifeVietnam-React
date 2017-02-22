@@ -21,7 +21,6 @@ app.use(function (req, res, next) {
   res.setHeader('Cache-Control', 'no-cache')
   next()
 })
-console.log('Username:' + process.env.GMAIL_USERNAME)
 var smtpConfig = {
   host: 'smtp.gmail.com',
   port: 465,
