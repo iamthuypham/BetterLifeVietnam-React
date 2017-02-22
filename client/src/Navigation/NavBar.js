@@ -8,7 +8,7 @@ import FontAwesome from 'react-fontawesome'
 const NavBar = (props) => (
   <div className='container-fluid'>
     <div className='space-top-row'>
-      <div style={{minHeight: '50px', padding: '10px 0 10px 30px'}}><a href='#' ><Image style={{ width: '100%', maxWidth: '370px'}} src={logo} responsive /></a></div>
+      <div style={{minHeight: '50px', padding: '10px 0 10px 30px'}}><Link to='/' ><Image style={{ width: '100%', maxWidth: '370px'}} src={logo} responsive /></Link></div>
       <div style={{minHeight: '50px', padding: '10px 30px 10px 0'}}>
         <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
           <input type='hidden' name='cmd' value='_s-xclick' />
@@ -28,18 +28,18 @@ const NavBar = (props) => (
             <MenuItem eventKey='1.2'><Link to='/our-team'><div>Our Team</div></Link></MenuItem>
           </NavDropdown>
           <NavDropdown eventKey='2' title='What We Do' id='basic-nav-dropdown'>
-            <MenuItem eventKey='2.1'><Link to='/book-library'><div>Book Library</div></Link></MenuItem>
+            <MenuItem eventKey='2.1'><Link to='/book-library'><div>Books Library</div></Link></MenuItem>
             <MenuItem eventKey='2.2'><Link to='/blv-scholarship'><div>BLV Scholarship</div></Link></MenuItem>
           </NavDropdown>
-          <NavDropdown eventKey='3' title='Tours For Books' id='basic-nav-dropdown'>
+          <NavDropdown eventKey='3' title='Tours for Books' id='basic-nav-dropdown'>
             <MenuItem eventKey='3.1'><Link to='/tours-travel-services'><div>Tours & Travel Services</div></Link></MenuItem>
             <MenuItem eventKey='3.2'><Link to='/voluntourism'><div>Voluntourism</div></Link></MenuItem>
             <MenuItem eventKey='3.3'><Link to='/study-tours'><div>Study Tours</div></Link></MenuItem>
           </NavDropdown>
-          <NavItem eventKey='4' title='Our Donors'><Link to='/our-donors'>Our Donors</Link></NavItem>
+          <NavItem eventKey='4' title='Our Donors'><Link to='/our-donors'>Sponsors</Link></NavItem>
           <NavItem eventKey='5' title='Contact'><Link to='/CommentBox'>Contact</Link></NavItem>
           <div className='socialMedia'>
-            <a href='https://www.facebook.com/pg/Better-Life-Vietnam-111667145557377/photos/?tab=album&album_id=1296427037081376'><FontAwesome name='facebook-square' /></a>
+            <a href='https://www.facebook.com/Better-Life-Vietnam-111667145557377/'><FontAwesome name='facebook-square' /></a>
             <a href='https://www.instagram.com/betterlifevietnam/'><FontAwesome name='instagram' /></a>
             <a href='https://twitter.com/BetterLifeVN?lang=en'><FontAwesome name='twitter' /></a>
           </div>

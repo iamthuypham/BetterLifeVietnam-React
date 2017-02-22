@@ -1,0 +1,33 @@
+.footer-container {
+	padding: 2% 2%;
+	width: 100%;
+}
+.footer-col {
+	padding: 10px 10%;
+}
+.footer-col h6 {
+	font-weight: bold;
+}
+.footer-info-col {
+	padding: 0 10px;
+}
+.footer-info-col p {
+	font-size: 0.6em;
+}
+.footer-social-media-col {
+	text-align: center;
+	padding: 15px 20%;
+}
+@media (min-width: 768px) {
+  	.footer-icon-col {
+		padding: 15px 0;
+	}
+}
+@media (min-width: 1024px) {
+	.footer-col h6 {
+			font-size: 1em;
+		}
+		.footer-info-col p {
+			font-size: 0.8em;
+		}
+}

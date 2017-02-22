@@ -57,7 +57,7 @@ class ShowMessage extends React.Component {
           <h2>Thank You</h2>
         </Modal.Header>
         <Modal.Body>
-          <h4><strong>Better Life Vietnam</strong> would like to thank sir <a href='http://www.tobinjames.com'>Tobin James</a> for enable us to start this scholarship program.</h4>
+          <h4><strong>Better Life Vietnam</strong> would like to thank sir <a href='http://www.tobinjames.com' target='_blank'>Tobin James</a> for enable us to start this scholarship program.</h4>
         </Modal.Body>
       </Modal>
       )

@@ -1,24 +1,26 @@
 import React from 'react'
-import Sponsor from '../Highlight/Sponsor'
+import Sponsor1 from '../Highlight/Sponsor1'
+import Footer from './Footer'
 
 const OurDonors = () => (
   <div className='container'>
-    <div>
+    <div className='addMargin'>
       <h4>Thank you to our sponsors for your commitment to bring a brighter future to children of Vietnam. We appreciate your ongoing support.</h4>
-      <h1>Individual Donors</h1>
+      <h1 style={{textAlign:'left'}}>Individual Donors</h1>
       <div>
-        <h4>Tobin James</h4>
-        <h4>Walter family and friends</h4>
-        <h4>Alyssa Kopelman and friends</h4>
-        <h4>Hugh Adam</h4>
-        <h4>Nguyen Cong Nghiem</h4>
-        <h4>Thomas Hart</h4>
-        <h4>Alyssa Murguia and friends</h4>
-        <h4>Mathieu Lamolle</h4>
+        <p>Tobin James</p>
+        <p>Walter family and friends</p>
+        <p>Alyssa Kopelman and friends</p>
+        <p>Hugh Adam</p>
+        <p>Nguyen Cong Nghiem</p>
+        <p>Thomas Hart</p>
+        <p>Alyssa Murguia and friends</p>
+        <p>Mathieu Lamolle</p>
       </div>
-      <h1>Corporate Sponsors</h1>
-      <Sponsor />
+      <h1 style={{textAlign:'left'}}>Corporate Sponsors</h1>
+      <Sponsor1 />
     </div>
+    <Footer />
   </div>
 )
 

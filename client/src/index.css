@@ -97,8 +97,15 @@ hr {
   padding: 0;
 }
 
+.grey-bg {
+    background-color: #F5F3F3;    
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 0 30px;  
+  }
+  .addMargin {
+    margin-top: 35px;
   }
 }

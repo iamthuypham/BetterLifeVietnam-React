@@ -61,7 +61,7 @@ class ShowStudentCard extends React.Component {
         <div>
           <h3>Proposed income generating model</h3>
           <p><span><strong>Title: </strong></span>{this.props.detail.title}</p>
-          <p><strong>Reason for choosing this model</strong></p>
+          <p><strong>Reason for choosing this model:</strong></p>
           <ul>{ reasonList }</ul>
           <p><span><strong>Size Of Business: </strong></span>{this.props.detail.sizeOfBusiness}</p>
           <p><span><strong>Total Estimated Investment: </strong></span>{this.props.detail.totalEstimatedInvestment}</p>

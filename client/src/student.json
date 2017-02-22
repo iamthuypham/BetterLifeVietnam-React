@@ -11,18 +11,18 @@
             },
         "needSponsor": true,
         "sponsor":"",
-        "story":"Her father passed away due to a fatal disease. Ngoc Anh, her mother, and her three siblings live in a small rundown house next to a new home built from borrowed money. A construction debt of about VND 60 million ($ 2700) is a burden on the shoulders of a young mother and children who have just lost a father. In addition to working in the fields and tending to pigs, Huong also works for hire but she still is not able to make enough to support her kids and make monthly payments. Even though Ngoc Anh is young, she already knows how to help her mother with fieldwork and tending to livestock. She always gives 100% effort into her studies and is named an honor student every year.",
+        "story":"Ngoc Anh, her mother, and her three siblings live in a small rundown house next to a new home built from borrowed money. Her father passed away from a fatal disease. A construction debt of about 60 million VND ($2700) is a burden on the shoulders of a young mother and children who have just lost a father. In addition to working in the fields and tending to pigs, Huong, Ngoc Anh's mother, also works for hire but she still is not able to make enough to support her kids and make monthly payments. Although Ngoc Anh is young, she already knows how to help her mother with fieldwork and tend to livestock. She always gives 100% effort into her studies and is named an honor student every year.",
         "detail": {
-            "title": "Pigs farming/keeping for reproduction.",
+            "title": "Pig Farming for Reproduction",
             "reason": [
-                "Huong who is mother of Ngoc Anh already has many years of experience in tending to pigs and their reproduction.",
+                "Huong, Ngoc Anh's mother, already has many years of experience in tending to pigs and their reproduction.",
                 "The occupation does not take too much time and is efficient in bringing in profits."
                 ],
             "sizeOfBusiness": "One top-notch female pig weighing 100kg.",
             "totalEstimatedInvestment": "7,650,000 VND ($350) /5 months.",
-            "profitOffInvestment": "The sixth month",
-            "estimatedIncome": "The pig will birth approximately 7-10 children in its first litter, every year, the mother will give birth to 2-4 litters. The market price of a piglet, at the time being, ranges from 700,000 VND to 900,000 VND ($35-$45) for average pigs and from 1,000,000 VND to 1,200,000 VND ($50-$60) for good pigs. The total profit for one litter ranges from 7,000,000 VND to 10,000,000 VND ($ 350- $460).",
-            "profitSpendingPlan": "To pay for schooling and living costs of family members, pay back a debt of VND 60 million that came from building a house."
+            "profitOffInvestment": "After 6 months",
+            "estimatedIncome": "The pig will birth approximately 7-10 children in its first litter, every year, the mother will give birth to 2-4 litters. The market price of a piglet, at the time being, ranges from 700,000 VND to 900,000 VND ($35-45) for average-sized pigs and from 1,000,000 VND to 1,200,000 VND ($50-60) for larger pigs. The total profit for one litter ranges from 7,000,000 VND to 10,000,000 VND ($350-460).",
+            "profitSpendingPlan": "To pay for schooling and living costs of family members, and pay back a debt of 60 million VND that came from building a house."
         },
         "link1":"",
         "img":"NguyenNgocAnh.jpg",
@@ -35,7 +35,7 @@
         "age":"14",
         "homeTown":"Ben Tre",
         "sponsor":"",
-        "story":"Danh is a 14 year old boy without a father from the time he was born. He has been cared for by his mother and grandmother who have no stable job. Although he also has to work to support the family, he still studies well at school. He wishes to finish his high school and to be able to go to university. He will enter high school next year and will be eligible for a high school scholarship package of $50 per month.",
+        "story":"Since birth, 14-year-old Danh has been cared for by his mother and grandmother, who do not have stable jobs. Although he also has to work to support the family, Danh still studies well at school. He will enter high school next year and will be eligible for a high school scholarship package of $50 per month. He wishes to finish high school and then attend university.",
         "link1":"http://caplayeuthuong.vtv24.vtv.vn/cau-be-mo-coi-cha-me-ngheo-quyet-tam-hoc-gioi/a79.html",
         "img":"DoanHuuDanh.jpeg",
         "id":"2"
@@ -43,48 +43,39 @@
        "name":"Le Thi Thu Ngan",
         "age":"16",
         "homeTown":"Khanh Hoa",
-        "story":"Ngan is one of a family of three children. Her father left the family when she was a child and her mother has suffered from a serious uterine illness. Despite having this serious disease, her mother has been working hard to raise Ngan and her sister and brother. Her mother's job as a dish washer brings the family an income of less than VND2,000,000 per month (less than $90). This puts Ngan, her brother and her sister at risk of having to quit school. We hope to offer Ngan a high scholarship package of $50 per month.",
+        "story":"Ngan is one of three children. Her father left the family when she was a child and her mother has suffered from a serious uterine illness. Despite having this disease, her mother works hard to raise Ngan and her sister and brother. Her mother's job as a dish washer brings the family an income of less than 2,000,000 VND per month (less than $90). This puts Ngan and her siblings at risk of having to quit school. We hope to offer Ngan a highschool scholarship package of $50 per month.",
         "link1":"http://caplayeuthuong.vtv24.vtv.vn/nguoi-me-ngheo-dau-yeu-gang-suc-nuoi-ba-con-an-hoc/a242.html",
         "img":"LeThiThuNgan.jpeg",
         "id":"3"
     },{
-       "name":"Ha",
+       "name":"Nguyen Thu Ha",
         "age":"14",
         "homeTown":"Quang Ngai",
         "sponsor":"Mr. Mathieu Lamolle (Belgium)",
-        "story":"Ha is the eldest sister in a family of three children. She lost her father who was infected with HIV. Her mother is also infected with HIV. The family is dependent on a 40$ allowance per month from the government. Despite this difficult life, Ha is having good grades at school. We are thankful to Mr Mathieu Lamolle for offering her a secondary scholarship package of $35 per month.",
+        "story":"Ha is the eldest sister in a family of three children. She lost her father who was infected with HIV; her mother is also infected with HIV. The family is dependent on a $40 allowance per month from the government. Despite this difficult life, Ha earns good grades at school. We are thankful to Mr. Mathieu Lamolle for offering her a secondary scholarship package of $35 per month.",
         "link1":"http://caplayeuthuong.vtv24.vtv.vn/ba-be-con-hieu-thao-hoc-gioi-cua-nguoi-me-ngheo-co-hiv/a169.html",
         "img":"Ha.jpeg",
         "id":"4"
     },{
-        "name":"Lo Thi Chua",
-        "age":"18",
-        "homeTown":"Ha Giang",
-        "sponsor":"",
-        "story":"Chua is an orphan and has been taken care of by a social center in Ha Giang Province. She has been studying really hard and has passed an exam into university in Tuyen Quang province. She is a big sister standing in the middle in this photo. We hope to offer her a university scholarship of $80 per month.",
-        "link1":"http://caplayeuthuong.vtv24.vtv.vn/tam-guong-vuot-kho-vuon-len-trong-cuoc-song-va-hoc-tap/a52.html",
-        "img":"LoThiChua.jpeg",
-        "id":"5"
-    },{
         "name":"Le Quoc Son",
         "age":"8",
-        "homeTown":"",
-        "story":"Son is one of a family of three children. His father left the family when she was a child and his mother has suffered from a serious uterine illness. Despite this serious disease, his mother has been working hard to raise him and his sisters. His mother's job as a dish washer brings the family an income of less than VND 2,000,000 per month (less than $90). This puts Ngan, her brother and her sister at the risk of having to quit school. We hope to offer Son a high scholarship package of $50 per month.",
+        "homeTown":"Khanh Hoa",
+        "story":"Son is from a family of three children. His father left the family when he was a child and his mother has suffered from a serious uterine illness. Despite this disease, his mother has been working hard to raise him and his sisters. His mother's job as a dish washer brings the family an income of less than 2,000,000 VND per month (less than $90). This puts Son and his siblings at the risk of having to quit school. We hope to offer Son a primary school scholarship package of $50 per month.",
         "link1":"",
         "img":"LeQuocSon.jpeg",
-        "id":"6"
+        "id":"5"
     },{
         "name":"Le Ngoc My",
         "age":"8",
         "homeTown":"Quang Ngai",
-        "story":"My is an eight year old orphan. Her father died in an accident when My was seven months old. When she was three years old, her mother passed away because of liver cancer. She was then cared for by her grandparents who have a difficult life. Her grandmother is 68 years old and has a mental disease. My and her grandparents are dependent on a government allowance of VND800,000 VND per month ($35). We hope to offer My a primary scholarship package of $25 per month for her to be able to have healthy meals and go to school.",
+        "story":"My is an 8-year-old orphan, whose father died in an accident when My was 7 months old and mother passed away due to liver cancer when My was 3 years old. She was then cared for by her grandparents who have a difficult life. Her grandmother is 68 years old and has a mental disease. My and her grandparents are dependent on a government allowance of 800,000 VND per month ($35). We hope to offer My a primary scholarship package of $25 per month for her to be able to have healthy meals and go to school.",
         "link1":"http://caplayeuthuong.vtv24.vtv.vn/thuong-thay-canh-be-my-mo-coi-phai-lam-bao-mau-cho-ba-ngoai/a168.html",
         "img":"LeNgocMy.jpg",
-        "id":"7"
+        "id":"6"
     },{
         "name":"Le Khanh Duong",
-        "age":"",
-        "birthYear":"2003",
+        "age":"14",
+        "birthYear":"",
         "homeTown":"Ha Noi",
         "bio": {
             "dateOfBirth": "17/10/2003",
@@ -94,23 +85,23 @@
             },
         "needSponsor": false,
         "sponsor":"",
-        "story":"Duong and his parents live in a small chamber in their paternal grandmother’s home. His father has been handicapped since childhood and getting through daily life is a struggle. His mother has just gone through a time of extreme hardship. The wellbeing of his family is a heavy burden on the shoulders of an eighth grade student. The four family members depend on one acre of farmland and one cow, that Duong tends to daily, for food. Duong has been an advanced student every academic year.",
+        "story":"Duong and his parents live in a small chamber in their paternal grandmother’s home. His father has been handicapped since Duong's childhood, and getting through daily life is a struggle. His mother has just gone through a time of extreme hardship. The wellbeing of his family is a heavy burden on the shoulders of an eighth grade student. The four family members depend on one acre of farmland and one cow that Duong tends to daily for food. Duong has been an advanced student every academic year.",
         "detail": {
-            "title": "Raising chickens for collecting eggs.",
+            "title": "Raising Chickens For Collecting Eggs.",
             "reason":[
                 "It is fitting for the parents, given their health status.",
                 "Makes fast profits if the chickens are taken care of well.",
                 "There is also the advantage of already having barns for the chickens."
                 ],
             "sizeOfBusiness": "30 chickens, totaling 21 kg.",
-            "totalEstimatedInvestment": "VND 5,555,000 ($250) /4 months.",
+            "totalEstimatedInvestment": "5,555,000 VND ($250) /4 months.",
             "profitOffInvestment": "The fifth month.",
-            "estimatedIncome": "One hen lays approximately 15-20 eggs per month. The market price of eggs is 4,000-5,000 VND per egg, at the time being. The average total profits from 30 hens is about VND 2,300,000 /month ($100).",
+            "estimatedIncome": "One hen lays approximately 15-20 eggs per month. The market price of eggs is 4,000-5,000 VND per egg, at the time being. The average total profits from 30 hens is about 2,300,000 VND ($100) /month .",
             "profitSpendingPlan": "To pay for schooling for their child Le Khanh Duong, to have better daily meals, to get medical services for mom and dad."
         },
         "link1":"",
         "img":"LeKhanhDuong.jpg",
         "img2":"LeKhanhDuongFam.jpg",
-        "id":"8"
+        "id":"7"
     }]
 }
