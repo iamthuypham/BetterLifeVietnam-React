@@ -52,10 +52,12 @@ app.post('/api/comments', function (req, res) {
     var errorToComment = 'Oh no! Something went wrong. Please email us directly at betterlifevietnam@gmail.com'
     if (error) {
       comments.push(errorToComment)
+      transporter.close()
       return console.log('Transporter Error: '+ error)
     } 
-      res.send(comments)
-      console.log('Message sent: ' + info.response)
+    res.send(comments)
+    console.log('Message sent: ' + info.response)
+    transporter.close()
   })
 })
 
