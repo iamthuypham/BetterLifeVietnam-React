@@ -54,6 +54,7 @@ app.post('/api/comments', function (req, res) {
       comments.push(errorToComment)
       return console.log('Transporter Error: '+ error)
     } 
+    transporter.close();
     res.send(comments)
     console.log('Message sent: ' + info.response)
   })
