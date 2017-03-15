@@ -12,6 +12,7 @@ import Voluntourism from './scenes/Voluntourism'
 import StudyTours from './scenes/StudyTours'
 import OurDonors from './scenes/OurDonors'
 import CommentBox from './scenes/CommentBox'
+import Contact from './scenes/Contact'
 
 import './index.css'
 class ClientApp extends React.Component { 
@@ -33,7 +34,7 @@ class ClientApp extends React.Component {
             <Route path='/study-tours' component={StudyTours} />
           </Route>
           <Route path='/our-donors' component={OurDonors} />
-          <Route path='/CommentBox' component={CommentBox} />
+          <Route path='/contact' component={Contact} />
         </Route>
       </Router>
     )
