@@ -12,7 +12,8 @@ import Voluntourism from './scenes/Voluntourism'
 import StudyTours from './scenes/StudyTours'
 import OurDonors from './scenes/OurDonors'
 import CommentBox from './scenes/CommentBox'
-import Contact from './scenes/Contact'
+import BLV_form from './scenes/BLV_form'
+import TFB_form from './scenes/TFB_form'
 
 import './index.css'
 class ClientApp extends React.Component { 
@@ -34,7 +35,10 @@ class ClientApp extends React.Component {
             <Route path='/study-tours' component={StudyTours} />
           </Route>
           <Route path='/our-donors' component={OurDonors} />
-          <Route path='/contact' component={Contact} />
+          <Route path='/contact'>
+            <Route path='/general-inquiry' component={BLV_form} />
+            <Route path='/tours-and-travel-inquiry' component={TFB_form} />
+          </Route>
         </Route>
       </Router>
     )

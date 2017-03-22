@@ -4,7 +4,7 @@ const React = require('react')
   // import './CommentBox.css'
 import Footer from './Footer'
 
-class Contact extends React.Component {
+class TFB_form extends React.Component {
   componentDidMount() {
     (function() {
       var qs, js, q, s, d = document,
@@ -25,9 +25,10 @@ class Contact extends React.Component {
   render() {
   return (
     <div>
-      <div className="typeform-widget" data-url="https://blvdevelopmentteam.typeform.com/to/cbGYo0" style={{width: "100%", height: "500px"}}></div>
+      <p style={{textAlign:"center"}}>Please wait until webpage is fully loaded.</p>
+      <div className="typeform-widget" data-url="https://blvdevelopmentteam.typeform.com/to/iwWkrc" style={{width: "100%", height: "500px"}}></div>
       <Footer />
     </div>
   )}
 }
-module.exports = Contact
+module.exports = TFB_form

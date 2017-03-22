@@ -37,7 +37,10 @@ const NavBar = (props) => (
             <MenuItem eventKey='3.3'><Link to='/study-tours'><div>Study Tours</div></Link></MenuItem>
           </NavDropdown>
           <NavItem eventKey='4' title='Our Donors'><Link to='/our-donors'>Sponsors</Link></NavItem>
-          <NavItem eventKey='5' title='Contact'><Link to='/CommentBox'>Contact</Link></NavItem>
+          <NavDropdown eventKey='5' title='Contact' id='basic-nav-dropdown'>
+            <MenuItem eventKey='5.1'><Link to='/general-inquiry'><div>General Inquiry</div></Link></MenuItem>
+            <MenuItem eventKey='5.2'><Link to='/tours-and-travel-inquiry'><div>Tours & Travel Inquiry</div></Link></MenuItem>
+          </NavDropdown>
           <div className='socialMedia'>
             <a href='https://www.facebook.com/Better-Life-Vietnam-111667145557377/'><FontAwesome name='facebook-square' /></a>
             <a href='https://www.instagram.com/betterlifevietnam/'><FontAwesome name='instagram' /></a>
