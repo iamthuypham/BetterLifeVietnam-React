@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
+import { LinkContainer } from 'react-router-bootstrap';
 import './NavBar.css'
 import logo from '../images/BLV-logo.png'
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Image} from 'react-bootstrap'
@@ -24,23 +25,38 @@ const NavBar = (props) => (
       <Navbar.Collapse>
         <Nav pullRight>
           <NavDropdown eventKey='1' title='About' id='basic-nav-dropdown'>
-            <MenuItem eventKey='1.1'><Link to='/about'><div>Who We Are</div></Link></MenuItem>
-            <MenuItem eventKey='1.2'><Link to='/our-team'><div>Our Team</div></Link></MenuItem>
+            <LinkContainer to='/about'>
+              <MenuItem eventKey='1.1'>Who We Are</MenuItem>
+            </LinkContainer>
+            <LinkContainer to='/our-team'>
+              <MenuItem eventKey='1.2'>Our Team</MenuItem>
+            </LinkContainer>
           </NavDropdown>
           <NavDropdown eventKey='2' title='What We Do' id='basic-nav-dropdown'>
-            <MenuItem eventKey='2.1'><Link to='/book-library'><div>Books Library</div></Link></MenuItem>
-            <MenuItem eventKey='2.2'><Link to='/blv-scholarship'><div>BLV Scholarship</div></Link></MenuItem>
+            <LinkContainer to='/book-library'>
+              <MenuItem eventKey='2.1'>Books Library</MenuItem>
+            </LinkContainer>
+            <LinkContainer to='/blv-scholarship'>
+              <MenuItem eventKey='2.2'>BLV Scholarship</MenuItem>
+            </LinkContainer>
           </NavDropdown>
           <NavDropdown eventKey='3' title='Tours for Books' id='basic-nav-dropdown'>
-            <MenuItem eventKey='3.1'><Link to='/tours-travel-services'><div>Tours & Travel Services</div></Link></MenuItem>
-            <MenuItem eventKey='3.2'><Link to='/voluntourism'><div>Voluntourism</div></Link></MenuItem>
-            <MenuItem eventKey='3.3'><Link to='/study-tours'><div>Study Tours</div></Link></MenuItem>
+            <LinkContainer to='/tours-travel-services'>
+              <MenuItem eventKey='3.1'>Tours & Travel Services</MenuItem>
+            </LinkContainer>
+            <LinkContainer to='/voluntourism'>
+              <MenuItem eventKey='3.2'>Voluntourism</MenuItem>
+            </LinkContainer>
+            <LinkContainer to='/study-tours'>
+              <MenuItem eventKey='3.3'>Study Tours</MenuItem>
+            </LinkContainer>
           </NavDropdown>
-          <NavItem eventKey='4' title='Our Donors'><Link to='/our-donors'>Sponsors</Link></NavItem>
-          <NavDropdown eventKey='5' title='Contact' id='basic-nav-dropdown'>
-            <MenuItem eventKey='5.1'><Link to='/general-inquiry'><div>General Inquiry</div></Link></MenuItem>
-            <MenuItem eventKey='5.2'><Link to='/tours-and-travel-inquiry'><div>Tours & Travel Inquiry</div></Link></MenuItem>
-          </NavDropdown>
+          <LinkContainer to='/our-donors'>
+            <NavItem eventKey='4' title='Our Sponsors'>Sponsors</NavItem>
+          </LinkContainer>
+          <LinkContainer to='/contact'>
+            <MenuItem eventKey='5' title='Contact'>Contact</MenuItem>
+          </LinkContainer>
           <div className='socialMedia'>
             <a href='https://www.facebook.com/Better-Life-Vietnam-111667145557377/'><FontAwesome name='facebook-square' /></a>
             <a href='https://www.instagram.com/betterlifevietnam/'><FontAwesome name='instagram' /></a>
