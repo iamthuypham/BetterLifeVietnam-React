@@ -25,51 +25,9 @@
         "link1":"",
         "img":"NguyenNgocAnh.jpg",
         "img2":"NguyenNgocAnhFam.jpg",
-        "feature": true,
+        "feature": false,
         "id":"1"
         
-    },{
-        "name":"Doan Huu Danh",
-        "age":"14",
-        "homeTown":"Ben Tre",
-        "sponsor":"",
-        "story":"Since birth, 14-year-old Danh has been cared for by his mother and grandmother, who do not have stable jobs. Although he also has to work to support the family, Danh still studies well at school. He will enter high school next year and will be eligible for a high school scholarship package of $50 per month. He wishes to finish high school and then attend university.",
-        "link1":"http://caplayeuthuong.vtv24.vtv.vn/cau-be-mo-coi-cha-me-ngheo-quyet-tam-hoc-gioi/a79.html",
-        "img":"DoanHuuDanh.jpeg",
-        "id":"2"
-    },{
-       "name":"Le Thi Thu Ngan",
-        "age":"16",
-        "homeTown":"Khanh Hoa",
-        "story":"Ngan is one of three children. Her father left the family when she was a child and her mother has suffered from a serious uterine illness. Despite having this disease, her mother works hard to raise Ngan and her sister and brother. Her mother's job as a dish washer brings the family an income of less than 2,000,000 VND per month (less than $90). This puts Ngan and her siblings at risk of having to quit school. We hope to offer Ngan a highschool scholarship package of $50 per month.",
-        "link1":"http://caplayeuthuong.vtv24.vtv.vn/nguoi-me-ngheo-dau-yeu-gang-suc-nuoi-ba-con-an-hoc/a242.html",
-        "img":"LeThiThuNgan.jpeg",
-        "id":"3"
-    },{
-       "name":"Nguyen Thu Ha",
-        "age":"14",
-        "homeTown":"Quang Ngai",
-        "sponsor":"Mr. Mathieu Lamolle (Belgium)",
-        "story":"Ha is the eldest sister in a family of three children. She lost her father who was infected with HIV; her mother is also infected with HIV. The family is dependent on a $40 allowance per month from the government. Despite this difficult life, Ha earns good grades at school. We are thankful to Mr. Mathieu Lamolle for offering her a secondary scholarship package of $35 per month.",
-        "link1":"http://caplayeuthuong.vtv24.vtv.vn/ba-be-con-hieu-thao-hoc-gioi-cua-nguoi-me-ngheo-co-hiv/a169.html",
-        "img":"Ha.jpeg",
-        "id":"4"
-    },{
-        "name":"Le Quoc Son",
-        "age":"8",
-        "homeTown":"Khanh Hoa",
-        "story":"Son is from a family of three children. His father left the family when he was a child and his mother has suffered from a serious uterine illness. Despite this disease, his mother has been working hard to raise him and his sisters. His mother's job as a dish washer brings the family an income of less than 2,000,000 VND per month (less than $90). This puts Son and his siblings at the risk of having to quit school. We hope to offer Son a primary school scholarship package of $50 per month.",
-        "link1":"",
-        "img":"LeQuocSon.jpeg",
-        "id":"5"
-    },{
-        "name":"Le Ngoc My",
-        "age":"8",
-        "homeTown":"Quang Ngai",
-        "story":"My is an 8-year-old orphan, whose father died in an accident when My was 7 months old and mother passed away due to liver cancer when My was 3 years old. She was then cared for by her grandparents who have a difficult life. Her grandmother is 68 years old and has a mental disease. My and her grandparents are dependent on a government allowance of 800,000 VND per month ($35). We hope to offer My a primary scholarship package of $25 per month for her to be able to have healthy meals and go to school.",
-        "link1":"http://caplayeuthuong.vtv24.vtv.vn/thuong-thay-canh-be-my-mo-coi-phai-lam-bao-mau-cho-ba-ngoai/a168.html",
-        "img":"LeNgocMy.jpg",
-        "id":"6"
     },{
         "name":"Le Khanh Duong",
         "age":"14",
@@ -98,6 +56,124 @@
         "link1":"",
         "img":"LeKhanhDuong.jpg",
         "img2":"LeKhanhDuongFam.jpg",
-        "id":"7"
+        "feature": false,
+        "id":"2"
+    },{
+        "name":"Khuat Thi Tham",
+        "age":"13",
+        "birthYear":"",
+        "homeTown":"Ha Noi",
+        "bio": {
+            "dateOfBirth": "06/10/2004",
+            "school": "7A Cam Yen Middle School",
+            "address": "Cam Yen - Thach That - Ha Noi",
+            "phone": "Grandfather: Khuat Van Dat"
+            },
+        "needSponsor": false,
+        "sponsor":"",
+        "story":"Since both parents passed away due to illness, the sisters have been cared for by their grandparents. The low-income family lives in an agricultural village. Their youngest son (the sisters’ uncle) also passed away and left behind three young children. The grandparents have suffered the pain of losing three children while working hard to raise five grandchildren. Thắm and Tươi both study well at school.",
+        "detail": {
+            "title": "Raising Chickens For Collecting Eggs.",
+            "reason":[
+                "The family members can take part in this project.",
+                "It takes a short time to produce eggs, which will be collected and sold daily to generate income."
+                ],
+            "sizeOfBusiness": "30 chickens (produces 600 organic eggs per month).",
+            "profitOffInvestment": "",
+            "profitSpendingPlan": "1) Invest in the model (buy new chickens) 2) Pay for education expenses."
+        },
+        "link1":"",
+        "img":"LeKhanhDuong.jpg",
+        "img2":"LeKhanhDuongFam.jpg",
+        "feature": false,
+        "id":"3"
+    },{
+        "name":"Khuat Thi Tuoi",
+        "age":"15",
+        "birthYear":"",
+        "homeTown":"Ha Noi",
+        "bio": {
+            "dateOfBirth": "05/08/2002",
+            "school": "9A Cam Yen Middle School",
+            "address": "Cam Yen - Thach That - Ha Noi",
+            "phone": "Grandfather: Khuat Van Dat"
+            },
+        "needSponsor": false,
+        "sponsor":"",
+        "story":"Since both parents passed away due to illness, the sisters have been cared for by their grandparents. The low-income family lives in an agricultural village. Their youngest son (the sisters’ uncle) also passed away and left behind three young children. The grandparents have suffered the pain of losing three children while working hard to raise five grandchildren. Thắm and Tươi both study well at school.",
+        "detail": {
+            "title": "Raising Chickens For Collecting Eggs.",
+            "reason":[
+                "The family members can take part in this project.",
+                "It takes a short time to produce eggs, which will be collected and sold daily to generate income."
+                ],
+            "sizeOfBusiness": "30 chickens (produces 600 organic eggs per month).",
+            "profitOffInvestment": "The fifth month.",
+            "profitSpendingPlan": "1) Invest in the model (buy new chickens) 2) Pay for education expenses."
+        },
+        "link1":"",
+        "img":"LeKhanhDuong.jpg",
+        "img2":"LeKhanhDuongFam.jpg",
+        "feature": false,
+        "id":"4"
+    },{
+        "name":"Nguyen Thi Phuong Thu",
+        "age":"16",
+        "birthYear":"",
+        "homeTown":"Ha Noi",
+        "bio": {
+            "dateOfBirth": "10/07/2001",
+            "school": "10 A13 Phuc Tho high school",
+            "address": "Trach Loi - Trach My Loc -  Phuc Tho - Ha Noi",
+            "phone": "Grandfather: Nguyen Khac Hung"
+            },
+        "needSponsor": true,
+        "sponsor":"",
+        "story":"After her parents divorced, Phương Thư lived by herself. She is currently being taken care of by her grandparents. Her grandfather has lung cancer, and her grandmother works hard on the family farm. Additionally, her grandmother borrows money from relatives to raise Phương Thư and take care of the grandfather. Phương Thư attends school in the morning and works on the farm with her grandma in the afternoon. Despite her long and tiring schedule, Phương Thư always studies hard and earns excellent grades each year.",
+        "detail": {
+            "title": "Raising Chickens For Collecting Eggs.",
+            "reason":[
+                "Family members can take part in this model.",
+                "The grandfather has experience in raising chickens.",
+                "The model generates profits quickly with high economic efficiency."
+                ],
+            "sizeOfBusiness": "100 chickens (1,020 eggs per month).",
+            "profitOffInvestment": "",
+            "profitSpendingPlan": "1) Invest in this model (buying new chickens). 2) Pay for education fees of VND 4.400.000/year and other education related expenses. 3) Pay for medical expenses for the grandfather."
+        },
+        "link1":"",
+        "img":"Nguyen_Thi_Phuong_Thu.png",
+        "img2":"Nguyen_Thi_Phuong_Thu_Fam.png",
+        "feature": true,
+        "id":"5"
+    },{
+        "name":"Nguyen Thi Hong Hoa",
+        "age":"9",
+        "birthYear":"",
+        "homeTown":"Ha Noi",
+        "bio": {
+            "dateOfBirth": "08/05/2007",
+            "school": "4C Trach My Loc Primary School",
+            "address": "Trach My Loc - Phuc Tho - Ha Noi",
+            "phone": "Aunt: Nguyen Thi Vui"
+            },
+        "needSponsor": true,
+        "sponsor":"",
+        "story":"Hoa's mother passed away during childbirth. Her father works in other provinces and comes home for only 2-3 days a year before leaving again.  Hoa and her brother, Nguyễn Khắc Long, are now being cared for by their disabled aunt. Although their aunt has limited mobility, she has to travel 15 km to earn income as a dish washer. Although Hoa's brother passed an entrance exam to a university in Hanoi, but he could not afford the high cost of  living and studying in the large city. Instead, he chose to study at a university in Thai Nguyen province, which is closer to home. Hoa is physically smaller (due to lack of nutrition) than her friends but she has a strong will to live and study. She wishes to become a doctor in the future.",
+        "detail": {
+            "title": "Raising chickens for meat and eggs.",
+            "reason":[
+                "Ms. Vui has experience raising chicken.",
+                "This will generate income quickly for the family."
+                ],
+            "sizeOfBusiness": "100 chickens (1,020 eggs per month)",
+            "profitOffInvestment": "",
+            "profitSpendingPlan": "1) Invest in the model (buying new chickens) 2) Pay for living expenses of the family and education expenses for the children."
+        },
+        "link1":"",
+        "img":"LeKhanhDuong.jpg",
+        "img2":"LeKhanhDuongFam.jpg",
+        "feature": false,
+        "id":"6"
     }]
 }
