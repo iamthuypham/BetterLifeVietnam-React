@@ -57,7 +57,7 @@
         "id":"8"
     },{
         "name":"Bethany Tietjen",
-        "position":"Volunteer",
+        "position":"Project Officer",
         "info1":"",
         "info2":"Originally from New York, Bethany lived overseas for most of her childhood and developed a love of travel and philanthropy from a young age. She received her Bachelor of Arts in International Relations and German Studies from American University in Washington, DC, and has experience working in nonprofits and government agencies both in the U.S. and abroad. Her main passion lies in finding sustainable, lasting solutions to the world's biggest development issues. She is currently working as an English teacher in Hanoi on top of her work with Better Life Vietnam.",
         "img":"BethanyTietjen.jpg",
@@ -70,32 +70,39 @@
         "img":"Maggie.png",
         "id":"10"
     },{
+        "name":"Akash Panda",
+        "position":"Business Manager",
+        "info1":"",
+        "info2":"Akash is from Bangalore, India. He has a business degree in Marketing and currently working as a Business manager for a leading Telecom Company. He believes that education is the basic right of every human being irrespective of their age and it is the answer to address all the fundamental issues in the society. This along with his passion to explore new culture encouraged him to join BLV to develop a social enterprise and to make us self-sustainable. He takes care of all the business and strategy related matter of BLV and Tour for Books.",
+        "img":"AkashPanda.jpg",
+        "id":"11"
+    },{
         "name":"Ronit Zvi",
         "position":"UX/UI Designer",
         "info1":"“Visual artist turned UX designer, my love resides in creating visually stimulating, detail oriented designs. As an experience designer, I have learned to go beyond visual aesthetics and appeal to living, breathing people, bringing products to life in a purposeful way.”",
         "info2":"A native New Yorker, Ronit studied visual arts at SUNY Purchase. Her interest in human behavior and technology inspired her to continue her education in the field of User Experience Design. She is passionate about creating efficient and fulfilling experiences for users. When coming across Better Life Vietnam she was inspired to use her UX skills to build a better experience for the BLV users, and help the BLV team work toward creating positive change.",
         "img":"RonitZvi.jpg",
-        "id":"11"
+        "id":"12"
     },{
         "name":"Nancy Pham",
         "position":"Editor/Graphic Designer",
         "info1":"",
         "info2":"With a passion for travel and youth education, Nancy is excited to work with Better Life Vietnam as an editor and graphic designer. Nancy earned her B.A. in Journalism from the University of Maryland. She currently works at a major news publication in Washington, D.C. and volunteers as a mentor for underserved Asian Pacific American youth in Maryland. ",
         "img":"NancyPham.jpg",
-        "id":"12"
+        "id":"13"
     },{
         "name":"Roman Sheydvasser",
         "position":"IT Specialist",
         "info1":"",
         "info2":"Roman Sheydvasser hails from Siberia, Russia. He immigrated to the U.S. as a child, and grew up with his hands constantly on computers and computer devices. He now lives in California where he is working as a programmer on multiple startup projects. Roman believes education and international cooperation are key to the world’s future. He wants children and adults in Vietnam to have the same chance to succeed as he did. At BLV he uses his technology skills to communicate our mission to the world via social media, and to assist the volunteers with any IT challenges.",
         "img":"RomanSheydvasser.jpg",
-        "id":"13"
+        "id":"14"
     },{
         "name":"Thuy Pham (Rosa)",
         "position":"Web Developer",
         "info1":"",
         "info2":"A passionate, productive, software developer with a specialization in web development.  A quick learner, problem solver, with a mission focus mindset.  With 1.5 years experience in HTML, CSS, and JavaScript and exposure to AngularJS, React, and Ruby on Rails, Rosa is quick to pick up new technologies and apply them to the latest stack of software development foundations.  She has a working knowledge and understanding of a variety of web technologies, and brings her skills to deliver high quality thoughtful web experiences.  Rosa is passionate about supporting the next generation of youth with education and technology to improve the quality of life through youth outreach and non-profit programs.",
         "img":"RosaPham.jpg",
-        "id":"14"
+        "id":"15"
     }]
 }
