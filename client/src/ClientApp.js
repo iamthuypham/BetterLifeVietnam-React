@@ -12,6 +12,7 @@ import Voluntourism from './scenes/Voluntourism'
 import StudyTours from './scenes/StudyTours'
 import OurDonors from './scenes/OurDonors'
 import Contact from './scenes/Contact'
+import Donate from './scenes/Donate'
 
 import './index.css'
 class ClientApp extends React.Component { 
@@ -33,9 +34,9 @@ class ClientApp extends React.Component {
             <Route path='/study-tours' component={StudyTours} />
           </Route>
           <Route path='/our-donors' component={OurDonors} />
-          <Route>
-            <Route path='/contact' component={Contact} />
-          </Route>
+          <Route path='/contact' component={Contact} />
+          <Route path='/donate' component={Donate} />
+          
         </Route>
       </Router>
     )
