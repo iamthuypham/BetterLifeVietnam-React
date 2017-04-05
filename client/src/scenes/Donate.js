@@ -8,7 +8,7 @@ var hostedFields = require('braintree-web/hosted-fields');
 import Footer from './Footer'
 
 const newForm = (
-  <form id="checkout-form" method="POST" action="/submitted" target="_blank">
+  <form id="checkout-form" method="POST" action="/submitted" target="message">
       <div id="error-message"></div>
     
       <label htmlFor="card-number">Card Number</label>
@@ -112,40 +112,37 @@ class CommentBox extends React.Component {
     }.bind(this))
   }
   
-  loadResultAfterSubmission() {
-    $.ajax({
-      url: '/submitted',
-      // dataType: 'json',
-      cache: false,
-      success: function(data) {
-        console.log(data)
-        this.setState({message: data, stage: 'success'})
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(status, err.toString());
-      }.bind(this)
-    });
+  // loadResultAfterSubmission() {
+  //   $.ajax({
+  //     url: '/submitted',
+  //     // dataType: 'json',
+  //     cache: false,
+  //     success: function(data) {
+  //       console.log(data)
+  //       this.setState({message: data, stage: 'success'})
+  //     }.bind(this),
+  //     error: function(xhr, status, err) {
+  //       console.error(status, err.toString());
+  //     }.bind(this)
+  //   });
 
-  }
+  // }
   componentDidMount() {
+    this.ifr.onload = () => {
+      document.getElementById("targetAlert").innerHTML = this.ifr.contentWindow.document.getElementsByTagName("body")[0].innerHTML;
+    }
   }
   render() {
     if(!this.state.stage){
       this.generateToken()
     } else if (this.state.stage === 'authorized' && this.state.token) {
       this.loadForm();
-    } else if (this.state.stage === 'submitted') {
-      this.loadResultAfterSubmission();
-    }
+    } 
     return (
       <div>
-        { (this.state.stage === 'success' && this.state.message) ? (
-          <Alert bsStyle="warning">
-            <strong>{this.state.message}</strong>
-          </Alert>
-        ) : ""
-        }
         { newForm }
+        <Alert id="targetAlert"></Alert>
+        <iframe name="message" id="alertMessage" hidden="true" ref={(f) => this.ifr = f}></iframe>
         <Footer />
       </div>
     );
@@ -153,3 +150,6 @@ class CommentBox extends React.Component {
 }
 
 module.exports = CommentBox
+
+//using ref attribute to access iframe
+//then using componentDidMount to manipulate component

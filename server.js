@@ -43,7 +43,6 @@ app.post("/submitted", function (req, res) {
           var resultErrors = result.errors.deepErrors();
           res.send(resultErrors);
         } else {
-          console.log("ID is: " + result.transaction.id)
           res.send("Your donation has been submitted.");
         }
       } 
@@ -52,32 +51,6 @@ app.post("/submitted", function (req, res) {
       }
     }
   )
-})
-
-app.get("/submitted", function (req, res) {
-  gateway.transaction.sale({
-    amount: "10.00",
-    paymentMethodNonce: req,
-    options: {
-      submitForSettlement: true
-    }
-  }, function (err, result) {
-    if (result) {
-      if (!result.success){
-        var resultErrors = result.errors.deepErrors();
-        var errorList = []
-        resultErrors.map(function(e){
-          errorList.push(e.message)
-        })
-        res.send(errorList);
-      } else {
-        res.send(result.message);
-      }
-    }  
-    else {
-      res.send("Server Error: " + err + ". Please contact Development team.")
-    }
-  })
 })
 
 app.listen(app.get('port'), () => {
