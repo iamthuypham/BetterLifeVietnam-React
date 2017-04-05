@@ -1,6 +1,9 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
+var bodyParser = require('body-parser');
+var braintree = require("braintree");
+const util = require('util')
 
 app.set('port', (3001));
 // Express only serves static assets in production
@@ -9,54 +12,45 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 }
 
-var nodemailer = require('nodemailer')
-var bodyParser = require('body-parser')
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({ extended: true })); 
 
-// Sending Email when user request /contactUs
-console.log('Execute Nodemailer')
-app.use(function (req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Cache-Control', 'no-cache')
-  next()
-})
-var smtpConfig = {
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true, // use SSL
-  auth: {
-    user: process.env.GMAIL_USERNAME,
-    pass: process.env.GMAIL_PW
-  }
-}
-var transporter = nodemailer.createTransport('smtps://' + smtpConfig.auth.user + ':' + smtpConfig.auth.pass + '@smtp.gmail.com')
-
-var comments = [];
-
-app.get('/api/comments', function(req, res) {
-  res.send(comments);
+//Braintree API
+var gateway = braintree.connect({
+  environment:  braintree.Environment.Sandbox,
+  merchantId:   '54ryc7z45wdwpqmh',
+  publicKey:    't7kmx3j7wthxhr2m',
+  privateKey:   'b3aa5ca6ca58fad5cc3cdaca9b3d795a'
 });
-app.post('/api/comments', function (req, res) {
-    // setup e-mail data
-  var mailOptions = {
-    from: 'BLV Development Member <dev.betterlifevietnam@gmail.com>', // sender address
-    to: ['dev.betterlifevietnam@gmail.com', 'phamrosalind@gmail.com'], // list of receivers
-    subject: 'New Contact from '+ req.body.name, // Subject line
-    text: req.body.message, // plaintext body
-    html: '<h4> Name: '+req.body.name+'</h4><h4>Email: '+req.body.email+'</h4><h4>Message: "'+ req.body.message +'"</h4>' // html body
   
-}
-    // send mail with defined transport object
-  transporter.sendMail(mailOptions, function (error, info) {
-    var errorToComment = 'Oh no! Something went wrong. Please email us directly at betterlifevietnam@gmail.com'
-    if (error) {
-      comments.push(errorToComment)
-      return console.log('Transporter Error: '+ error)
+app.get("/donate", function (req, res) {
+  var clientToken = '';
+  gateway.clientToken.generate({}, function (err, response) {
+    clientToken = response.clientToken
+    res.send(clientToken);
+  });
+});
+
+app.post("/submitted", function (req, res) {
+  gateway.transaction.sale({
+    amount: "10.00",
+    paymentMethodNonce: req.body.payment_method_nonce,
+    options: {
+      submitForSettlement: true
     }
-    console.log('Message sent: ' + info.response)
-    res.send(comments)
-  })
+  }, function (err, result) {
+      if (result) {
+        if (!result.success){
+          var resultErrors = result.errors.deepErrors();
+          res.send(resultErrors);
+        } else {
+          res.send("Your donation has been submitted.");
+        }
+      } 
+      else {
+        res.send("Server Error: " + err + ". Please contact Development team.")
+      }
+    }
+  )
 })
 
 app.listen(app.get('port'), () => {

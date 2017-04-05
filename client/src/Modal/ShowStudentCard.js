@@ -33,6 +33,7 @@ class ShowStudentCard extends React.Component {
     let famImg
     let needSponsor
     let needSponsorButton2
+    let needSponsorInvestmentDetail
     let otherStudentLink
 
     if (this.props.age) {
@@ -51,32 +52,6 @@ class ShowStudentCard extends React.Component {
     if (this.props.sponsor) {
       sponsorText = (<p>Sponsored by {this.props.sponsor}</p>)
     }
-
-    if (this.props.detail) {
-      var reasonList = []
-      for (var i = 0; i < this.props.detail.reason.length; i++) {
-        reasonList.push(<li>{ this.props.detail.reason[i] }</li>)
-      }
-      detailText = (
-        <div>
-          <h3>Proposed income generating model</h3>
-          <p><span><strong>Title: </strong></span>{this.props.detail.title}</p>
-          <p><strong>Reason for choosing this model:</strong></p>
-          <ul>{ reasonList }</ul>
-          <p><span><strong>Size Of Business: </strong></span>{this.props.detail.sizeOfBusiness}</p>
-          <p><span><strong>Total Estimated Investment: </strong></span>{this.props.detail.totalEstimatedInvestment}</p>
-          <p><span><strong>Profit Off Investment: </strong></span>{this.props.detail.profitOffInvestment}</p>
-          <p><span><strong>Estimated Income: </strong></span>{this.props.detail.estimatedIncome}</p>
-          <p><span><strong>Profit Spending Plan: </strong></span>{this.props.detail.profitSpendingPlan}</p>
-        </div>
-        )
-    }
-    if (this.props.img2) {
-      famImg = (<div className='center-top-col'><Image style={{maxWidth: '100%', maxHeight: '100%'}} src={process.env.PUBLIC_URL + '/images/studentsImg/' + this.props.img2} /></div>)
-    }
-    if (this.props.link1) {
-      readMoreLink = (<a href={this.props.link1}>Read More</a>)
-    }
     if (this.props.needSponsor) {
       needSponsor = (<div className='needSponsorButton'><a>Sponsor Me</a></div>)
       needSponsorButton2 = (
@@ -90,6 +65,41 @@ class ShowStudentCard extends React.Component {
         </Button>
         )
     }
+    if (this.props.detail) {
+      var reasonList = []
+      for (var i = 0; i < this.props.detail.reason.length; i++) {
+        reasonList.push(<li>{ this.props.detail.reason[i] }</li>)
+      }
+      if (this.props.needSponsor) {
+        needSponsorInvestmentDetail = (
+          <div>
+            <p><span><strong>Total Estimated Investment: </strong></span>{this.props.detail.totalEstimatedInvestment}</p>
+            <p><span><strong>Estimated Income: </strong></span>{this.props.detail.estimatedIncome}</p>
+          </div>
+        )
+      } else {
+        needSponsorInvestmentDetail = (<div></div>)
+      }
+      detailText = (
+        <div>
+          <h3>Proposed income generating model</h3>
+          <p><span><strong>Title: </strong></span>{this.props.detail.title}</p>
+          <p><strong>Reason for choosing this model:</strong></p>
+          <ul>{ reasonList }</ul>
+          <p><span><strong>Size Of Business: </strong></span>{this.props.detail.sizeOfBusiness}</p>
+          <p><span><strong>Profit Off Investment: </strong></span>{this.props.detail.profitOffInvestment}</p>
+          {needSponsorInvestmentDetail}
+          <p><span><strong>Profit Spending Plan: </strong></span>{this.props.detail.profitSpendingPlan}</p>
+        </div>
+        )
+    }
+    if (this.props.img2) {
+      famImg = (<div className='center-top-col'><Image style={{maxWidth: '100%', maxHeight: '100%'}} src={process.env.PUBLIC_URL + '/images/studentsImg/' + this.props.img2} /></div>)
+    }
+    if (this.props.link1) {
+      readMoreLink = (<a href={this.props.link1}>Read More</a>)
+    }
+    
     if (this.props.featureCardShow) {
       otherStudentLink = (<Link href='#allStudent'>See Other Students...</Link>)
     }

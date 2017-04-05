@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
 import NavBar from './Navigation/NavBar'
 import Landing from './scenes/Landing'
@@ -11,13 +11,14 @@ import ToursTravelServices from './scenes/ToursTravelServices'
 import Voluntourism from './scenes/Voluntourism'
 import StudyTours from './scenes/StudyTours'
 import OurDonors from './scenes/OurDonors'
-import CommentBox from './scenes/CommentBox'
+import Contact from './scenes/Contact'
+import Donate from './scenes/Donate'
 
 import './index.css'
 class ClientApp extends React.Component { 
   render () {
     return (
-      <Router history={browserHistory}>
+      <Router history={hashHistory}>
         <Route path='/' component={NavBar}>
           <IndexRoute component={Landing} />
           <Route path='/about' component={About} />
@@ -27,13 +28,15 @@ class ClientApp extends React.Component {
             <Route path='/blv-scholarship' component={BLVScholarship} />
             <Route path='/allStudent' component={BLVScholarship} />
           </Route>
-          <Route path='/tours-for-books'>
+          <Route>
             <Route path='/tours-travel-services' component={ToursTravelServices} />
             <Route path='/voluntourism' component={Voluntourism} />
             <Route path='/study-tours' component={StudyTours} />
           </Route>
           <Route path='/our-donors' component={OurDonors} />
-          <Route path='/CommentBox' component={CommentBox} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/donate' component={Donate} />
+          
         </Route>
       </Router>
     )
