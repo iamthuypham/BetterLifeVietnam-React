@@ -1,8 +1,35 @@
-iframe #document html body {
-	font-family: Helvetica Neue;
-	font-weight: bold;
+label {
 	color: #777;
 }
+
+#card-number, #cvv, #expiration-date, #custom-donate {
+  border: 1px solid #d6d6d6;
+  -webkit-transition: border-color 160ms;
+  transition: border-color 160ms;
+  border-radius: 5px;
+}
+
+.hosted-field{
+	height:50px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#submitButton {
+	margin-top: 10px;
+	width: 100%;
+	max-width: 200px;
+	float: right;
+	background-color: #EFD314;
+	color: black;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px black;
+	border:none;
+	padding: 10px 10px;
+}
 @media (min-width: 768px) {
+	#checkout-form, .alert{
+		margin: 0 27%;
+	}
 }
 
