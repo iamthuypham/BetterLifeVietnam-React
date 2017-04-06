@@ -6,9 +6,10 @@ var client = require('braintree-web/client');
 var hostedFields = require('braintree-web/hosted-fields');
 
 import Footer from './Footer'
+import '../scenes/Donate.css'
 
 const newForm = (
-  <form id="checkout-form" method="POST" action="/submitted" target="message">
+  <form id="checkout-form" method="POST" action="/submitted" target="message" >
       <div id="error-message"></div>
     
       <label htmlFor="card-number">Card Number</label>
@@ -19,9 +20,22 @@ const newForm = (
     
       <label htmlFor="expiration-date">Expiration Date</label>
       <div className="hosted-field" id="expiration-date"></div>
+      
+      <label htmlFor="donate-option">Donate Amount</label>
+      <div className="donateOption">
+        <input placeholder="$20"/>
+        <input placeholder="$30"/>
+        <input placeholder="$50"/>
+      </div>
+      
+      <label htmlFor="custome-donate">Custom Donation</label>
+      <div className="donateOption custom">
+        <input className="custom-field" value="$"/>
+        <input className="custom-field" id="custom-donate" placeholder="100" />
+      </div>
     
       <input type="hidden" name="payment_method_nonce" />
-      <input type="submit" value="Pay $10" disabled />
+      <input id="submitButton" type="submit" value="Submit" disabled />
     </form>
   )
 
@@ -62,14 +76,20 @@ class CommentBox extends React.Component {
         client: clientInstance,
         styles: {
           'input': {
-            'font-size': '14pt'
+            'font-size': '14pt',
+            'font-family': 'arial',
+            'height': '100px',
           },
           'input.invalid': {
-            'color': 'red'
+            'color': '#ff0000'
           },
           'input.valid': {
-            'color': 'green'
-          }
+            'color': '#00ba5d'
+          },
+          ':focus': {
+            'color': '#777'
+          },
+          
         },
         fields: {
           number: {
@@ -111,22 +131,6 @@ class CommentBox extends React.Component {
       }.bind(this))
     }.bind(this))
   }
-  
-  // loadResultAfterSubmission() {
-  //   $.ajax({
-  //     url: '/submitted',
-  //     // dataType: 'json',
-  //     cache: false,
-  //     success: function(data) {
-  //       console.log(data)
-  //       this.setState({message: data, stage: 'success'})
-  //     }.bind(this),
-  //     error: function(xhr, status, err) {
-  //       console.error(status, err.toString());
-  //     }.bind(this)
-  //   });
-
-  // }
   componentDidMount() {
     this.ifr.onload = () => {
       document.getElementById("targetAlert").innerHTML = this.ifr.contentWindow.document.getElementsByTagName("body")[0].innerHTML;
@@ -139,9 +143,10 @@ class CommentBox extends React.Component {
       this.loadForm();
     } 
     return (
-      <div>
-        { newForm }
+      <div className="container">
+        <h3>Enter your payment detail</h3>
         <Alert id="targetAlert"></Alert>
+        { newForm }
         <iframe name="message" id="alertMessage" hidden="true" ref={(f) => this.ifr = f}></iframe>
         <Footer />
       </div>
