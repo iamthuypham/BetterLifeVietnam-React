@@ -9,12 +9,49 @@ label {
   border-radius: 5px;
 }
 
-.hosted-field{
+.hosted-field, .custom-field{
 	height:50px;
+	width: 100%;
 	padding: 10px;
 	margin-bottom: 10px;
 }
 
+.donateOption {
+	margin-bottom: 10px;
+}
+.donateOption input {
+	width: 33.3333%;
+	/*border-radius: 5px;*/
+	background-color: white;
+	box-shadow: none;
+	border: solid 1px #d6d6d6;
+	padding: 10px;
+	text-align: center;
+}
+
+.donateOption input:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.donateOption input:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.custom input:first-child {
+	width: 15%;
+	text-align: center;
+	background-color: #d6d6d6;
+}
+.custom input:last-child {
+	width: 85%;
+	text-align: left;
+}
+#custom-donate {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-left: none;
+}
 #submitButton {
 	margin-top: 10px;
 	width: 100%;

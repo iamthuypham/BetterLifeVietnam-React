@@ -21,14 +21,18 @@ const newForm = (
       <label htmlFor="expiration-date">Expiration Date</label>
       <div className="hosted-field" id="expiration-date"></div>
       
-      <div id="donateOption">
-        <input type="submit" value="$20" />
-        <input type="submit" value="$30" />
-        <input type="submit" value="$50" />
+      <label htmlFor="donate-option">Donate Amount</label>
+      <div className="donateOption">
+        <input placeholder="$20"/>
+        <input placeholder="$30"/>
+        <input placeholder="$50"/>
       </div>
       
       <label htmlFor="custome-donate">Custom Donation</label>
-      <div className="hosted-field" id="custom-donate"></div>
+      <div className="donateOption custom">
+        <input className="custom-field" value="$"/>
+        <input className="custom-field" id="custom-donate" placeholder="100" />
+      </div>
     
       <input type="hidden" name="payment_method_nonce" />
       <input id="submitButton" type="submit" value="Submit" disabled />
@@ -99,10 +103,6 @@ class CommentBox extends React.Component {
           expirationDate: {
             selector: '#expiration-date',
             placeholder: '10/2019'
-          },
-          customDonate: {
-            selector: '#custom-donate',
-            placeholder: '$___'
           }
         }
       }, function (hostedFieldsErr, hostedFieldsInstance) {
