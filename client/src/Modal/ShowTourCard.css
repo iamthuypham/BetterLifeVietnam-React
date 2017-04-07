@@ -1,0 +1,58 @@
+.tourCard {
+  box-shadow: 0 1px 4px;
+}
+
+.thumbnail {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0;
+  /*min-height: 350px;*/
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+}
+.special {
+  position: relative;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.caption h3, .special h3{
+  margin: 0;
+  display: inline;
+}
+.special h3 {
+  border-left: 1px solid #777;
+  padding: 20px 0 10px;
+}
+.tourInfo {
+  padding: 10px;
+  border: 1px solid #777;
+  border-top: none;
+  margin-bottom: 20px;
+}
+.tourInfo p {
+  margin: 0;
+}
+.specialThumbnail {
+  background: url('../images/CompTour.jpg') no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  min-height: 190px;
+}
+
+@media (min-width: 768px) {
+  .tourInfo {
+    min-height: 190px;
+  }
+  .special, .specialThumbnail {
+    min-height: 400px;
+  }
+  .special .tourInfo {
+    min-height: 350px;
+  }
+}

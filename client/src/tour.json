@@ -40,14 +40,7 @@
         ],
         "img": "CompTour.jpg",
         "brochure": "CompBrochure.pdf",
+        "special": true,
         "id": "1"
-    }, {
-        "name": "Custom Vietnam Tours",
-        "detail1": "Thank you for trusting Tours for Books and giving us a chance to be your companion on your trip to Southeast Asia. In addition to specific day tours and packages, we offer customized tours based on your interests and needs. We are delighted to abide by your wishes and make it come true.",
-        "detail2": "Please email toursforbooks@betterlifevietnam.org, and our tour consultants will reply back with advice and sample itineraries.",
-        "attractions": "",
-        "img": "CustomTour.png",
-        "brochure": "",
-        "id": "5"
     }]
 }
