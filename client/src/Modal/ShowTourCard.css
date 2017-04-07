@@ -2,7 +2,7 @@
   box-shadow: 0 1px 4px;
 }
 
-.thumbnail {
+.tourCard .thumbnail {
   padding: 0;
   border: none;
   border-radius: 0;
@@ -12,30 +12,30 @@
   /*min-height: 350px;*/
 }
 
-.caption {
+.tourCard .caption {
   position: absolute;
   bottom: 0;
 }
 .special {
   position: relative;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   flex-direction: column;
 }
-.caption h3, .special h3{
+.tourCard .caption h3, .special h3{
   margin: 0;
   display: inline;
 }
 .special h3 {
-  border-left: 1px solid #777;
+  border-right: 1px solid #777;
   padding: 20px 0 10px;
 }
-.tourInfo {
+.tourCard .tourInfo {
   padding: 10px;
   border: 1px solid #777;
   border-top: none;
   margin-bottom: 20px;
 }
-.tourInfo p {
+.tourCard .tourInfo p {
   margin: 0;
 }
 .specialThumbnail {
@@ -46,8 +46,13 @@
 }
 
 @media (min-width: 768px) {
-  .tourInfo {
+  .tourCard .thumbnail .caption {
+    padding-left: 20px;
+  }
+  .tourCard .tourInfo {
     min-height: 190px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .special, .specialThumbnail {
     min-height: 400px;

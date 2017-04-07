@@ -1,19 +1,50 @@
-#applyVisa a {
-    font-size: 12px ;
+.customTour {
+  margin-bottom: 40px;
 }
-
-.tab-content {
-    padding: 5% 5%;
-    border: 1px solid #ddd;
-    border-top: none;
+.scholarshipPanel .panel{
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+    border: none;
+}
+.panel, .panel-heading > h4, .scholarshipPanel .panel-body p {
+    text-align: center;
+}
+.scholarshipPanel .panel-heading, .scholarshipProcess .panel-heading {
+    background-color: #40AB48;
+    color: white;
+    font-weight: bold;
+}
+.scholarshipWorth {
+    font-weight: bold;
+}
+.scholarshipNote {
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.applyVisa .panel-heading {
+    background-color: white;
+    border-radius: 0px;
+    border: 2px solid black;
+}
+.applyVisa li {
+  text-align: left;
 }
 
 @media (min-width: 768px) {
-  #applyVisa ul {
-      width: 80%;
+  .customTour h1{
+    text-align: left
   }
-  .tab-content {
-    width: 80%;
-    padding: 3% 3%;
+  .scholarshipPanel .panel-body {
+      min-height: 170px;
   }
+  .padding20 {
+     padding: 0 20%;
+  }
+  
+}
+@media (min-width: 1024px) {
+    .scholarshipPanel .panel-body {
+          min-height: 190px;
+     }
 }

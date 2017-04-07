@@ -41,24 +41,23 @@ class ShowTourCard extends React.Component {
             </Thumbnail>
             <div className="tourInfo">
               <p>{this.props.detail1}</p>
-              <p>{this.props.detail2}</p>
             </div>
           </div>
         </Col>
       ) : (
         <Col xs={12} style={{minHeight: '300px'}}>
+          <Col xs={12} sm={5} style={{padding:'0'}}>
+            <div className='specialThumbnail' onClick={this.open}></div>
+          </Col>
           <Col xs={12} sm={7} style={{padding:'0'}}>
             <div onClick={this.open} className="tourCard special">
               <h3 style={{ color: 'black' }}>{this.props.name}</h3>
-              <div className="tourInfo" style={{ borderRight: 'none', marginBottom: '0'}}>
+              <div className="tourInfo" style={{ borderRigh: 'none', marginBottom: '0'}}>
                 <p>{this.props.detail1}</p>
                 <p>{this.props.detail2}</p>
                 <ul>{attractionList}</ul>
               </div>
             </div>
-          </Col>
-          <Col xs={12} sm={5} style={{padding:'0'}}>
-            <div className='specialThumbnail' onClick={this.open}></div>
           </Col>
         </Col>
       )
@@ -77,10 +76,3 @@ ShowTourCard.propTypes = {
 }
 
 module.exports = ShowTourCard
-
-// , {
-//         "name": "Custom Vietnam Tours",
-//         "detail1": "Thank you for trusting Tours for Books and giving us a chance to be your companion on your trip to Southeast Asia. In addition to specific day tours and packages, we offer customized tours based on your interests and needs. We are delighted to abide by your wishes and make it come true.",
-//         "detail2": "Please email toursforbooks@betterlifevietnam.org, and our tour consultants will reply back with advice and sample itineraries.",
-
-//     }
