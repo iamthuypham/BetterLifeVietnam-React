@@ -5,7 +5,9 @@ import FontAwesome from 'react-fontawesome'
 import '../scenes/ToursTravelServices.css'
 
 import ShowTourCard from '../Modal/ShowTourCard'
+import ShowTravelMethodCard from '../Modal/ShowTravelMethodCard'
 import tourData from '../tour.json'
+import travelMethodData from '../travelMethod.json'
 import Footer from './Footer'
 
 class TourForBook extends React.Component {
@@ -54,24 +56,14 @@ class TourForBook extends React.Component {
             </Accordion>
           </div>
         </div>
-        <div className='container'>
-          <div>
-            <h1>Train ticket booking</h1>
-            <p>Despite the long and time-consuming ride, traveling by train is still among the most popular choice with tourists coming to Vietnam, as you can fully enjoy the panoramic view of the landscapes at ground level and have a real insight of both urban and rural areas in the country.</p>
-            <p>As our tours cover a wide range of destinations: from Sapa to Hue and Danang and to Ho Chi Minh City, <strong>Tours for Books</strong> has cooperated with trustworthy agents to provide train tickets with  guaranteed best prices. Our tour consultants will help you with the comprehensive services, so you do not need to worry about scams or waste time waiting in a long queue to purchase tickets.</p>
-          </div>
-          <div>
-            <h1>Air ticket booking</h1>
-            <p>If you have limited time in Vietnam, air travel may be an ideal domestic option. Nearly all routes take about 2 hours maximum with frequent departures throughout the day. New domestic routes have recently been added with drastically improved service.</p>
-            <p><strong>Tours for Books</strong> has been working closely with prestigious ticket reservation offices of major airlines in Vietnam such as Vietnam Airlines, Vietjet Air, and JetStar. When you book an air ticket with us, we can guarantee a good fare for early-birds and quick and efficient service if you need to make any changes to your reservation.</p>
-          </div>
-          <div>
-            <h1>Car for rent</h1>
-            <p>An International Driving License has not been finalized in Vietnam, thus driving a car on your own is not a good choice here. This is especially true (and costly!) if traveling with family or a group of more than five people.</p>
-            <p>That's a reason why <strong>Tours for Books</strong> offers a car rental service with personal driver. With extensive routes to many popular destinations in Vietnam, you can relax and enjoy the scenery while saving your time and money. Following our motto <strong>"drive safe, drive fun,"</strong> our highly trained drivers are not only friendly and courteous, but also have good English-speaking skills. Tourists may choose from a wide range of high-standard vehicles including a 4-seater car, 16-seater van, 24-seater bus, 35-seater bus and 45-seater bus. Our car rental service will provide you with an unforgettable driving experience throughout the beautiful country of Vietnam.</p>
-            <p>Please note that our car rental service is supplied daily, monthly, or longterm with special offers.</p>
-          </div>
-        </div>
+        <h1>Method Of Transit</h1>
+        <Grid style={{height: '1000px'}}>
+          <Row>
+            {travelMethodData.travelMethods.map((method) => (
+              <ShowTravelMethodCard {...method} key={method.id} length={travelMethodData.travelMethods.length}/>
+              ))}
+          </Row>
+        </Grid>
         <Footer />
       </div>
     )

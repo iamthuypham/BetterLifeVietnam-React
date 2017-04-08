@@ -1,28 +1,9 @@
 const React = require('react')
-import { Modal, Col, Thumbnail } from 'react-bootstrap'
+import { Col, Thumbnail } from 'react-bootstrap'
 
 import '../Modal/ShowTourCard.css'
 
 class ShowTourCard extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      showModal: false
-    }
-    this.open = this.open.bind(this)
-    this.close = this.close.bind(this)
-  }
-  open () {
-    this.setState({
-      showModal: true
-    })
-  }
-  close () {
-    this.setState({
-      showModal: false
-    })
-  }
-
   render () {
     var attractionList = []
     if (this.props.attractions){
@@ -35,8 +16,8 @@ class ShowTourCard extends React.Component {
       (!this.props.special)?
       (
         <Col xs={12} sm={6} md={4} style={{minHeight: '300px'}}>
-          <div onClick={this.open} className="tourCard">
-            <Thumbnail src={process.env.PUBLIC_URL + '/images/toursImg/' + this.props.img} onClick={this.open}>
+          <div className="tourCard">
+            <Thumbnail src={process.env.PUBLIC_URL + '/images/toursImg/' + this.props.img}>
               <h3 style={{ color: 'white' }}>{this.props.name}</h3>
             </Thumbnail>
             <div className="tourInfo">
@@ -47,10 +28,10 @@ class ShowTourCard extends React.Component {
       ) : (
         <Col xs={12} style={{minHeight: '300px'}}>
           <Col xs={12} sm={5} style={{padding:'0'}}>
-            <div className='specialThumbnail' onClick={this.open}></div>
+            <div className='specialThumbnail'></div>
           </Col>
           <Col xs={12} sm={7} style={{padding:'0'}}>
-            <div onClick={this.open} className="tourCard special">
+            <div className="tourCard special">
               <h3 style={{ color: 'black' }}>{this.props.name}</h3>
               <div className="tourInfo" style={{ borderRigh: 'none', marginBottom: '0'}}>
                 <p>{this.props.detail1}</p>
@@ -71,7 +52,6 @@ ShowTourCard.propTypes = {
   name: string.isRequired,
   detail1: string,
   detail2: string,
-  attractions: string,
   img: string.isRequired
 }
 

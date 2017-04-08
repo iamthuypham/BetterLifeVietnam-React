@@ -1,0 +1,29 @@
+.methodCard, #popover-positioned-scrolling-bottom {
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px;
+}
+.methodCard .fa {
+  text-align:center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.methodCard h3 {
+  margin-top: 0;
+}
+.methodCard div p {
+  line-height: 1.7em;
+}
+.methodInfoShort {
+  overflow: hidden;
+}
+.lastLine {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+@media (min-width: 768px) {
+
+}
