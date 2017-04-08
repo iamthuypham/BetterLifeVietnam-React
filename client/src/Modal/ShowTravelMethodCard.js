@@ -1,65 +1,88 @@
 const React = require('react')
-import { Col, OverlayTrigger, Popover } from 'react-bootstrap'
+const ReactDOM = require('react-dom')
+
+import { Col, Overlay} from 'react-bootstrap'
 import FontAwesome from 'react-fontawesome'
 
 import '../Modal/ShowTravelMethodCard.css'
 
-const popoverBottom = (
-  <Popover id="popover-positioned-scrolling-bottom">
-    <div>
-      <p id="methodDetail1"></p>
-      <p id="methodDetail2"></p>
-    </div>
-  </Popover>
-);
+const PopoverBottom = React.createClass({
+  render() {
+    return (
+      <div className="overlay">
+        <div id="popover-positioned-scrolling-bottom" >
+          <Col xs={0} md={5} className="popoverImgCol">
+            <img src={process.env.PUBLIC_URL + '/images/transitImg/' + this.props.img}></img>
+          </Col>
+          <Col xs={12} md={7} className="popoverDetailCol">
+            <div>
+              <p className="methodDetail"></p>
+              <p className="methodDetail"></p>
+            </div>
+          </Col>
+        </div>
+      </div>
+    )
+  }
+})
 
 class showTravelMethodCard extends React.Component {
   constructor(props) {
     super(props)
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      targetCardId: ''
+      targetCardId: '',
+      show: false
     }
     this.selectCard = this.selectCard.bind(this)
-    this.resetTargetCardId = this.resetTargetCardId.bind(this)
+    this.resetContent = this.resetContent.bind(this)
   }
   selectCard(){
-    
-    this.setState({ targetCardId: this.props.id})
+    this.setState({ show: true, targetCardId: this.props.id})
   }
-  resetTargetCardId(){
-    this.setState({ targetCardId: ''})
+  resetContent() {
+    this.props.handleHeight(this.state.show)
+    var targetId = "methodCard"+this.state.targetCardId
+      var detailMethodElement = document.getElementById(targetId).parentElement.nextElementSibling
+      var methodDetail1 = detailMethodElement.getElementsByClassName("methodDetail")[0]
+      var methodDetail2 = detailMethodElement.getElementsByClassName("methodDetail")[1]
+      methodDetail1.innerHTML = ""
+      methodDetail2.innerHTML = ""
   }
   handleClick() {
-    console.log("TargetCardId" +this.state.targetCardId)
-    console.log("PropsId" +this.props.id)
-    if (this.state.targetCardId === this.props.id && document.getElementById("methodDetail1") && document.getElementById("methodDetail2")) {
-      console.log(this.props)
-      document.getElementById("methodDetail1").innerHTML = this.props.detail1
-      document.getElementById("methodDetail2").innerHTMl = this.props.detail2
+    this.props.handleHeight(this.state.show)
+    if (this.state.targetCardId === this.props.id) {
+      var targetId = "methodCard"+this.state.targetCardId
+      var detailMethodElement = document.getElementById(targetId).parentElement.nextElementSibling
+      var methodDetail1 = detailMethodElement.getElementsByClassName("methodDetail")[0]
+      var methodDetail2 = detailMethodElement.getElementsByClassName("methodDetail")[1]
+      
+      if ( methodDetail1 && methodDetail2) {
+        methodDetail1.innerHTML = this.props.detail1
+        methodDetail2.innerHTML = this.props.detail2
+      }
     }
-    this.resetTargetCardId()
   }
   componentDidMount() {
-    document.addEventListener("click", this.handleClick)
   }
-
   componentWillUnmount() {
-    document.removeEventListener("click", this.handleClick)
   }
   render () {
     return (
+      <div>
       <Col xs={12} md={4}>
-        <OverlayTrigger container={this} trigger="click" placement="bottom" overlay={popoverBottom}>
-          <div className="methodCard" onClick={this.selectCard}>
-            <FontAwesome name={this.props.img+' fa-5x'}/>
-            <h3>{this.props.name}</h3>
-            <div className="methodInfoShort lastLine">
-              <p style={{textAlign: 'center'}}>{this.props.detail1}</p>
-            </div>
+        <div className="methodCard" id={"methodCard"+this.props.id} onClick={this.selectCard} ref="target">
+          <FontAwesome name={this.props.icon+' fa-5x'}/>
+          <h3>{this.props.name}</h3>
+          <div className="methodInfoShort lastLine">
+            <p style={{textAlign: 'center'}}>{this.props.detail1}</p>
           </div>
-        </OverlayTrigger>
+        </div>
       </Col>
+      <Overlay container={this} onHide={() => this.setState({ show: false })} show={this.state.show}  placement="bottom" target={() => ReactDOM.findDOMNode(this.refs.target)} rootClose={true} onEntered={this.handleClick} onExit={this.resetContent}>
+        <PopoverBottom img={this.props.img}/>
+      </Overlay>
+      </div>
     )
   }
 }

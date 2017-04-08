@@ -14,6 +14,13 @@ class TourForBook extends React.Component {
   componentDidUpdate() {
     window.scrollTo(0, 0)
   }
+  modifyHeight(showedCardDetail) {
+    if (showedCardDetail) {
+      document.getElementById("transitMethod").style.minHeight = "700px";
+    } else {
+      document.getElementById("transitMethod").style.minHeight = "300px";
+    }
+  }
   render () {
     return (
       <div>
@@ -57,10 +64,10 @@ class TourForBook extends React.Component {
           </div>
         </div>
         <h1>Method Of Transit</h1>
-        <Grid style={{height: '1000px'}}>
+        <Grid id="transitMethod">
           <Row>
             {travelMethodData.travelMethods.map((method) => (
-              <ShowTravelMethodCard {...method} key={method.id} length={travelMethodData.travelMethods.length}/>
+              <ShowTravelMethodCard {...method} key={method.id} length={travelMethodData.travelMethods.length} handleHeight={this.modifyHeight.bind(this)}/>
               ))}
           </Row>
         </Grid>

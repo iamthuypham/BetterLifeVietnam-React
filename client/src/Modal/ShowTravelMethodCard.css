@@ -1,8 +1,14 @@
+.methodCard {
+  padding: 20px;
+}
 .methodCard, #popover-positioned-scrolling-bottom {
   border: 1px solid #e2e2e2;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 1px 3px;
+  margin: 10px 0 10px 0;
+  box-shadow: 0 1px 1px;
+  border-radius: 0;
+}
+#methodCard1 {
+  margin-top: 0;
 }
 .methodCard .fa {
   text-align:center;
@@ -23,7 +29,45 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
-
+.overlay {
+  padding: 0 15px 0 15px;
+}
+.overlay img {
+  width: 100%;
+}
+.hidden {
+  visibility: hidden;
+}
+.popover {
+  position: relative;
+  max-width: none;
+}
+.popoverImgCol {
+  display: none;
+}
 @media (min-width: 768px) {
 
+}
+
+@media (min-width: 1024px) {
+  #methodCard1 {
+    margin-top: 10px;
+  }
+  .overlay {
+    position: relative;
+    width: 99%;
+    top: 300px;
+  }
+  #popover-positioned-scrolling-bottom {
+    position: absolute;
+    box-shadow: 0 1px 1px 1px;
+  }
+  .popoverImgCol {
+    display: unset;
+    padding: 0;
+  }
+  .popoverDetailCol {
+    padding: 20px;
+  }
+  
 }
