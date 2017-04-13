@@ -1,4 +1,5 @@
 const React = require('react')
+import { Link } from 'react-router'
 import { Col, Thumbnail } from 'react-bootstrap'
 
 import '../Modal/ShowTourCard.css'
@@ -17,12 +18,14 @@ class ShowTourCard extends React.Component {
       (
         <Col xs={12} sm={6} md={4} style={{minHeight: '300px'}}>
           <div className="tourCard">
-            <Thumbnail src={process.env.PUBLIC_URL + '/images/toursImg/' + this.props.img}>
-              <h3 style={{ color: 'white' }}>{this.props.name}</h3>
-            </Thumbnail>
-            <div className="tourInfo">
-              <p>{this.props.detail1}</p>
-            </div>
+            <a href={"http://"+this.props.link} target="_blank">
+              <Thumbnail src={process.env.PUBLIC_URL + '/images/toursImg/' + this.props.img}>
+                <h3 style={{ color: 'white' }}>{this.props.name}</h3>
+              </Thumbnail>
+              <div className="tourInfo">
+                <p>{this.props.detail1}</p>
+              </div>
+            </a>
           </div>
         </Col>
       ) : (

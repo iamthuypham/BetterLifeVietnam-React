@@ -6,6 +6,7 @@
         "attractions": "",
         "img": "NorthernTour.jpg",
         "brochure": "NorthernBrochure.pdf",
+        "popular":false,
         "id": "2"
     }, {
         "name": "Central Vietnam Tours",
@@ -14,6 +15,7 @@
         "attractions": "",
         "img": "CentralTour.jpg",
         "brochure": "CentralBrochure.pdf",
+        "popular":false,
         "id": "3"
     }, {
         "name": "Southern Vietnam Tours",
@@ -22,6 +24,7 @@
         "attractions": "",
         "img": "SouthernTour.jpg",
         "brochure": "SouthernBrochure.pdf",
+        "popular":false,
         "id": "4"
     }, {
         "name": "Comprehensive Vietnam Tours",
@@ -41,6 +44,106 @@
         "img": "CompTour.jpg",
         "brochure": "CompBrochure.pdf",
         "special": true,
+        "popular":false,
         "id": "1"
+    }, {
+        "name": "Experience Hanoi Nightlife",
+        "detail1": "Hanoi nightlife is one of the must-see things when it comes to traveling in Vietnam. If you enjoy a vibrant nightlife with activities after sunset, this is tour would be a great way to discover the afterhours of Hanoi.",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/experience-hanoi-nightlife/",
+        "popular":true,
+        "id": "5"
+    }, {
+        "name": "Have Dinner with a Hanoian Family",
+        "detail1": "Vietnamese cuisine is one of the essential characteristics to Vietnamese culture. Get a taste of the authentic Vietnamese homecooked meals with a local family. Dishes served at home is different from the options you have at a local eatery.",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/have-dinner-with-a-hanoian-family/",
+        "popular":true,
+        "id": "6"
+    }, {
+        "name": "Hanoi Cuisine Tasting",
+        "detail1": "If you are interested in walking through the maze of Hanoi Old Quarter and enjoying Vietnamese cuisine, this half day trip might be the perfect choice for you. Discover Hanoi through sampling the local foods.",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/have-dinner-with-a-hanoian-family/",
+        "popular":true,
+        "id": "7"
+    }, {
+        "name": "Hanoi Ionah Show",
+        "detail1": "The show features a poetic storyline and a great combination of dance, theater, circus, lasers, and 3D effects fantastic choreography by talented artists. The show is highly interactive and is suitable for both adults and children. ",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/have-dinner-with-a-hanoian-family/",
+        "popular":true,
+        "id": "8"
+    }, {
+        "name": "Experience Being an Hanoian",
+        "detail1": "This day tour is an ideal choice for families with kids who want to spend a meaningful day in Hanoi to learn and experience the daily life of being a local Hanoian.",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/have-dinner-with-a-hanoian-family/",
+        "popular":true,
+        "id": "9"
+    }, {
+        "name": "Hanoi Costume",
+        "detail1": "This special city tour will be the best option to discover a glorious side of Hanoi - the ancient capital of Vietnam through the history of Vietnamese traditional costumes.",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/have-dinner-with-a-hanoian-family/",
+        "popular":true,
+        "id": "10"
+    }, {
+        "name": "Hoi An Homemade Meal",
+        "detail1": "This tour is perfect for anyone who loves seeing the real local life in Hoi An. Dig deeper in their dining etiquette with a Vietnamese meal prepared by yourselves under guidance of the local.",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/have-dinner-with-a-hanoian-family/",
+        "popular":true,
+        "id": "11"
+    }, {
+        "name": "Visit Tho Ha Village",
+        "detail1": "Located 70km from Hanoi, Tho Ha village is becoming a more and more popular destination for tourists who wish to discover the rural life and ancient architecture of Vietnamese people.",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/have-dinner-with-a-hanoian-family/",
+        "popular":true,
+        "id": "11"
+    }, {
+        "name": "Tra Nhieu Village Eco Tour",
+        "detail1": "You will have a chance to paddle a “Thung Chai”, a special bamboo basket boat only have in Vietnam.",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/have-dinner-with-a-hanoian-family/",
+        "popular":true,
+        "id": "12"
+    }, {
+        "name": "Ho Chi Minh City Vespa Tour",
+        "detail1": "If you want to see the real dynamic nightlife of Ho Chi Minh city, enjoy a ride on a vintage Vespa, and taste the famous specialties of the region at the same time, this short night excursion might be of your choice.",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/have-dinner-with-a-hanoian-family/",
+        "popular":true,
+        "id": "13"
+    }, {
+        "name": "Ho Chi Minh City Vespa Tour",
+        "detail1": "If you want to see the real dynamic nightlife of Ho Chi Minh city, enjoy a ride on a vintage Vespa, and taste the famous specialties of the region at the same time, this short night excursion might be of your choice.",
+        "detail2": "",
+        "img": "NorthernTour.jpg",
+        "brochure": "CompBrochure.pdf",
+        "link":"betterlifevietnam.org/cms/have-dinner-with-a-hanoian-family/",
+        "popular":true,
+        "id": "14"
     }]
 }

@@ -7,6 +7,7 @@ import About from './scenes/About'
 import OurTeam from './scenes/OurTeam'
 import BookLibrary from './scenes/BookLibrary'
 import BLVScholarship from './scenes/BLVScholarship'
+import VietDan from './scenes/VietDan'
 import ToursTravelServices from './scenes/ToursTravelServices'
 import Voluntourism from './scenes/Voluntourism'
 import StudyTours from './scenes/StudyTours'
@@ -29,6 +30,7 @@ class ClientApp extends React.Component {
             <Route path='/allStudent' component={BLVScholarship} />
           </Route>
           <Route>
+            <Route path='/vietdan' component={VietDan} />
             <Route path='/tours-travel-services' component={ToursTravelServices} />
             <Route path='/voluntourism' component={Voluntourism} />
             <Route path='/study-tours' component={StudyTours} />

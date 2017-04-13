@@ -1,0 +1,24 @@
+.VietDan .cover-container {
+	height: 100px;
+}
+.VietDan .cover-title{
+	z-index: 4;
+	bottom: 0;
+	padding-bottom: 5vw;
+}
+.VietDan .cover-container h1 {
+	margin: 0;
+	font-size: 4vw;
+}
+.VietDan .cover-container img{ 
+	position: absolute;
+	bottom: -73px;
+}
+@media (min-width: 768px) {
+	.VietDan .cover-container {
+		height: 250px;
+	}
+}
+@media (min-width: 1024px) {
+	
+}
